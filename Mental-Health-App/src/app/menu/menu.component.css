@@ -1,0 +1,29 @@
+.selections {
+  margin-top: 25%;
+  margin-bottom: 25%;
+  background-color: bisque;
+}
+
+.icon {
+  font-size: xx-large;
+}
+
+.menu-items {
+  display: inline-block;
+  margin: 10px;
+}
+
+.menu-button1 {
+  height: 130px;
+  width: 130px;
+}
+
+.menu-button2 {
+  height: 130px;
+  width: 130px;
+}
+
+.menu-button3 {
+  height: 130px;
+  width: 130px;
+}
