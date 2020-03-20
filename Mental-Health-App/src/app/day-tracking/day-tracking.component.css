@@ -1,0 +1,94 @@
+.questionBox {
+  position: absolute;
+  background: lightskyblue;
+  padding: 2%;
+  left: 33%;
+  top: 15%;
+  width: 30%;
+  height: 60%;
+  bottom: 50%;
+  border-radius: 2%;
+}
+/* Adding a value about how the day has been starts here. */
+.sliderValue {
+  position: absolute;
+  left: 60%;
+  top: 60%;
+}
+
+.questionCard {
+  margin-bottom: 10px;
+  height: 10%;
+  top: 4%;
+}
+
+.slider {
+  position: absolute;
+  top: 45%;
+  right: 47%;
+  width: 50%;
+}
+/* Adding a value about how the day has been stops here. */
+
+/* Adding a value about how much sleep did you get starts here. */
+.sliderValueSleep {
+  position: absolute;
+  left: 60%;
+  top: 60%;
+}
+
+.questionCardSleep {
+  margin-bottom: 10px;
+  height: 10%;
+  top: 6%;
+}
+
+.sliderSleep {
+  position: absolute;
+  top: 45%;
+  right: 47%;
+  width: 50%;
+}
+/* Adding a value about how much sleep did you get stops here. */
+
+/* Adding a value about how much did you exercised starts here. */
+.sliderValueExercise {
+  position: absolute;
+  left: 60%;
+  top: 60%;
+}
+
+.questionCardExercise {
+  margin-bottom: 10px;
+  height: 10%;
+  top: 8%;
+}
+
+.sliderExercise {
+  position: absolute;
+  top: 45%;
+  right: 47%;
+  width: 50%;
+}
+/* Adding a value about how much did you exercised stops here. */
+
+/* Adding a value about how is the weather starts here. */
+.sliderValueWeather {
+  position: absolute;
+  left: 60%;
+  top: 60%;
+}
+
+.questionCardWeather {
+  margin-bottom: 10px;
+  height: 10%;
+  top: 10%;
+}
+
+.sliderWeather {
+  position: absolute;
+  top: 45%;
+  right: 47%;
+  width: 50%;
+}
+/* Adding a value about how is the weather stops here. */

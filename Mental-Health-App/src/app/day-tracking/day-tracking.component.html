@@ -1,0 +1,30 @@
+<div class="questionBox">
+  <!-- Question about how the day has been. -->
+  <mat-card class="questionCard" *ngFor="let question of dayTrackingItemsList">
+    {{ question.question }}
+    <mat-slider class="slider" min="0" max="4" step="1" #matSlider></mat-slider>
+    <div class="sliderValue">{{question.answerList[matSlider.value]}}</div>
+  </mat-card>
+
+  <!-- Question about how much sleep did you get. -->
+    <mat-card class="questionCardSleep" *ngFor="let question of dayTrackingSleep">
+      {{ question.question }}
+      <mat-slider class="sliderSleep" min="0" max="4" step="1" #matSlider></mat-slider>
+      <div class="sliderValueSleep">{{question.answerListSleep[matSlider.value]}}</div>
+  </mat-card>
+
+  <!-- Question about how much exercise did you get. -->
+  <mat-card class="questionCardExercise" *ngFor="let question of dayTrackingExercise">
+    {{ question.question }}
+    <mat-slider class="sliderExercise" min="0" max="4" step="1" #matSlider></mat-slider>
+    <div class="sliderValueExercise">{{question.answerListExercise[matSlider.value]}}</div>
+  </mat-card>
+
+  <!-- Question about how is the weather. -->
+  <mat-card class="questionCardWeather" *ngFor="let question of dayTrackingWeather">
+    {{ question.question }}
+    <mat-slider class="sliderWeather" min="0" max="4" step="1" #matSlider></mat-slider>
+    <div class="sliderValueWeather">{{question.answerListWeather[matSlider.value]}}</div>
+  </mat-card>
+</div>
+
