@@ -1,0 +1,40 @@
+.reliefCard{
+  position: absolute;
+  background: lightskyblue;
+  top: 15%;
+  height: 40%;
+  width: 30%;
+  left: 30%;
+  padding: 2%;
+  border-radius: 2%;
+}
+
+.outButton{
+  position: absolute;
+  left: 5%;
+  height: 30%;
+  width: 35%;
+}
+
+.breathingExerciseButton{
+  position: absolute;
+  left: 60%;
+  height: 30%;
+  width: 35%;
+}
+
+.crisisPhoneButton{
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  height: 30%;
+  width: 35%;
+}
+
+.ownSuggestionButton{
+  position: absolute;
+  left: 60%;
+  top: 60%;
+  height: 30%;
+  width: 35%;
+}
