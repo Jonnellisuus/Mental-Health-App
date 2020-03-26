@@ -9,4 +9,4 @@ export class DayTrackingExerciseItem {
     this.answerListExercise = ['Et ole vielä vastannut', 'Tunnin', '2 tuntia', '3 tuntia', '4 tuntia'];
   }
 }
-
+//

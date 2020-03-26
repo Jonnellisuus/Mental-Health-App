@@ -12,12 +12,14 @@ import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
 import { OwnSuggestionComponent } from './relief/own-suggestion/own-suggestion.component';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 @NgModule({
@@ -27,7 +29,10 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
     ReliefComponent,
     MenuComponent,
     ToolbarComponent,
-    OwnSuggestionComponent
+    OwnSuggestionComponent,
+    MenuComponent,
+    ToolbarComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
@@ -44,10 +49,11 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatSidenavModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-//

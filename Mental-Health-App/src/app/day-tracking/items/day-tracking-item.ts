@@ -9,4 +9,4 @@ export class DayTrackingItem {
     this.answerList = ['Et ole vielä vastannut', 'Mahtava', 'Hyvä', 'Huono', 'Kamala'];
   }
 }
-
+//
