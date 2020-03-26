@@ -9,3 +9,4 @@ export class DayTrackingWeatherItem {
     this.answerListWeather = ['Et ole vielä vastannut', 'Aurinkoinen', 'pilvinen', 'tuulinen', 'sateinen'];
   }
 }
+

@@ -32,3 +32,4 @@ export class OwnSuggestionComponent implements OnInit {
     this.snackBar.open('Ehdotus tallennettu', 'OK', {duration: 3000});
   }
 }
+//

@@ -31,3 +31,4 @@ export class DayTrackingComponent implements OnInit {
     this.snackBar.open('Päivän seuranta tallennettu', 'OK', {duration: 3000});
   }
 }
+//

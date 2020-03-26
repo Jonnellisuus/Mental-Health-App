@@ -9,3 +9,4 @@ export class DayTrackingSleepItem {
     this.answerListSleep = ['Et ole vielä vastannut', 'Tunnin', '2 tuntia', '3 tuntia', '4 tuntia'];
   }
 }
+

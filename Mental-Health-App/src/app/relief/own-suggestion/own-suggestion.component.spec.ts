@@ -23,3 +23,4 @@ describe('OwnSuggestionComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+//
