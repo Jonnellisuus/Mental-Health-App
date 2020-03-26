@@ -1,0 +1,53 @@
+<div>
+  <mat-card class="ownSuggestionCard">
+    <form [formGroup]="profileForm" (ngSubmit)="onSave(contactForm)" #contactForm="ngForm">
+      <h3 align="center">Luo uusi ehdotus hankalaan hetkeen.</h3>
+      <mat-form-field class="suggestionName">
+        <label for="suggestionName">
+          <input matInput type="text"
+                 class="form-control"
+                 id="suggestionName"
+                 name="suggestionName"
+                 formControlName="suggestionName"
+                 maxlength="20"
+                 placeholder="Avun nimi">
+        </label>
+      </mat-form-field>
+
+      <mat-error>
+        <div *ngIf="suggestionName.invalid && (suggestionName.dirty || suggestionName.touched)">
+          <p class="errorMessageName" *ngIf="suggestionName.hasError('required')">Anna ehdotukselle nimi</p>
+          <!-- This will be removed if not needed.
+          <p class="instructionTextFirstName" *ngIf="suggestionName.hasError('minlength')">Et kirjoittanut nimeä</p>
+          -->
+        </div>
+      </mat-error>
+
+      <mat-form-field class="inputSuggestion">
+        <label for="inputSuggestion">
+        <textarea matInput type="text"
+                  class="form-control"
+                  id="inputSuggestion"
+                  name="inputSuggestion"
+                  formControlName="inputSuggestion"
+                  placeholder="Mitä tehdä"
+                  maxlength="200"></textarea>
+        </label>
+      </mat-form-field>
+
+      <mat-error>
+        <div *ngIf="inputSuggestion.invalid && (inputSuggestion.dirty || inputSuggestion.touched)">
+          <p class="errorMessageSuggestion" *ngIf="inputSuggestion.hasError('required')">Kirjoita ehdotus</p>
+          <!-- This will be removed if not needed.
+          <p class="instructionTextFirstName" *ngIf="inputSuggestion.hasError('minlength')">Et kirjoittanut ehdotusta</p>
+          -->
+        </div>
+      </mat-error>
+
+    </form>
+    <button [routerLink]="['/relief']" class="saveSuggestionButton" mat-raised-button [disabled]="contactForm.form.invalid"
+            (click)="onSave(contactForm)">Tallenna</button>
+
+    <button [routerLink]="['/relief']" class="cancelSuggestionButton" mat-raised-button>Peruuta</button>
+  </mat-card>
+</div>

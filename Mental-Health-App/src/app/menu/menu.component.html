@@ -1,0 +1,23 @@
+<div class="selection-container">
+  <mat-card class="selections">
+    <mat-list-item class="menu-items">
+    <button [routerLink]="['/day-tracking']" mat-fab class="menu-button1" (click)="createNewData()">
+      <mat-icon class="icon">create</mat-icon><br>
+      Kerro päivästäsi
+    </button>
+    </mat-list-item>
+    <mat-list-item class="menu-items">
+    <button [routerLink]="['/relief']" mat-fab class="menu-button2">
+      <mat-icon class="icon">live_help</mat-icon><br>
+      Hankaliin hetkiin
+    </button>
+    </mat-list-item>
+      <mat-list-item class="menu-items">
+    <button mat-fab class="menu-button3">
+      <mat-icon class="icon">stars</mat-icon><br>
+      Voimavarat
+    </button>
+      </mat-list-item>
+    <div>testi.</div>
+  </mat-card>
+</div>

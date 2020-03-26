@@ -20,11 +20,14 @@
     <div class="sliderValueExercise">{{question.answerListExercise[matSlider.value]}}</div>
   </mat-card>
 
-  <!-- Question about how is the weather. -->
+  <!-- Question about how is the weather -->
   <mat-card class="questionCardWeather" *ngFor="let question of dayTrackingWeather">
     {{ question.question }}
     <mat-slider class="sliderWeather" min="0" max="4" step="1" #matSlider></mat-slider>
     <div class="sliderValueWeather">{{question.answerListWeather[matSlider.value]}}</div>
+
+    <button [routerLink]="['/menu']" class="saveButton" mat-raised-button (click)="saveDayTracking()">Tallenna</button>
+    <button [routerLink]="['/menu']" class="cancelDayTrackingButton" mat-raised-button>Peruuta</button>
   </mat-card>
 </div>
 

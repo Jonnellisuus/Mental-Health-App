@@ -1,0 +1,50 @@
+.ownSuggestionCard{
+  position: absolute;
+  background: lightskyblue;
+  top: 15%;
+  height: 60%;
+  width: 30%;
+  left: 30%;
+  padding: 2%;
+  border-radius: 2%;
+}
+
+/* Input for own suggestion to a difficult moment starts here. */
+.inputSuggestion{
+  position: absolute;
+  top: 35%;
+  left: 6%;
+  width: 80%;
+}
+/* Input for own suggestion to a difficult moment stops here. */
+
+.saveSuggestionButton{
+  position: absolute;
+  left: 75%;
+  top: 85%;
+  height: 10%;
+  width: 20%;
+}
+
+.cancelSuggestionButton{
+  position: absolute;
+  top: 85%;
+  height: 10%;
+  width: 20%;
+  background: orangered;
+}
+
+/* The placement for an error message starts here (if there was no name for the suggestion). */
+.errorMessageName{
+  position: absolute;
+  left: 50%;
+  top: 24%;
+}
+/* The placement for an error message stops here (if there was no name for the suggestion). */
+
+/* The placement for an error message starts here (if there was no suggestion written). */
+.errorMessageSuggestion{
+  position: absolute;
+  top: 50%;
+}
+/* The placement for an error message stops here (if there was no suggestion written). */

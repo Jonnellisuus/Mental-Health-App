@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ReliefComponent } from './relief.component';
+import { OwnSuggestionComponent } from './own-suggestion.component';
 
-describe('ReliefComponent', () => {
-  let component: ReliefComponent;
-  let fixture: ComponentFixture<ReliefComponent>;
+describe('OwnSuggestionComponent', () => {
+  let component: OwnSuggestionComponent;
+  let fixture: ComponentFixture<OwnSuggestionComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ReliefComponent ]
+      declarations: [ OwnSuggestionComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ReliefComponent);
+    fixture = TestBed.createComponent(OwnSuggestionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -23,4 +23,3 @@ describe('ReliefComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-//

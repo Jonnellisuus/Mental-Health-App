@@ -19,7 +19,7 @@
 .questionCard {
   margin-bottom: 10px;
   height: 10%;
-  top: 4%;
+  top: 2%;
 }
 
 .slider {
@@ -40,7 +40,7 @@
 .questionCardSleep {
   margin-bottom: 10px;
   height: 10%;
-  top: 6%;
+  top: 4%;
 }
 
 .sliderSleep {
@@ -61,7 +61,7 @@
 .questionCardExercise {
   margin-bottom: 10px;
   height: 10%;
-  top: 8%;
+  top: 6%;
 }
 
 .sliderExercise {
@@ -82,7 +82,7 @@
 .questionCardWeather {
   margin-bottom: 10px;
   height: 10%;
-  top: 10%;
+  top: 8%;
 }
 
 .sliderWeather {
@@ -91,4 +91,17 @@
   right: 47%;
   width: 50%;
 }
-/* Adding a value about how is the weather stops here. */
+/* Adding a value about how is the weather stops here */
+
+.saveButton{
+  position: absolute;
+  top: 115%;
+  left: 78%;
+}
+
+.cancelDayTrackingButton{
+  position: absolute;
+  top: 115%;
+  left: 0;
+  background: orangered;
+}
