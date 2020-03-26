@@ -5,3 +5,7 @@
 .toolbar-button {
   border-radius: 20%;
 }
+
+.sidenav-container {
+  height: 100%;
+}
