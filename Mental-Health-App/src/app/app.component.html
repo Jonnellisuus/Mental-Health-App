@@ -1,39 +1,6 @@
-<!--
-<mat-sidenav-container class="app-sidenav-container">
-  <mat-sidenav #sidenav [mode]="'over'" [opened]="false" class="app-sidenav">
-    <-- Sidenav content --
-    <div>
-      <div fxLayout="column" fxLayoutAlign="center center" class="app-sidenav-user-area">
-        <div>
-          <mat-icon class="app-sidenav-avatar" color="primary">account_circle</mat-icon>
-        </div>
-        <div>
-          <span>Jaana Peltonen</span>
-        </div>
-      </div>
-      <mat-divider></mat-divider>
-      <div>
-        <mat-nav-list>
-          <mat-list-item>
-            <a routerLink="login" (click)="sidenav.toggle()">Sign out</a>
-          </mat-list-item>
-        </mat-nav-list>
-      </div>
-    </div>
-  </mat-sidenav>
-  <div fxFlexFill class="app-sidenav-content">
-    <app-toolbar (MenuClick)="sidenav.toggle()"></app-toolbar>
-    <div class="app-app-container">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
-</mat-sidenav-container>
-<router-outlet></router-outlet>
--->
-
-<mat-sidenav-container class="app-sidenav-container">
-  <mat-sidenav #sidenav [mode]="'over'" [opened]="false" class="app-sidenav">
-      <div fxLayout="column" fxLayoutAlign="center center" class="app-sidenav-user-area"></div>
+<mat-sidenav-container class="sidenavContainer">
+  <mat-sidenav #sidenav [mode]="'over'" [opened]="false" class="sidenav">
+      <div fxLayout="column" fxLayoutAlign="center center" class="sidenavToolbar"></div>
     <mat-list-item class="reportButton">
       <button mat-flat-button>Raportti</button>
     </mat-list-item>
