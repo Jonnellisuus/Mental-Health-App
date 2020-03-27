@@ -1,7 +1,13 @@
 .selections {
-  margin-top: 25%;
-  margin-bottom: 25%;
-  background-color: bisque;
+  position: absolute;
+  background: lightskyblue;
+  padding: 2%;
+  left: 33%;
+  top: 15%;
+  width: 30%;
+  height: 60%;
+  bottom: 50%;
+  border-radius: 2%;
 }
 
 .icon {
@@ -21,10 +27,21 @@
 .menu-button2 {
   height: 130px;
   width: 130px;
+  left: 50%;
 }
 
 .menu-button3 {
+  position: absolute;
   height: 130px;
   width: 130px;
+  top: 50%;
+  left: 8%;
 }
 
+.menu-button4 {
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  top: 50%;
+  left: 58%;
+}

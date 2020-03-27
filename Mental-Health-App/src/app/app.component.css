@@ -1,3 +1,76 @@
 /*
+.app-sidenav-container {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.app-sidenav {
+  width: 200px;
+}
+
+.app-app-container {
+  height: 100%;
+  overflow: auto;
+}
+
+.app-sidenav-avatar {
+  font-size: 80px;
+  width: 80px;
+  height: 80px;
+}
+
+.app-sidenav-user-area {
+  background: #D9D9D9;
+  padding: 8px;
+}
+
+.app-sidenav-content {
+  overflow: hidden;
+}
 
  */
+
+.app-sidenav-container {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-sidenav {
+  width: 250px;
+}
+
+.app-sidenav-user-area {
+  position: relative;
+  background: blueviolet;
+  height: 10.5%;
+}
+
+.app-user-name {
+  font: caption;
+  font-size: small;
+  color: white;
+  text-align: center;
+  background: #616161;
+}
+
+.reportButton{
+  position: absolute;
+  left: 22%;
+  top: 20%;
+}
+
+.settingsButton{
+  position: absolute;
+  left: 22%;
+  top: 30%;
+}
+
+.signOutButton{
+  position: absolute;
+  left: 22%;
+  top: 40%;
+}
