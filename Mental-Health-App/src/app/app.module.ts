@@ -21,6 +21,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { ReliefOutComponent } from './relief/relief-out/relief-out.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ReliefOutComponent } from './relief/relief-out/relief-out.component';
     MenuComponent,
     ToolbarComponent,
     SidenavComponent,
-    ReliefOutComponent
+    ReliefOutComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

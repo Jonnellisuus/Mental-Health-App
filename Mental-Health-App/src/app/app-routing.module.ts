@@ -5,6 +5,7 @@ import {ReliefComponent} from "./relief/relief.component";
 import {MenuComponent} from "./menu/menu.component";
 import {OwnSuggestionComponent} from "./relief/own-suggestion/own-suggestion.component";
 import {ReliefOutComponent} from "./relief/relief-out/relief-out.component";
+import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'relief', component: ReliefComponent },
   {path: 'menu', component: MenuComponent },
   {path: 'own-suggestion', component: OwnSuggestionComponent},
-  {path: 'relief-out', component: ReliefOutComponent}
+  {path: 'relief-out', component: ReliefOutComponent},
+  {path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({
@@ -20,4 +22,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-//
