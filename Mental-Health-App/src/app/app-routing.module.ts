@@ -4,13 +4,15 @@ import {DayTrackingComponent} from "./day-tracking/day-tracking.component";
 import {ReliefComponent} from "./relief/relief.component";
 import {MenuComponent} from "./menu/menu.component";
 import {OwnSuggestionComponent} from "./relief/own-suggestion/own-suggestion.component";
+import {ReliefOutComponent} from "./relief/relief-out/relief-out.component";
 
 
 const routes: Routes = [
   {path: 'day-tracking', component: DayTrackingComponent},
   {path: 'relief', component: ReliefComponent },
   {path: 'menu', component: MenuComponent },
-  {path: 'own-suggestion', component: OwnSuggestionComponent}
+  {path: 'own-suggestion', component: OwnSuggestionComponent},
+  {path: 'relief-out', component: ReliefOutComponent}
 ];
 
 @NgModule({

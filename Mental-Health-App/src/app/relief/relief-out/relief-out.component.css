@@ -1,0 +1,15 @@
+.reliefCardOut{
+  position: absolute;
+  top: 15%;
+  background: lightskyblue;
+  height: 60%;
+  width: 30%;
+  left: 30%;
+  padding: 2%;
+  border-radius: 2%;
+}
+
+.returnReliefButton{
+  position: absolute;
+  top: 85%;
+}

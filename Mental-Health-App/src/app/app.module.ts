@@ -20,6 +20,7 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { ReliefOutComponent } from './relief/relief-out/relief-out.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     OwnSuggestionComponent,
     MenuComponent,
     ToolbarComponent,
-    SidenavComponent
+    SidenavComponent,
+    ReliefOutComponent
   ],
   imports: [
     BrowserModule,
