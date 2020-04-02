@@ -9,6 +9,7 @@ import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 
 
 const routes: Routes = [
+  {path: '', redirectTo: '/menu', pathMatch: 'full'},
   {path: 'day-tracking', component: DayTrackingComponent},
   {path: 'relief', component: ReliefComponent },
   {path: 'menu', component: MenuComponent },

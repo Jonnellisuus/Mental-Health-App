@@ -6,7 +6,7 @@ export class DayTrackingWeatherItem {
   constructor(question: string) {
     this.question = question;
     this.answer = '';
-    this.answerListWeather = ['Et ole vielä vastannut', 'Aurinkoinen', 'pilvinen', 'tuulinen', 'sateinen'];
+    this.answerListWeather = ['Et ole vastannut', 'Aurinkoinen', 'pilvinen', 'tuulinen', 'sateinen'];
   }
 }
 //

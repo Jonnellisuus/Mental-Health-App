@@ -106,3 +106,41 @@
   background: orangered;
 }
 
+/* Responsive for different devices */
+@media screen and (max-width: 640px){
+  .questionBox{
+    position: absolute;
+    padding: 2%;
+    left: 5%;
+    top: 15%;
+    width: 90%;
+    height: 60%;
+    bottom: 50%;
+    border-radius: 2%;
+  }
+
+  .saveButton{
+    position: absolute;
+    left: 75%;
+  }
+
+  .sliderValue{
+    position: absolute;
+    top: 60%;
+  }
+
+  .sliderValueSleep{
+    position: absolute;
+    top: 60%;
+  }
+
+  .sliderValueSleep{
+    position: absolute;
+    top: 60%;
+  }
+
+  .sliderValueWeather{
+    position: absolute;
+    top: 60%;
+  }
+}

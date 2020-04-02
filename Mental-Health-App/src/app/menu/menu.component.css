@@ -45,3 +45,57 @@
   top: 50%;
   left: 58%;
 }
+
+@media screen and (max-width: 812px){
+  .selections{
+    position: absolute;
+    padding: 2%;
+    left: 12%;
+    top: 15%;
+    width: 70%;
+    height: 60%;
+    bottom: 50%;
+    border-radius: 2%;
+  }
+
+  .menu-button1{
+    position: absolute;
+    height: 110px;
+    width: 110px;
+  }
+
+  .menu-button2{
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    left: 56%;
+  }
+
+  .menu-button3{
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    top: 30%;
+    left: 6.4%;
+  }
+
+  .menu-button4{
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    top: 30%;
+    left: 56%;
+  }
+
+  @media screen and (max-width: 375px){
+    .menu-button3{
+      position: absolute;
+      top: 40%;
+    }
+
+    .menu-button4{
+      position: absolute;
+      top: 40%;
+    }
+  }
+}

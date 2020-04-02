@@ -6,7 +6,7 @@ export class DayTrackingItem {
   constructor(question: string) {
     this.question = question;
     this.answer = '';
-    this.answerList = ['Et ole vielä vastannut', 'Mahtava', 'Hyvä', 'Huono', 'Kamala'];
+    this.answerList = ['Et ole vastannut', 'Mahtava', 'Hyvä', 'Huono', 'Kamala'];
   }
 }
 //

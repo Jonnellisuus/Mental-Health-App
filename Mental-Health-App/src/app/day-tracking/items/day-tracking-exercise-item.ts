@@ -6,7 +6,7 @@ export class DayTrackingExerciseItem {
   constructor(question: string) {
     this.question = question;
     this.answer = '';
-    this.answerListExercise = ['Et ole vielä vastannut', 'Tunnin', '2 tuntia', '3 tuntia', '4 tuntia'];
+    this.answerListExercise = ['Et ole vastannut', 'Tunnin', '2 tuntia', '3 tuntia', '4 tuntia'];
   }
 }
 //
