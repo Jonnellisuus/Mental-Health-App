@@ -1,5 +1,4 @@
-
-  .reliefCardOut {
+.reliefCardOut {
     position: absolute;
     top: 15%;
     background: lightskyblue;
@@ -31,7 +30,6 @@
     top: 85%;
   }
 }
-
   /*scaled for iPhone5*/
   @media screen and (max-width: 320px) {
     .reliefText {
