@@ -52,3 +52,65 @@
   top: 85%;
 }
 
+@media screen and (max-width: 812px) {
+  .reliefCard {
+    position: absolute;
+    top: 15%;
+    height: 60%;
+    width: 65%;
+    left: 15%;
+    padding: 2%;
+    border-radius: 2%;
+  }
+
+  .outButton {
+    position: absolute;
+    left: 5%;
+    top:5%;
+    height: 20%;
+    width: 38%;
+    border-radius: 5%;
+  }
+
+  .breathingExerciseButton {
+    position: absolute;
+    left: 57%;
+    top:5%;
+    height: 20%;
+    width: 38%;
+    border-radius: 5%;
+  }
+
+  .crisisPhoneButton {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    height: 20%;
+    width: 38%;
+    border-radius: 5%;
+  }
+
+  .ownSuggestionButton {
+    position: absolute;
+    left: 57%;
+    top: 30%;
+    height: 20%;
+    width: 38%;
+    border-radius: 5%;
+  }
+
+  .addSuggestionButton {
+    position: absolute;
+    left: 60%;
+    top: 80%;
+    height: 80px;
+    width: 80px;
+  }
+
+  .returnMenuButton {
+    position: absolute;
+    top: 85%;
+    left: 10%;
+  }
+}
+
