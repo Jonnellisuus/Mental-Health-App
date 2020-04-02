@@ -49,7 +49,9 @@
 }
 /* The placement for an error message stops here (if there was no suggestion written). */
 
-@media screen and (max-width: 812px) {
+
+/*scaled for iPhoneX*/
+@media screen and (max-width: 375px) {
   .ownSuggestionCard {
     position: absolute;
     top: 15%;
@@ -84,4 +86,26 @@
      position: absolute;
      font-size: smaller;
    }
+}
+/*scaled for iPhone5*/
+@media screen and (max-width: 320px) {
+  .cancelSuggestionButton {
+    position: absolute;
+    top: 85%;
+    height: 10%;
+    width: 40%;
+  }
+  .saveSuggestionButton {
+    position: absolute;
+    left: 55%;
+    top: 85%;
+    height: 10%;
+    width: 40%;
+  }
+  .inputSuggestion {
+    margin-top: 10%;
+  }
+  .errorMessageName {
+    display: inline-block;
+  }
 }

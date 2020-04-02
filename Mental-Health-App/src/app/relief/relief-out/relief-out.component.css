@@ -14,8 +14,8 @@
     position: absolute;
     top: 85%;
   }
-
-@media screen and (max-width: 812px) {
+/*scaled for iPhoneX*/
+@media screen and (max-width: 375px) {
   .reliefCardOut{
     position: absolute;
     top: 15%;
@@ -31,3 +31,13 @@
     top: 85%;
   }
 }
+
+  /*scaled for iPhone5*/
+  @media screen and (max-width: 320px) {
+    .reliefText {
+      font-size: smaller;
+    }
+    .reliefHeader {
+      font-size: larger;
+    }
+  }

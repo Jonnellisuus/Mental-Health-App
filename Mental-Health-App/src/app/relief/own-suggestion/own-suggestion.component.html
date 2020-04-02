@@ -16,7 +16,7 @@
 
       <mat-error>
         <div *ngIf="suggestionName.invalid && (suggestionName.dirty || suggestionName.touched)">
-          <br>
+
           <p class="errorMessageName" *ngIf="suggestionName.hasError('required')">Anna ehdotukselle nimi</p>
           <!-- This will be removed if not needed.
           <p class="instructionTextFirstName" *ngIf="suggestionName.hasError('minlength')">Et kirjoittanut nimeä</p>
@@ -38,6 +38,7 @@
 
       <mat-error>
         <div *ngIf="inputSuggestion.invalid && (inputSuggestion.dirty || inputSuggestion.touched)">
+
           <p class="errorMessageSuggestion" *ngIf="inputSuggestion.hasError('required')">Kirjoita ehdotus</p>
           <!-- This will be removed if not needed.
           <p class="instructionTextFirstName" *ngIf="inputSuggestion.hasError('minlength')">Et kirjoittanut ehdotusta</p>
