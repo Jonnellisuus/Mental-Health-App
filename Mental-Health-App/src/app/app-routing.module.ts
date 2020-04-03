@@ -6,6 +6,7 @@ import {MenuComponent} from "./menu/menu.component";
 import {OwnSuggestionComponent} from "./relief/own-suggestion/own-suggestion.component";
 import {ReliefOutComponent} from "./relief/relief-out/relief-out.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
+import {LoginComponent} from "./login/login.component";
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'menu', component: MenuComponent },
   {path: 'own-suggestion', component: OwnSuggestionComponent},
   {path: 'relief-out', component: ReliefOutComponent},
+  {path: 'login', component: LoginComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 
