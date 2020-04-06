@@ -22,6 +22,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { ReliefOutComponent } from './relief/relief-out/relief-out.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SettingComponent } from './setting/setting.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ToolbarComponent,
     SidenavComponent,
     ReliefOutComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SettingComponent
   ],
   imports: [
     BrowserModule,
