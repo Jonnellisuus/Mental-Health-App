@@ -6,15 +6,18 @@ import {MenuComponent} from "./menu/menu.component";
 import {OwnSuggestionComponent} from "./relief/own-suggestion/own-suggestion.component";
 import {ReliefOutComponent} from "./relief/relief-out/relief-out.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
+import {LoginComponent} from "./login/login.component";
+import {LoginGuard} from "./guard/login.guard";
 
 
 const routes: Routes = [
-  {path: '', redirectTo: '/menu', pathMatch: 'full'},
-  {path: 'day-tracking', component: DayTrackingComponent},
-  {path: 'relief', component: ReliefComponent },
-  {path: 'menu', component: MenuComponent },
-  {path: 'own-suggestion', component: OwnSuggestionComponent},
-  {path: 'relief-out', component: ReliefOutComponent},
+  {path: '', redirectTo: '/login', pathMatch: 'full'},
+  {path: 'day-tracking', component: DayTrackingComponent, canActivate: [LoginGuard]},
+  {path: 'relief', component: ReliefComponent, canActivate: [LoginGuard]},
+  {path: 'menu', component: MenuComponent, canActivate: [LoginGuard]},
+  {path: 'own-suggestion', component: OwnSuggestionComponent, canActivate: [LoginGuard]},
+  {path: 'relief-out', component: ReliefOutComponent, canActivate: [LoginGuard]},
+  {path: 'login', component: LoginComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 

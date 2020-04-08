@@ -1,0 +1,48 @@
+.loginCard {
+  position: absolute;
+  background: lightskyblue;
+  padding: 2%;
+  left: 33%;
+  top: 15%;
+  width: 30%;
+  height: 60%;
+  bottom: 50%;
+  border-radius: 2%;
+}
+
+.loginTitle {
+  text-align: center;
+}
+
+.inputEmail{
+  position: absolute;
+  left: 25%;
+  width: 50%;
+}
+
+.inputPassword{
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  top: 30%;
+}
+
+.loginButton {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+
+/* Responsive for different devices */
+@media screen and (max-width: 640px){
+  .loginCard{
+    position: absolute;
+    padding: 2%;
+    left: 8%;
+    top: 15%;
+    width: 80%;
+    height: 60%;
+    bottom: 50%;
+    border-radius: 2%;
+  }
+}

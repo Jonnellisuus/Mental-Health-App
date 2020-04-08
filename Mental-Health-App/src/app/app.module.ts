@@ -15,13 +15,19 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { OwnSuggestionComponent } from './relief/own-suggestion/own-suggestion.component';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { ReliefOutComponent } from './relief/relief-out/relief-out.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { LoginComponent } from './login/login.component';
+import {environment} from "../environments/environment";
+import {AuthService} from "./services/auth.service";
+import {AngularFireModule} from "@angular/fire";
+import {AngularFireAuthModule} from "@angular/fire/auth";
+import {AngularFirestoreModule} from "@angular/fire/firestore";
 
 
 
@@ -37,7 +43,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ToolbarComponent,
     SidenavComponent,
     ReliefOutComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -56,9 +63,17 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ReactiveFormsModule,
     MatSnackBarModule,
     MatSidenavModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebase, 'angular-auth-firebase'),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    FormsModule,
+    /*
+    Run the following command in Angular project in order to use FireBase authentication:
+    npm install @angular/fire firebase --save
+     */
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

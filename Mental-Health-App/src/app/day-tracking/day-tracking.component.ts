@@ -5,6 +5,8 @@ import {DayTrackingSleepItem} from "./items/day-tracking-sleep-item";
 import {DayTrackingExerciseItem} from "./items/day-tracking-exercise-item";
 import {DayTrackingWeatherItem} from "./items/day-tracking-weather-item";
 import {MatSnackBar} from "@angular/material/snack-bar";
+import {AuthService} from "../services/auth.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-day-tracking',
@@ -18,7 +20,8 @@ export class DayTrackingComponent implements OnInit {
   dayTrackingWeather: Array<DayTrackingWeatherItem>;
 
 
-  constructor(private questionService: DayTrackingService, public snackBar: MatSnackBar) { }
+  constructor(private questionService: DayTrackingService, public snackBar: MatSnackBar,
+              public authService: AuthService, public router: Router) { }
 
   ngOnInit(): void {
     this.dayTrackingItemsList = this.questionService.getQuestions();
@@ -29,5 +32,11 @@ export class DayTrackingComponent implements OnInit {
 
   saveDayTracking(){
     this.snackBar.open('Päivän seuranta tallennettu', 'OK', {duration: 3000});
+  }
+
+
+  logout() {
+    this.authService.logout();
+    this.router.navigate(['login']);
   }
 }
