@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyAVjBXJ-Et1MwtedE-sE-eizW_XqpLFmzE',
+    authDomain: 'mental-health-app-ff444.firebaseapp.com',
+    databaseURL: 'https://mental-health-app-ff444.firebaseio.com',
+    projectId: 'mental-health-app-ff444',
+    storageBucket: 'mental-health-app-ff444.appspot.com',
+    messagingSenderId: '881697328012',
+    appId: '1:881697328012:web:44c49a7d137b718fe564a9',
+    measurementId: 'G-1S6PZE74FB'
+  }
 };
 
 /*
