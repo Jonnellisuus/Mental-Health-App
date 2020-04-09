@@ -1,4 +1,6 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import {Observable} from "rxjs";
+import {AuthService} from "../services/auth.service";
 
 @Component({
   selector: 'app-toolbar',
@@ -7,12 +9,14 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
   @Output() MenuClick: EventEmitter<any>;
+  isLoggedIn$: Observable<boolean>;
 
-  constructor() {
+  constructor(private authService: AuthService) {
     this.MenuClick = new EventEmitter<any>();
   }
 
   ngOnInit(): void {
+    this.isLoggedIn$ = this.authService.isLoggedIn;
   }
 
 

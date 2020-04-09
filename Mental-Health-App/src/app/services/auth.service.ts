@@ -10,7 +10,12 @@ import {BehaviorSubject, Observable} from 'rxjs';
 export class AuthService {
   user: Observable<firebase.User>;
   userData: any;
+  private loggedIn: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
   userEmail: BehaviorSubject<string> = new BehaviorSubject<string>('');
+
+  get isLoggedIn() {
+    return this.loggedIn.asObservable();
+  }
 
   constructor(private firebaseAuth: AngularFireAuth, public router: Router) {
     this.user = firebaseAuth.authState;
@@ -30,11 +35,11 @@ export class AuthService {
 
   login(email: string, password: string) {
     this.firebaseAuth
-      .auth
       .signInWithEmailAndPassword(email, password)
       .then(value => {
         console.log('Access granted.');
         this.router.navigate(['menu']);
+        this.loggedIn.next(true);
       })
       .catch(err => {
         console.log('Invalid email or password', err.message);
@@ -45,8 +50,8 @@ export class AuthService {
 
   logout() {
     this.firebaseAuth
-      .auth
       .signOut();
+    this.loggedIn.next(false);
   }
 
   getLoggedInUser(): any {
