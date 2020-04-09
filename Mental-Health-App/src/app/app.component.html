@@ -8,7 +8,7 @@
       <button mat-flat-button>Asetukset</button>
     </mat-list-item>
     <mat-list-item class="signOutButton">
-      <button mat-flat-button>Kirjaudu ulos</button>
+      <button mat-flat-button (click)="logout()" *ngIf="authService.user | async">Kirjaudu ulos</button>
     </mat-list-item>
   </mat-sidenav>
   <app-toolbar (MenuClick)="sidenav.toggle()"></app-toolbar>

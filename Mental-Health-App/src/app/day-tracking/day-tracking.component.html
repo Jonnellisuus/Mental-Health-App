@@ -28,8 +28,5 @@
 
     <button [routerLink]="['/menu']" class="saveButton" mat-raised-button (click)="saveDayTracking()">Tallenna</button>
     <button [routerLink]="['/menu']" class="cancelDayTrackingButton" mat-raised-button>Peruuta</button>
-
-    <button mat-raised-button class="logout" (click)="logout()" *ngIf="authService.user | async">Logout</button>
   </mat-card>
 </div>
-<!-- -->
