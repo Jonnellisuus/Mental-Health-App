@@ -15,14 +15,16 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { OwnSuggestionComponent } from './relief/own-suggestion/own-suggestion.component';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { ReliefOutComponent } from './relief/relief-out/relief-out.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { SettingComponent } from './setting/setting.component';
+import { SettingsComponent } from './settings/settings.component';
+import {MatOptionModule} from "@angular/material/core";
+import {MatSelectModule} from "@angular/material/select";
 
 
 @NgModule({
@@ -38,7 +40,7 @@ import { SettingComponent } from './setting/setting.component';
     SidenavComponent,
     ReliefOutComponent,
     PageNotFoundComponent,
-    SettingComponent
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +59,11 @@ import { SettingComponent } from './setting/setting.component';
     ReactiveFormsModule,
     MatSnackBarModule,
     MatSidenavModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatOptionModule,
+    MatSelectModule,
+    MatSelectModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,7 +6,7 @@ import {MenuComponent} from "./menu/menu.component";
 import {OwnSuggestionComponent} from "./relief/own-suggestion/own-suggestion.component";
 import {ReliefOutComponent} from "./relief/relief-out/relief-out.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
-
+import {SettingsComponent} from "./settings/settings.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/menu', pathMatch: 'full'},
@@ -15,6 +15,7 @@ const routes: Routes = [
   {path: 'menu', component: MenuComponent },
   {path: 'own-suggestion', component: OwnSuggestionComponent},
   {path: 'relief-out', component: ReliefOutComponent},
+  {path: 'settings', component: SettingsComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 

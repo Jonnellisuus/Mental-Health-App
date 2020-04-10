@@ -1,0 +1,29 @@
+.settings-container {
+  position: absolute;
+  top: 15%;
+  background: lightskyblue;
+  height: 60%;
+  width: 60%;
+  left: 19%;
+  padding: 2%;
+  border-radius: 2%;
+}
+
+.themeHeader {
+  text-align: center;
+}
+
+.back-to-menu {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+}
+
+.testiklassi {
+  background-color: yellow;
+  color: black;
+}
+
+.testiklassi2 {
+  background-color: blueviolet;
+}

@@ -1,16 +1,18 @@
-<mat-sidenav-container class="sidenavContainer">
-  <mat-sidenav #sidenav [mode]="'over'" [opened]="false" class="sidenav">
+  <mat-sidenav-container class="sidenavContainer">
+    <mat-sidenav #sidenav [mode]="'over'" [opened]="false" class="sidenav">
       <div fxLayout="column" fxLayoutAlign="center center" class="sidenavToolbar"></div>
-    <mat-list-item class="reportButton">
-      <button mat-flat-button>Raportti</button>
-    </mat-list-item>
-    <mat-list-item class="settingsButton">
-      <button mat-flat-button>Asetukset</button>
-    </mat-list-item>
-    <mat-list-item class="signOutButton">
-      <button mat-flat-button>Kirjaudu ulos</button>
-    </mat-list-item>
-  </mat-sidenav>
-  <app-toolbar (MenuClick)="sidenav.toggle()"></app-toolbar>
-  <router-outlet></router-outlet>
-</mat-sidenav-container>
+      <mat-list-item class="reportButton">
+        <button mat-flat-button>Raportti</button>
+      </mat-list-item>
+      <mat-list-item class="settingsButton">
+        <button [routerLink]="['/settings']" mat-flat-button>Asetukset</button>
+      </mat-list-item>
+      <mat-list-item class="signOutButton">
+        <button mat-flat-button>Kirjaudu ulos</button>
+      </mat-list-item>
+    </mat-sidenav>
+    <app-toolbar (MenuClick)="sidenav.toggle()"></app-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-container>
+
+

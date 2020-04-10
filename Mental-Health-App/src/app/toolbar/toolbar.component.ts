@@ -13,8 +13,8 @@ export class ToolbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-  }
 
+  }
 
   onMenuClick() {
     this.MenuClick.emit();

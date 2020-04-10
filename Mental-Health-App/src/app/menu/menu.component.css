@@ -10,6 +10,15 @@
   border-radius: 2%;
 }
 
+.testiklassi {
+  background-color: yellow;
+  color: black;
+}
+
+.testiklassi2 {
+  background-color: blueviolet;
+}
+
 .icon {
   font-size: xx-large;
 }
