@@ -33,6 +33,12 @@
   left: 25%;
 }
 
+.redirectToSignUp{
+  position: absolute;
+  top: 70%;
+  left: 25%;
+}
+
 /* Responsive for different devices */
 @media screen and (max-width: 640px){
   .loginCard{

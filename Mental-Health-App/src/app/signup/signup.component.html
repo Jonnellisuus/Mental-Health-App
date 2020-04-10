@@ -1,0 +1,76 @@
+<mat-card class="form">
+  <form [formGroup]="profileForm" #contactForm="ngForm"> <!-- (ngSubmit)="onSave(contactForm)" -->
+    <H3 class="singUpTitle">Rekisteröityminen</H3>
+    <div class="inputEmail">
+      <mat-form-field>
+        <label for="email"></label>
+        <input matInput type="email"
+               typeof="email"
+               class="form-control"
+               id="email"
+               name="email"
+               formControlName="email"
+               placeholder="Sähköposti"
+               #userEmail>
+      </mat-form-field>
+    </div>
+
+    <mat-error>
+      <div *ngIf="email.invalid && (email.dirty || email.touched)">
+        <p class="instructionTextEmail" *ngIf="email.hasError('required')">Syötä sähköpostisi</p>
+        <p class="instructionTextEmail" *ngIf="email.hasError('pattern')">Sähköposti on virheellinen</p>
+      </div>
+    </mat-error>
+
+    <div class="inputPassword">
+      <mat-form-field>
+        <label for="passWord"></label>
+        <input matInput type="password"
+               class="form-control"
+               id="passWord"
+               name="passWord"
+               formControlName="passWord"
+               placeholder="Salasana"
+               #userPwd>
+      </mat-form-field>
+    </div>
+
+    <mat-error>
+      <div *ngIf="passWord.invalid && (passWord.dirty || passWord.touched)">
+        <p class="instructionTextPassword1" *ngIf="passWord.hasError('required')">Syötä salasana</p>
+        <p class="instructionTextPassword2" *ngIf="passWord.hasError('minlength')">Salasanan on oltava
+          vähintään <br> kymmenen merkkiä pitkä</p>
+      </div>
+    </mat-error>
+
+    <div class="inputConfirmPassword">
+      <mat-form-field>
+        <label for="confirmPassword"></label>
+        <input matInput type="password"
+               class="form-control"
+               id="confirmPassword"
+               name="confirmPassword"
+               formControlName="confirmPassword"
+               placeholder="Varmista salasana">
+      </mat-form-field>
+    </div>
+
+    <mat-error>
+      <div *ngIf="confirmPassword.invalid && (confirmPassword.dirty || confirmPassword.touched)">
+        <p class="instructionTextConfirmPassword" *ngIf="confirmPassword.hasError('required')">Syötä salasana uudelleen</p>
+        <p class="instructionTextConfirmPassword" *ngIf="profileForm.controls.confirmPassword.errors?.MatchPassword">
+          Salasanat eivät täsmää</p>
+      </div>
+    </mat-error>
+  </form>
+
+  <div>
+    <button mat-raised-button class="signUpButton" [disabled]="contactForm.form.invalid"
+            (click)="authService.SignUp(userEmail.value, userPwd.value); signUp()">Rekisteröidy
+    </button>
+  </div>
+
+  <div class="redirectToLogin">
+    <span>Oletko jo rekisteröitynyt? Paina<span style="color: yellow" class="redirect" routerLink="/login"> tästä.</span></span>
+  </div>
+</mat-card>

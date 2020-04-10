@@ -28,6 +28,7 @@ import {AuthService} from "./services/auth.service";
 import {AngularFireModule} from "@angular/fire";
 import {AngularFireAuthModule} from "@angular/fire/auth";
 import {AngularFirestoreModule} from "@angular/fire/firestore";
+import { SignupComponent } from './signup/signup.component';
 
 
 
@@ -44,7 +45,8 @@ import {AngularFirestoreModule} from "@angular/fire/firestore";
     SidenavComponent,
     ReliefOutComponent,
     PageNotFoundComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,66 @@
+.form {
+  position: absolute;
+  background: lightskyblue;
+  top: 15%;
+  height: 60%;
+  width: 30%;
+  left: 30%;
+  padding: 2%;
+  border-radius: 2%;
+}
+
+.singUpTitle{
+  position: absolute;
+  top: 1%;
+  left: 32%;
+}
+
+.inputEmail{
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+
+.inputPassword{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+
+.inputConfirmPassword{
+  position: absolute;
+  top: 65%;
+  left: 30%;
+}
+
+.signUpButton {
+  position: absolute;
+  left: 30%;
+  top: 85%;
+  height: 10%;
+  width: 24%;
+}
+
+.instructionTextEmail {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.instructionTextPassword1, .instructionTextPassword2 {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+}
+
+.instructionTextConfirmPassword {
+  position: absolute;
+  left: 30%;
+  top: 75%;
+}
+
+.redirectToLogin{
+  position: absolute;
+  top: 14%;
+  left: 23%;
+}

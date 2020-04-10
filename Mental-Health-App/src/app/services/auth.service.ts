@@ -3,6 +3,7 @@ import {Router} from "@angular/router";
 import {AngularFireAuth} from "@angular/fire/auth";
 import * as firebase from "firebase";
 import {BehaviorSubject, Observable} from 'rxjs';
+import {AngularFirestore, AngularFirestoreDocument} from "@angular/fire/firestore";
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +18,7 @@ export class AuthService {
     return this.loggedIn.asObservable();
   }
 
-  constructor(private firebaseAuth: AngularFireAuth, public router: Router) {
+  constructor(private firebaseAuth: AngularFireAuth, public router: Router, public afs: AngularFirestore,) {
     this.user = firebaseAuth.authState;
     this.firebaseAuth.authState.subscribe(user => {
 
@@ -56,5 +57,27 @@ export class AuthService {
 
   getLoggedInUser(): any {
     return this.firebaseAuth.authState;
+  }
+
+  SetUserData(user) {
+    const userRef: AngularFirestoreDocument<any> = this.afs.doc(`users/${user.uid}`);
+    const userData: { uid: any; email: any } = {
+      uid: user.uid,
+      email: user.email,
+    };
+    return userRef.set(userData, {
+      merge: true
+    })
+  }
+
+  SignUp(email, password) {
+    return this.firebaseAuth.createUserWithEmailAndPassword(email, password)
+      .then((result) => {
+        this.router.navigate(['menu']);
+        this.loggedIn.next(true);
+        this.SetUserData(result.user);
+      }).catch((error) => {
+        window.alert(error.message)
+      })
   }
 }
