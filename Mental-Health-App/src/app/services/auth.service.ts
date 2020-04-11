@@ -80,4 +80,12 @@ export class AuthService {
         window.alert(error.message)
       })
   }
+
+  showEmail() {
+    if (this.userEmail == null) {
+      return false;
+    } else {
+      return this.userEmail;
+    }
+  }
 }

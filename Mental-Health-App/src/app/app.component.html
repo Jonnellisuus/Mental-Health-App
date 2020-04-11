@@ -1,6 +1,10 @@
 <mat-sidenav-container class="sidenavContainer">
   <mat-sidenav #sidenav [mode]="'over'" [opened]="false" class="sidenav">
-      <div fxLayout="column" fxLayoutAlign="center center" class="sidenavToolbar"></div>
+      <div fxLayout="column" fxLayoutAlign="center center" class="sidenavToolbar">
+        <div class="userEmail">
+          <h4 *ngIf="authService.showEmail()">{{(authService.user | async)?.email}}</h4>
+        </div>
+      </div>
     <mat-list-item class="reportButton">
       <button mat-flat-button>Raportti</button>
     </mat-list-item>

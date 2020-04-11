@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AuthService} from "../services/auth.service";
-import {Router} from "@angular/router";
-import {AbstractControl, FormBuilder, FormGroup, FormGroupDirective, Validators} from "@angular/forms";
+import {AbstractControl, FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {MatSnackBar} from "@angular/material/snack-bar";
 
 export class PasswordValidation {
@@ -29,7 +28,7 @@ export class SignupComponent implements OnInit {
   password: string;
   errorMessage: string;
 
-  constructor(private fb: FormBuilder, public authService: AuthService, private router: Router, public snackBar: MatSnackBar) {
+  constructor(private fb: FormBuilder, public authService: AuthService, public snackBar: MatSnackBar) {
 
   }
 
