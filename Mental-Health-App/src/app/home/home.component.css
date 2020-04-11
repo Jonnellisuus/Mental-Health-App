@@ -1,0 +1,39 @@
+.loginCard {
+  position: absolute;
+  background: lightskyblue;
+  padding: 2%;
+  left: 33%;
+  top: 15%;
+  width: 30%;
+  height: 60%;
+  bottom: 50%;
+  border-radius: 2%;
+}
+
+.homeTitle{
+  position: absolute;
+  left: 15%;
+}
+
+.directSignUpButton{
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  width: 29.3%;
+}
+
+.directLogInButton{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+.signUpText{
+  position: absolute;
+  top: 12%;
+}
+
+.logInText{
+  position: absolute;
+  top: 35%;
+}
