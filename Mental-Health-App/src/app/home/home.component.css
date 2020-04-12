@@ -1,4 +1,4 @@
-.loginCard {
+.homeCard {
   position: absolute;
   background: lightskyblue;
   padding: 2%;
@@ -36,4 +36,29 @@
 .logInText{
   position: absolute;
   top: 35%;
+}
+
+@media screen and (max-width: 640px){
+  .homeCard{
+    position: absolute;
+    padding: 2%;
+    left: 8%;
+    top: 15%;
+    width: 80%;
+    height: 60%;
+    bottom: 50%;
+    border-radius: 2%;
+  }
+
+  .homeTitle{
+    position: absolute;
+    left: 4%;
+  }
+
+  .directSignUpButton{
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 40.4%;
+  }
 }

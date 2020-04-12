@@ -51,4 +51,10 @@
     bottom: 50%;
     border-radius: 2%;
   }
+
+  .redirectToSignUp{
+    position: absolute;
+    top: 70%;
+    left: 17%;
+  }
 }

@@ -1,4 +1,4 @@
-.form {
+.signUpCard {
   position: absolute;
   background: lightskyblue;
   top: 15%;
@@ -63,4 +63,72 @@
   position: absolute;
   top: 14%;
   left: 23%;
+}
+
+@media screen and (max-width: 640px){
+  .signUpCard{
+    position: absolute;
+    top: 15%;
+    height: 60%;
+    width: 80%;
+    left: 8%;
+    padding: 2%;
+    border-radius: 2%;
+  }
+
+  .singUpTitle{
+    position: absolute;
+    top: 1%;
+    left: 25%;
+  }
+
+  .redirectToLogin{
+    position: absolute;
+    top: 14%;
+    left: 10%;
+  }
+
+  .inputEmail{
+    position: absolute;
+    top: 20%;
+    left: 23%;
+  }
+
+  .inputPassword{
+    position: absolute;
+    top: 40%;
+    left: 23%;
+  }
+
+  .inputConfirmPassword{
+    position: absolute;
+    top: 65%;
+    left: 23%;
+  }
+
+  .instructionTextEmail{
+    position: absolute;
+    top: 30%;
+    left: 23%;
+  }
+
+  .instructionTextPassword1, .instructionTextPassword2 {
+    position: absolute;
+    left: 23%;
+    top: 50%;
+  }
+
+  .instructionTextConfirmPassword {
+    position: absolute;
+    left: 23%;
+    top: 75%;
+  }
+
+  .signUpButton {
+    position: absolute;
+    left: 23%;
+    top: 85%;
+    height: 10%;
+    width: 35%;
+  }
 }
