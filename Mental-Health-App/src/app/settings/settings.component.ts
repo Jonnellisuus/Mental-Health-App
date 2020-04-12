@@ -16,7 +16,7 @@ export class SettingsComponent implements OnInit {
     this.themeIndex = localStorage.getItem('themeNbr');
     console.log(this.themeIndex + ' teema valittuna');
 
-    if (this.themeIndex == 'themeNbr1') {
+    /*if (this.themeIndex == 'themeNbr1') {
       console.log("laitetaan ykkös teema");
     }
     else if (this.themeIndex == 'themeNbr2') {
@@ -27,21 +27,16 @@ export class SettingsComponent implements OnInit {
     }
     else {
       console.log("ei pitä tulla tässä vaiheessa");
-    }
+    }*/
   }
 
   changeTheme(themeNbr: string) {
     localStorage.clear();
-    this.refreshPage();
     localStorage.setItem('themeNbr', themeNbr)
-    localStorage.getItem(themeNbr);
-    //console.log(themeNbr);
-    console.log("Ja uusi teema on " + themeNbr);
+    this.themeIndex = localStorage.getItem('themeNbr');
+    //console.log("Ja uusi teema on " + themeNbr);
 
     return this.selectedTheme;
   }
 
-  refreshPage(): void {
-    window.location.reload();
-  }
 }

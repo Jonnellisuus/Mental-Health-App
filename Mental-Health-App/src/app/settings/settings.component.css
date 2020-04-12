@@ -19,11 +19,48 @@
   left: 2%;
 }
 
-.testiklassi {
-  background-color: yellow;
+.class-theme1 {
+  background-color: lightgoldenrodyellow;
   color: black;
 }
 
-.testiklassi2 {
-  background-color: blueviolet;
+.class-theme2 {
+  background-color: darkslategrey;
+}
+
+.class-theme3 {
+  background-color: red;
+}
+
+.class-cardtheme1 {
+  position: absolute;
+  top: 15%;
+  background: lightblue;
+  height: 60%;
+  width: 60%;
+  left: 19%;
+  padding: 2%;
+  border-radius: 2%;
+}
+
+.class-cardtheme2 {
+  position: absolute;
+  top: 15%;
+  background: dimgrey;
+  height: 60%;
+  width: 60%;
+  left: 19%;
+  padding: 2%;
+  border-radius: 2%;
+}
+
+.class-cardtheme3 {
+  position: absolute;
+  top: 15%;
+  background: gold;
+  height: 60%;
+  width: 60%;
+  left: 19%;
+  padding: 2%;
+  border-radius: 2%;
 }

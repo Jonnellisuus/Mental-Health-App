@@ -1,22 +1,21 @@
 <div class="selection-container">
-  <mat-card class="selections">
+  <mat-card [ngClass]="{'class-selections1': savedThemeIndex == 'themeNbr1', 'class-selections2': savedThemeIndex == 'themeNbr2', 'class-selections3': savedThemeIndex == 'themeNbr3'}">
     <mat-list-item class="menu-items">
-      <button [routerLink]="['/day-tracking']" [ngClass]="{'testiklassi': savedIndex == 'themeNbr1', 'testiklassi2': savedIndex == 'themeNbr2'}" mat-fab class="menu-button1" (click)="createNewData()">
+      <button [routerLink]="['/day-tracking']" [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1', 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}" mat-fab class="menu-button1" (click)="createNewData()">
         <mat-icon class="icon">create</mat-icon><br>
         Kerro päivästäsi</button>
     </mat-list-item>
     <mat-list-item class="menu-items">
-    <button [routerLink]="['/relief']" [ngClass]="{'testiklassi': savedIndex == 'themeNbr1', 'testiklassi2': savedIndex == 'themeNbr2'}" mat-fab class="menu-button2">
+    <button [routerLink]="['/relief']" [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1', 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}" mat-fab class="menu-button2">
       <mat-icon class="icon">live_help</mat-icon><br>Hankaliin hetkiin</button>
     </mat-list-item>
     <mat-list-item class="menu-items">
-        <button [ngClass]="{'testiklassi': savedIndex == 'themeNbr1', 'testiklassi2': savedIndex == 'themeNbr2'}" mat-fab class="menu-button3"><mat-icon class="icon">stars</mat-icon><br>
+        <button [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1', 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}" mat-fab class="menu-button3"><mat-icon class="icon">stars</mat-icon><br>
           Voimavarat</button>
       </mat-list-item>
     <mat-list-item class="menu-items">
-      <button [ngClass]="{'testiklassi': savedIndex == 'themeNbr1', 'testiklassi2': savedIndex == 'themeNbr2'}" mat-fab class="menu-button4"><mat-icon class="icon">favorite</mat-icon><br>
+      <button [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1', 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}" mat-fab class="menu-button4"><mat-icon class="icon">favorite</mat-icon><br>
         ":D"</button>
     </mat-list-item>
   </mat-card>
 </div>
-

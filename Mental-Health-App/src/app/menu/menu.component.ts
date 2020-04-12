@@ -6,15 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-  public savedIndex: string;
+  public savedThemeIndex: string;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.savedIndex = localStorage.getItem('themeNbr');
-    if (this.savedIndex == 'themeNbr1') {
-      console.log("tulos mänöö seuraavaa");
-    }
+    this.savedThemeIndex = localStorage.getItem('themeNbr');
   }
 
   createNewData() {

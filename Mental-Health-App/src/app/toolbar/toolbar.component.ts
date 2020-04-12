@@ -7,13 +7,14 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
   @Output() MenuClick: EventEmitter<any>;
+  public savedThemeIndex: string;
 
   constructor() {
     this.MenuClick = new EventEmitter<any>();
   }
 
   ngOnInit(): void {
-
+    this.savedThemeIndex = localStorage.getItem('themeNbr');
   }
 
   onMenuClick() {

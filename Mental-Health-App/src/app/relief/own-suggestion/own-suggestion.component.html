@@ -1,5 +1,5 @@
 <div>
-  <mat-card class="ownSuggestionCard">
+  <mat-card [ngClass]="{'ownSuggestionCard1': savedThemeIndex == 'themeNbr1', 'ownSuggestionCard2': savedThemeIndex == 'themeNbr2', 'ownSuggestionCard3': savedThemeIndex == 'themeNbr3'}">
     <form [formGroup]="profileForm" (ngSubmit)="onSave(contactForm)" #contactForm="ngForm">
       <h3 align="center">Luo uusi ehdotus hankalaan hetkeen.</h3>
       <mat-form-field class="suggestionName">

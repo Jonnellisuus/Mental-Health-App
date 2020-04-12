@@ -1,45 +1,20 @@
-<div class="settings-container">
+<div [ngClass]="{'class-cardtheme1': themeIndex == 'themeNbr1', 'class-cardtheme2': themeIndex == 'themeNbr2', 'class-cardtheme3': themeIndex == 'themeNbr3'}">
   <h2 class="themeHeader">Valitse teema</h2>
-  <mat-card class="selections">
-    <mat-list-item class="change-theme">
+  <mat-card >
+    <mat-list-item>
       <label class="theme-label">Valitse teema</label>
       <mat-select [(value)]="selectedTheme">
-        <mat-option (click)="changeTheme('themeNbr1')" value="Persu teema">eka</mat-option>
-        <mat-option (click)="changeTheme('themeNbr2')" value="Koira teema">toka</mat-option>
-        <mat-option (click)="changeTheme('themeNbr3')" value="Ja kolmas teema">ja kolmas</mat-option>
+        <mat-option (click)="changeTheme('themeNbr1')" value="Persu teema">Vaalea</mat-option>
+        <mat-option (click)="changeTheme('themeNbr2')" value="Koira teema">Tumma</mat-option>
+        <mat-option (click)="changeTheme('themeNbr3')" value="Ja kolmas teema">Värikäs</mat-option>
       </mat-select>
     </mat-list-item>
   </mat-card>
-  <button [ngClass]="{'testiklassi': themeIndex == 'themeNbr1', 'testiklassi2': themeIndex == 'themeNbr2'}" mat-fab>TEKSTIÄ</button>
-  <button [routerLink]="['/menu']" [ngClass]="{'testiklassi': themeIndex == 'themeNbr1', 'testiklassi2': themeIndex == 'themeNbr2'}"
+  <!--<button [ngClass]="{'class-theme1': themeIndex == 'themeNbr1', 'class-theme2': themeIndex == 'themeNbr2'}" mat-fab>TEKSTIÄ</button>
+  <button *ngIf="themeIndex == 'themeNbr1' || themeIndex == 'themeNbr2'" mat-fab>Eka tai toka</button>
+  <button *ngIf="themeIndex == 'themeNbr3'" mat-raised-button>Kolmas</button>-->
+
+  <button [routerLink]="['/menu']" [ngClass]="{'class-theme1': themeIndex == 'themeNbr1', 'class-theme2': themeIndex == 'themeNbr2', 'class-theme3': themeIndex == 'themeNbr3'}"
           mat-fab class="back-to-menu">
     <mat-icon class="icon">done</mat-icon></button>
-  <!--<mat-card>
-    Main Theme:
-    <button mat-raised-button color="primary">
-      Primary
-    </button>
-    <button mat-raised-button color="accent">
-      Accent
-    </button>
-    <button mat-raised-button color="warn">
-      Warning
-    </button>
-  </mat-card>
-  <mat-card class="alternate-theme">
-    Alternate Theme:
-    <button mat-raised-button color="primary">
-      Primary
-    </button>
-    <button mat-raised-button color="accent">
-      Accent
-    </button>
-    <button mat-raised-button color="warn">
-      Warning
-    </button>
-  </mat-card>-->
-  <!--<div>Valittu teema: {{selectedTheme}}</div>-->
   </div>
-<!-- joku ngIf että vaihtaa stylen ku vaihtuu teema -->
-
-<!--  https://www.youtube.com/watch?v=f-kUmbmBVLo  -->

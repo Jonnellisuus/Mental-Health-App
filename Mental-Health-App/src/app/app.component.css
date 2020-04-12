@@ -40,3 +40,21 @@
   left: 22%;
   top: 40%;
 }
+
+.class-theme1 {
+  position: relative;
+  background: lightgoldenrodyellow;
+  height: 10.5%;
+}
+
+.class-theme2 {
+  position: relative;
+  background: darkslategrey;
+  height: 10.5%;
+}
+
+.class-theme3 {
+  position: relative;
+  background: red;
+  height: 10.5%;
+}

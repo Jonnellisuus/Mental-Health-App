@@ -1,4 +1,4 @@
-.ownSuggestionCard{
+.ownSuggestionCard1{
   position: absolute;
   background: lightskyblue;
   top: 15%;
@@ -52,8 +52,29 @@
 
 /*scaled for iPhoneX*/
 @media screen and (max-width: 375px) {
-  .ownSuggestionCard {
+  .ownSuggestionCard1 {
     position: absolute;
+    background-color: lightblue;
+    top: 15%;
+    height: 60%;
+    width: 65%;
+    left: 15%;
+    padding: 2%;
+    border-radius: 2%;
+  }
+  .ownSuggestionCard2 {
+    position: absolute;
+    background-color: dimgrey;
+    top: 15%;
+    height: 60%;
+    width: 65%;
+    left: 15%;
+    padding: 2%;
+    border-radius: 2%;
+  }
+  .ownSuggestionCard3 {
+    position: absolute;
+    background-color: gold;
     top: 15%;
     height: 60%;
     width: 65%;

@@ -2,15 +2,15 @@
   position: center;
 }
 
-/*
-.toolbar-button {
-  border-radius: 20%;
+.class-theme1 {
+  background-color: lightgoldenrodyellow;
+  color: black;
 }
 
-.sidenav-container {
-  height: 100%;
+.class-theme2 {
+  background-color: darkslategrey;
 }
 
-
-
- */
+.class-theme3 {
+  background-color: red;
+}
