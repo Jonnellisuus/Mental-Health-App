@@ -44,7 +44,7 @@ export class AuthService {
       })
       .catch(err => {
         console.log('Invalid email or password', err.message);
-        alert('Invalid email or password.');
+        alert('Sähköposti tai salasana on virheellinen.');
         this.router.navigate(['login']);
       });
   }
@@ -77,7 +77,8 @@ export class AuthService {
         this.loggedIn.next(true);
         this.SetUserData(result.user);
       }).catch((error) => {
-        window.alert(error.message)
+        alert('Sähköposti on jo käytössä toisella tilillä.');
+        console.log('The account is already in use.', error.message);
       })
   }
 

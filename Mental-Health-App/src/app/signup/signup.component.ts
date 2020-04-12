@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AuthService} from "../services/auth.service";
 import {AbstractControl, FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {MatSnackBar} from "@angular/material/snack-bar";
 
 export class PasswordValidation {
 
@@ -28,7 +27,7 @@ export class SignupComponent implements OnInit {
   password: string;
   errorMessage: string;
 
-  constructor(private fb: FormBuilder, public authService: AuthService, public snackBar: MatSnackBar) {
+  constructor(private fb: FormBuilder, public authService: AuthService) {
 
   }
 
@@ -52,9 +51,5 @@ export class SignupComponent implements OnInit {
 
   get confirmPassword() {
     return this.profileForm.get('confirmPassword');
-  }
-
-  signUp(){
-    this.snackBar.open('Rekisteröityminen onnistui', 'OK', {duration: 8000});
   }
 }
