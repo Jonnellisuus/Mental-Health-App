@@ -17,5 +17,8 @@
       <button mat-fab class="menu-button4"><mat-icon class="icon">favorite</mat-icon><br>
         ":D"</button>
     </mat-list-item>
+    <mat-list-item class="signOutButton">
+      <button mat-flat-button (click)="logout()" *ngIf="authService.user | async">Kirjaudu ulos</button>
+    </mat-list-item>
   </mat-card>
 </div>

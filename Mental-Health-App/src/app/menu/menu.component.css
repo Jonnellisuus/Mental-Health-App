@@ -46,6 +46,12 @@
   left: 58%;
 }
 
+.signOutButton{
+  position: absolute;
+  top: 90%;
+  left: 35%;
+}
+
 @media screen and (max-width: 812px){
   .selections{
     position: absolute;
@@ -85,6 +91,12 @@
     width: 110px;
     top: 30%;
     left: 56%;
+  }
+
+  .signOutButton{
+    position: absolute;
+    top: 90%;
+    left: 30%;
   }
 
   @media screen and (max-width: 375px){
