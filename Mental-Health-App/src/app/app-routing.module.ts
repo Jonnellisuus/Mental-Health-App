@@ -9,9 +9,11 @@ import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 import {LoginComponent} from "./login/login.component";
 import {LoginGuard} from "./guard/login.guard";
 import {SettingsComponent} from "./settings/settings.component";
+import {SignupComponent} from "./signup/signup.component";
+import {HomeComponent} from "./home/home.component";
 
 const routes: Routes = [
-  {path: '', redirectTo: '/login', pathMatch: 'full'},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'day-tracking', component: DayTrackingComponent, canActivate: [LoginGuard]},
   {path: 'relief', component: ReliefComponent, canActivate: [LoginGuard]},
   {path: 'menu', component: MenuComponent, canActivate: [LoginGuard]},
@@ -19,6 +21,8 @@ const routes: Routes = [
   {path: 'relief-out', component: ReliefOutComponent, canActivate: [LoginGuard]},
   {path: 'settings', component: SettingsComponent, canActivate: [LoginGuard]},
   {path: 'login', component: LoginComponent},
+  {path: 'signup', component: SignupComponent},
+  {path: 'home', component: HomeComponent},
   {path: '**', component: PageNotFoundComponent}
   ];
 

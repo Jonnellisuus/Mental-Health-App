@@ -1,4 +1,4 @@
-.loginCard {
+.homeCard {
   position: absolute;
   background: lightskyblue;
   padding: 2%;
@@ -10,38 +10,36 @@
   border-radius: 2%;
 }
 
-.loginTitle {
-  text-align: center;
-}
-
-.inputEmail{
+.homeTitle{
   position: absolute;
-  left: 25%;
-  width: 50%;
+  left: 15%;
 }
 
-.inputPassword{
+.directSignUpButton{
   position: absolute;
-  left: 25%;
-  width: 50%;
-  top: 30%;
+  top: 25%;
+  left: 30%;
+  width: 29.3%;
 }
 
-.loginButton {
+.directLogInButton{
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 30%;
 }
 
-.redirectToSignUp{
+.signUpText{
   position: absolute;
-  top: 70%;
-  left: 25%;
+  top: 12%;
 }
 
-/* Responsive for different devices */
+.logInText{
+  position: absolute;
+  top: 35%;
+}
+
 @media screen and (max-width: 640px){
-  .loginCard{
+  .homeCard{
     position: absolute;
     padding: 2%;
     left: 8%;
@@ -52,9 +50,15 @@
     border-radius: 2%;
   }
 
-  .redirectToSignUp{
+  .homeTitle{
     position: absolute;
-    top: 70%;
-    left: 17%;
+    left: 4%;
+  }
+
+  .directSignUpButton{
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 40.4%;
   }
 }

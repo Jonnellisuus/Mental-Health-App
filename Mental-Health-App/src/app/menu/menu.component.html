@@ -36,5 +36,8 @@
         ":D"
       </button>
     </mat-list-item>
+    <mat-list-item class="signOutButton">
+      <button mat-flat-button (click)="logout()" *ngIf="authService.user | async">Kirjaudu ulos</button>
+    </mat-list-item>
   </mat-card>
 </div>

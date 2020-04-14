@@ -12,7 +12,9 @@
 .sidenav-toolbar {
   position: relative;
   background: blueviolet;
+  top: 0;
   height: 10.5%;
+  font-family: Arial, serif;
 }
 
 .app-user-name {
@@ -57,4 +59,19 @@
   position: relative;
   background: red;
   height: 10.5%;
+}
+
+.userEmail{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: white;
+}
+
+@media screen and (max-width: 375px){
+  .sidenav-toolbar{
+    position: relative;
+    top: 0;
+    height: 7%;
+  }
 }

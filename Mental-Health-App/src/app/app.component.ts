@@ -8,14 +8,36 @@ import {Router} from "@angular/router";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  public loginIndex: string; // new
   constructor(public authService: AuthService, public router: Router) { }
 
   title = 'Mental-Health-App';
 
+  ngOnInit(): void {
+    this.loginIndex = localStorage.getItem('loggedIn'); // new
+  }
+
   logout() {
     this.authService.logout();
     this.router.navigate(['login']);
+    //localStorage.clear();
+    //window.location.reload();
+    //this.logoutUser();
+    //this.refreshPage();
   }
+
+  /*
+
+  logoutUser(){
+    localStorage.clear();
+  }
+
+
+  refreshPage(){
+    window.location.reload();
+  }
+
+   */
 }
 
 

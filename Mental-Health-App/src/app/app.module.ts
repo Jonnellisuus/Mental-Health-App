@@ -31,6 +31,8 @@ import {AngularFirestoreModule} from "@angular/fire/firestore";
 import { SettingsComponent } from './settings/settings.component';
 import {MatOptionModule} from "@angular/material/core";
 import {MatSelectModule} from "@angular/material/select";
+import { SignupComponent } from './signup/signup.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -47,7 +49,9 @@ import {MatSelectModule} from "@angular/material/select";
     ReliefOutComponent,
     PageNotFoundComponent,
     LoginComponent,
-    SettingsComponent
+    SettingsComponent,
+    SignupComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
