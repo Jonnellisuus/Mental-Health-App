@@ -1,4 +1,4 @@
-<div [ngClass]="{'class-cardtheme1': themeIndex == 'themeNbr1', 'class-cardtheme2': themeIndex == 'themeNbr2', 'class-cardtheme3': themeIndex == 'themeNbr3'}">
+<div [ngClass]="{'class-cardtheme1': themeIndex == 'themeNbr1' || themeIndex == null, 'class-cardtheme2': themeIndex == 'themeNbr2', 'class-cardtheme3': themeIndex == 'themeNbr3'}">
   <h2 class="themeHeader">Valitse teema</h2>
   <mat-card >
     <mat-list-item>
@@ -14,7 +14,7 @@
   <button *ngIf="themeIndex == 'themeNbr1' || themeIndex == 'themeNbr2'" mat-fab>Eka tai toka</button>
   <button *ngIf="themeIndex == 'themeNbr3'" mat-raised-button>Kolmas</button>-->
 
-  <button [routerLink]="['/menu']" [ngClass]="{'class-theme1': themeIndex == 'themeNbr1', 'class-theme2': themeIndex == 'themeNbr2', 'class-theme3': themeIndex == 'themeNbr3'}"
+  <button [routerLink]="['/menu']" [ngClass]="{'class-theme1': themeIndex == 'themeNbr1' || themeIndex == null, 'class-theme2': themeIndex == 'themeNbr2', 'class-theme3': themeIndex == 'themeNbr3'}"
           mat-fab class="back-to-menu">
     <mat-icon class="icon">done</mat-icon></button>
   </div>
