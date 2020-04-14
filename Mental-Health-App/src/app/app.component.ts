@@ -9,6 +9,7 @@ import {Router} from "@angular/router";
 })
 export class AppComponent {
   public loginIndex: string; // new
+  public savedThemeIndex: string;
   constructor(public authService: AuthService, public router: Router) { }
 
   title = 'Mental-Health-App';

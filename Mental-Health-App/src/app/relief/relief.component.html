@@ -1,16 +1,16 @@
 <div>
-  <mat-card [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1', 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}">
+  <mat-card [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}">
     <mat-list-item class="relief-items">
-    <button [routerLink]="['/relief-out']" [ngClass]="{'outButton1': savedThemeIndex == 'themeNbr1', 'outButton2': savedThemeIndex == 'themeNbr2', 'outButton3': savedThemeIndex == 'themeNbr3'}" mat-raised-button>Ulos</button>
+    <button [routerLink]="['/relief-out']" [ngClass]="{'outButton1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'outButton2': savedThemeIndex == 'themeNbr2', 'outButton3': savedThemeIndex == 'themeNbr3'}" mat-raised-button>Ulos</button>
     </mat-list-item>
     <mat-list-item class="relief-items">
-    <button [ngClass]="{'breathingButton1': savedThemeIndex == 'themeNbr1', 'breathingButton2': savedThemeIndex == 'themeNbr2', 'breathingButton3': savedThemeIndex == 'themeNbr3'}" mat-raised-button>Hengitys-<br>harjoitus</button>
+    <button [ngClass]="{'breathingButton1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'breathingButton2': savedThemeIndex == 'themeNbr2', 'breathingButton3': savedThemeIndex == 'themeNbr3'}" mat-raised-button>Hengitys-<br>harjoitus</button>
     </mat-list-item>
     <mat-list-item class="relief-items">
-    <button [ngClass]="{'crisisPhoneButton1': savedThemeIndex == 'themeNbr1', 'crisisPhoneButton2': savedThemeIndex == 'themeNbr2', 'crisisPhoneButton3': savedThemeIndex == 'themeNbr3'}" mat-raised-button>Kriisi-<br>puhelin</button>
+    <button [ngClass]="{'crisisPhoneButton1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'crisisPhoneButton2': savedThemeIndex == 'themeNbr2', 'crisisPhoneButton3': savedThemeIndex == 'themeNbr3'}" mat-raised-button>Kriisi-<br>puhelin</button>
     </mat-list-item>
     <mat-list-item class="relief-items">
-    <button [ngClass]="{'ownSuggestionButton1': savedThemeIndex == 'themeNbr1', 'ownSuggestionButton2': savedThemeIndex == 'themeNbr2', 'ownSuggestionButton3': savedThemeIndex == 'themeNbr3'}" mat-raised-button>Oma<br>ehdotus</button>
+    <button [ngClass]="{'ownSuggestionButton1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'ownSuggestionButton2': savedThemeIndex == 'themeNbr2', 'ownSuggestionButton3': savedThemeIndex == 'themeNbr3'}" mat-raised-button>Oma<br>ehdotus</button>
     </mat-list-item>
     <!--<button [routerLink]="['/relief-out']" class="reliefButton" mat-raised-button>Ulos</button>
     <button class="reliefButton" mat-raised-button>Hengitys harjoitus</button>
