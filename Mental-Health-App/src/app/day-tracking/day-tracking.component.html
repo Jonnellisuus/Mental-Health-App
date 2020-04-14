@@ -1,4 +1,4 @@
-<div [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1', 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}">
+<div [ng] [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1', 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}">
   <!-- Question about how the day has been. -->
   <mat-card class="questionCard" *ngFor="let question of dayTrackingItemsList">
     {{ question.question }}

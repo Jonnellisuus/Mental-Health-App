@@ -17,7 +17,7 @@ export class DayTrackingService {
     this.dayTrackingItemsList = [new DayTrackingItem('Millainen päivä sinulla on ollut tänään?')];
     this.dayTrackingSleep = [new DayTrackingSleepItem('Monta tuntia nukuit?')];
     this.dayTrackingExercise = [new DayTrackingExerciseItem('Montako tuntia liikuit?')];
-    this.dayTrackingWeather = [new DayTrackingWeatherItem('Millainen sää on tänään?')]
+    this.dayTrackingWeather = [new DayTrackingWeatherItem('Millainen sää on tänään?')];
   }
 
 
@@ -36,5 +36,6 @@ export class DayTrackingService {
   getWeather(): Array<DayTrackingWeatherItem> {
     return this.dayTrackingWeather;
   }
+
 }
 //

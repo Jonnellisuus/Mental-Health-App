@@ -33,6 +33,8 @@ import {MatOptionModule} from "@angular/material/core";
 import {MatSelectModule} from "@angular/material/select";
 import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
+import {AngularFireDatabase, AngularFireDatabaseModule} from '@angular/fire/database';
+import {DayService} from './services/day.service';
 
 
 @NgModule({
@@ -74,6 +76,7 @@ import { HomeComponent } from './home/home.component';
     AngularFireModule.initializeApp(environment.firebase, 'angular-auth-firebase'),
     AngularFireAuthModule,
     AngularFirestoreModule,
+    AngularFireDatabaseModule,
     FormsModule,
     /*
     Run the following command in Angular project in order to use FireBase authentication:
@@ -84,7 +87,7 @@ import { HomeComponent } from './home/home.component';
     MatSelectModule,
     FormsModule
   ],
-  providers: [AuthService],
+  providers: [AuthService, DayService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
