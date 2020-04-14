@@ -26,6 +26,10 @@ export class AppComponent {
     //this.refreshPage();
   }
 
+  toSettings() {
+    this.router.navigate(['settings']);
+  }
+
   /*
 
   logoutUser(){
