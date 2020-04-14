@@ -13,7 +13,8 @@
       </label>
     </mat-form-field>
     <br>
-    <button mat-raised-button class="loginButton" (click)="login()" [disabled]="!email || !password">Kirjaudu sisään</button>
+    <button mat-raised-button class="loginButton" (click)="login('loggedIn')" [disabled]="!email || !password">Kirjaudu sisään</button>
+    <!-- 'loggedIn' -->
   </div>
   <div class="redirectToSignUp">
     <span>Etkö ole vielä rekisteröitynyt? <br> Voit tehdä sen painamalla<span style="color: yellow" class="redirect" routerLink="/signup"> tästä.</span></span>

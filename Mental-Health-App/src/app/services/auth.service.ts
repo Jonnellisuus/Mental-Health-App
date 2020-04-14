@@ -41,6 +41,7 @@ export class AuthService {
         console.log('Access granted.');
         this.router.navigate(['menu']);
         this.loggedIn.next(true);
+        //this.refreshPage();
       })
       .catch(err => {
         console.log('Invalid email or password', err.message);
@@ -53,6 +54,7 @@ export class AuthService {
     this.firebaseAuth
       .signOut();
     this.loggedIn.next(false);
+    //this.refreshPage();
   }
 
   getLoggedInUser(): any {
@@ -89,4 +91,11 @@ export class AuthService {
       return this.userEmail;
     }
   }
+
+  /*
+  refreshPage(){
+    window.location.reload()
+  }
+
+   */
 }

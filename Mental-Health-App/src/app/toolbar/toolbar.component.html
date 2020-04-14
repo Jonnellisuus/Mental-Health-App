@@ -1,6 +1,11 @@
-<mat-toolbar color="primary" *ngIf="isLoggedIn$ | async as isLoggedIn">
+<mat-toolbar color="primary" *ngIf="isLoggedIn$ | async as isLoggedIn"> <!-- loginIndex == 'loggedIn' -->
    <button mat-icon-button (click)="onMenuClick()">
      <mat-icon class="mat-18">menu</mat-icon>
    </button>
     <h1 class="toolbar-header">oLokirja</h1>
  </mat-toolbar>
+
+<!-- loginIndex == 'loggedIn' -->
+<!-- *ngIf="isLoggedIn$ | async as isLoggedIn" <-- original | -->
+<!-- *ngIf="loginIndex == 'loggedIn'"> -->
+<!-- | async as isLoggedIn  -->
