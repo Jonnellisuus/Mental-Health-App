@@ -28,7 +28,9 @@ import {AuthService} from "./services/auth.service";
 import {AngularFireModule} from "@angular/fire";
 import {AngularFireAuthModule} from "@angular/fire/auth";
 import {AngularFirestoreModule} from "@angular/fire/firestore";
-
+import { SettingsComponent } from './settings/settings.component';
+import {MatOptionModule} from "@angular/material/core";
+import {MatSelectModule} from "@angular/material/select";
 
 
 @NgModule({
@@ -44,7 +46,8 @@ import {AngularFirestoreModule} from "@angular/fire/firestore";
     SidenavComponent,
     ReliefOutComponent,
     PageNotFoundComponent,
-    LoginComponent
+    LoginComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -72,6 +75,10 @@ import {AngularFirestoreModule} from "@angular/fire/firestore";
     Run the following command in Angular project in order to use FireBase authentication:
     npm install @angular/fire firebase --save
      */
+    MatOptionModule,
+    MatSelectModule,
+    MatSelectModule,
+    FormsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

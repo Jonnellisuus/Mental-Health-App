@@ -19,7 +19,6 @@ export class ToolbarComponent implements OnInit {
     this.isLoggedIn$ = this.authService.isLoggedIn;
   }
 
-
   onMenuClick() {
     this.MenuClick.emit();
   }

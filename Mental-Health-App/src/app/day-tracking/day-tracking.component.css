@@ -1,6 +1,6 @@
-.questionBox {
+.class-theme1 {
   position: absolute;
-  background: lightskyblue;
+  background: lightblue;
   padding: 2%;
   left: 33%;
   top: 15%;
@@ -9,6 +9,31 @@
   bottom: 50%;
   border-radius: 2%;
 }
+
+.class-theme2 {
+  position: absolute;
+  background: dimgrey;
+  padding: 2%;
+  left: 33%;
+  top: 15%;
+  width: 30%;
+  height: 60%;
+  bottom: 50%;
+  border-radius: 2%;
+}
+
+.class-theme3 {
+  position: absolute;
+  background: gold;
+  padding: 2%;
+  left: 33%;
+  top: 15%;
+  width: 30%;
+  height: 60%;
+  bottom: 50%;
+  border-radius: 2%;
+}
+
 /* Adding a value about how the day has been starts here. */
 .sliderValue {
   position: absolute;
@@ -108,7 +133,29 @@
 
 /* Responsive for different devices */
 @media screen and (max-width: 640px){
-  .questionBox{
+  .class-theme1 {
+    position: absolute;
+    padding: 2%;
+    left: 5%;
+    top: 15%;
+    width: 90%;
+    height: 60%;
+    bottom: 50%;
+    border-radius: 2%;
+  }
+
+  .class-theme2 {
+    position: absolute;
+    padding: 2%;
+    left: 5%;
+    top: 15%;
+    width: 90%;
+    height: 60%;
+    bottom: 50%;
+    border-radius: 2%;
+  }
+
+  .class-theme3 {
     position: absolute;
     padding: 2%;
     left: 5%;
@@ -121,7 +168,15 @@
 
   .saveButton{
     position: absolute;
+    top: 115%;
     left: 75%;
+  }
+
+  .cancelDayTrackingButton{
+    position: absolute;
+    top: 115%;
+    left: 0;
+    background: orangered;
   }
 
   .sliderValue{

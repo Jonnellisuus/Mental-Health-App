@@ -1,4 +1,4 @@
-.reliefCard{
+.reliefCard {
   position: absolute;
   background: lightskyblue;
   top: 15%;
@@ -9,21 +9,21 @@
   border-radius: 2%;
 }
 
-.outButton{
+.outButton1 {
   position: absolute;
   left: 5%;
   height: 30%;
   width: 35%;
 }
 
-.breathingExerciseButton{
+.breathingExerciseButton {
   position: absolute;
   left: 60%;
   height: 30%;
   width: 35%;
 }
 
-.crisisPhoneButton{
+.crisisPhoneButton {
   position: absolute;
   top: 40%;
   left: 5%;
@@ -31,7 +31,7 @@
   width: 35%;
 }
 
-.ownSuggestionButton{
+.ownSuggestionButton {
   position: absolute;
   left: 60%;
   top: 40%;
@@ -39,7 +39,7 @@
   width: 35%;
 }
 
-.addSuggestionButton{
+.addSuggestionButton {
   position: absolute;
   left: 75%;
   top: 75%;
@@ -47,16 +47,41 @@
   width: 20%;
 }
 
-.returnMenuButton{
+.returnMenuButton {
   position: absolute;
   top: 85%;
 }
 
+.relief-items {
+  display: inline-block;
+  margin: 10px;
+}
 
 /*scaled for iPhoneX*/
 @media screen and (max-width: 375px) {
-  .reliefCard {
+  .class-theme1 {
     position: absolute;
+    background-color: lightblue;
+    top: 15%;
+    height: 60%;
+    width: 65%;
+    left: 15%;
+    padding: 2%;
+    border-radius: 2%;
+  }
+  .class-theme2 {
+    position: absolute;
+    background-color: dimgrey;
+    top: 15%;
+    height: 60%;
+    width: 65%;
+    left: 15%;
+    padding: 2%;
+    border-radius: 2%;
+  }
+  .class-theme3 {
+    position: absolute;
+    background-color: gold;
     top: 15%;
     height: 60%;
     width: 65%;
@@ -65,26 +90,74 @@
     border-radius: 2%;
   }
 
-  .outButton {
+  .outButton1 {
     position: absolute;
+    background-color: lightgoldenrodyellow;
+    color: black;
     left: 5%;
-    top:5%;
+    top: 5%;
     height: 20%;
     width: 38%;
     border-radius: 5%;
   }
 
-  .breathingExerciseButton {
+  .outButton2 {
     position: absolute;
+    background-color: darkslategrey;
+    color: white;
+    left: 5%;
+    top: 5%;
+    height: 20%;
+    width: 38%;
+    border-radius: 5%;
+  }
+
+  .outButton3 {
+    position: absolute;
+    background-color: red;
+    left: 5%;
+    top: 5%;
+    height: 20%;
+    width: 38%;
+    border-radius: 5%;
+  }
+
+  .breathingButton1 {
+    position: absolute;
+    background-color: lightgoldenrodyellow;
+    color: black;
     left: 57%;
-    top:5%;
+    top: 5%;
     height: 20%;
     width: 38%;
     border-radius: 5%;
   }
 
-  .crisisPhoneButton {
+  .breathingButton2 {
     position: absolute;
+    background-color: darkslategrey;
+    color: white;
+    left: 57%;
+    top: 5%;
+    height: 20%;
+    width: 38%;
+    border-radius: 5%;
+  }
+
+  .breathingButton3 {
+    position: absolute;
+    background-color: red;
+    left: 57%;
+    top: 5%;
+    height: 20%;
+    width: 38%;
+    border-radius: 5%;
+  }
+
+  .crisisPhoneButton1 {
+    position: absolute;
+    background-color: lightgoldenrodyellow;
+    color: black;
     top: 30%;
     left: 5%;
     height: 20%;
@@ -92,8 +165,52 @@
     border-radius: 5%;
   }
 
-  .ownSuggestionButton {
+  .crisisPhoneButton2 {
     position: absolute;
+    background-color: darkslategrey;
+    color: white;
+    top: 30%;
+    left: 5%;
+    height: 20%;
+    width: 38%;
+    border-radius: 5%;
+  }
+
+  .crisisPhoneButton3 {
+    position: absolute;
+    background-color: red;
+    top: 30%;
+    left: 5%;
+    height: 20%;
+    width: 38%;
+    border-radius: 5%;
+  }
+
+  .ownSuggestionButton1 {
+    position: absolute;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    left: 57%;
+    top: 30%;
+    height: 20%;
+    width: 38%;
+    border-radius: 5%;
+  }
+
+  .ownSuggestionButton2 {
+    position: absolute;
+    background-color: darkslategrey;
+    color: white;
+    left: 57%;
+    top: 30%;
+    height: 20%;
+    width: 38%;
+    border-radius: 5%;
+  }
+
+  .ownSuggestionButton3 {
+    position: absolute;
+    background-color: red;
     left: 57%;
     top: 30%;
     height: 20%;
@@ -119,7 +236,7 @@
 
 /*scaled for iPhone5*/
 @media screen and (max-width: 320px) {
-  .reliefCard{
+  .reliefCard {
     position: absolute;
     top: 15%;
     height: 60%;

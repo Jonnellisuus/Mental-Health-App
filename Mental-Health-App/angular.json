@@ -24,7 +24,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/theme.scss"
             ],
             "scripts": []
           },
@@ -124,5 +125,10 @@
   "defaultProject": "Mental-Health-App",
   "cli": {
     "analytics": "34c851f6-ceb3-45dd-bec8-55b1d49cf1e6"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
   }
 }

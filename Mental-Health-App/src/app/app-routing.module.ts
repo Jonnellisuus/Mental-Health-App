@@ -8,7 +8,7 @@ import {ReliefOutComponent} from "./relief/relief-out/relief-out.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 import {LoginComponent} from "./login/login.component";
 import {LoginGuard} from "./guard/login.guard";
-
+import {SettingsComponent} from "./settings/settings.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -17,9 +17,10 @@ const routes: Routes = [
   {path: 'menu', component: MenuComponent, canActivate: [LoginGuard]},
   {path: 'own-suggestion', component: OwnSuggestionComponent, canActivate: [LoginGuard]},
   {path: 'relief-out', component: ReliefOutComponent, canActivate: [LoginGuard]},
+  {path: 'settings', component: SettingsComponent, canActivate: [LoginGuard]},
   {path: 'login', component: LoginComponent},
   {path: '**', component: PageNotFoundComponent}
-];
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

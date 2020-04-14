@@ -1,4 +1,4 @@
-.ownSuggestionCard{
+.ownSuggestionCard1{
   position: absolute;
   background: lightskyblue;
   top: 15%;
@@ -52,14 +52,39 @@
 
 /*scaled for iPhoneX*/
 @media screen and (max-width: 375px) {
-  .ownSuggestionCard {
+  .ownSuggestionCard1 {
     position: absolute;
+    background-color: lightblue;
     top: 15%;
     height: 60%;
     width: 65%;
     left: 15%;
     padding: 2%;
     border-radius: 2%;
+  }
+  .ownSuggestionCard2 {
+    position: absolute;
+    background-color: dimgrey;
+    top: 15%;
+    height: 60%;
+    width: 65%;
+    left: 15%;
+    padding: 2%;
+    border-radius: 2%;
+  }
+  .ownSuggestionCard3 {
+    position: absolute;
+    background-color: gold;
+    top: 15%;
+    height: 60%;
+    width: 65%;
+    left: 15%;
+    padding: 2%;
+    border-radius: 2%;
+  }
+
+  .suggestionName {
+    right: -4%;
   }
 
   .saveSuggestionButton {
@@ -81,10 +106,15 @@
   .errorMessageName {
     position: absolute;
     font-size: smaller;
+    margin-top: 10%;
+    left: 6%;
   }
+
    .errorMessageSuggestion {
      position: absolute;
      font-size: smaller;
+     margin-top: 1%;
+     left: 6%;
    }
 }
 /*scaled for iPhone5*/

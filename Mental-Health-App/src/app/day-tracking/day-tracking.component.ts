@@ -13,6 +13,7 @@ import {Router} from "@angular/router";
   styleUrls: ['./day-tracking.component.css']
 })
 export class DayTrackingComponent implements OnInit {
+  public savedThemeIndex: string;
   dayTrackingItemsList: Array<DayTrackingItem>;
   dayTrackingSleep: Array<DayTrackingSleepItem>;
   dayTrackingExercise: Array<DayTrackingExerciseItem>;
@@ -23,6 +24,7 @@ export class DayTrackingComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.savedThemeIndex = localStorage.getItem('themeNbr');
     this.dayTrackingItemsList = this.questionService.getQuestions();
     this.dayTrackingSleep = this.questionService.getSleep();
     this.dayTrackingExercise = this.questionService.getExercise();

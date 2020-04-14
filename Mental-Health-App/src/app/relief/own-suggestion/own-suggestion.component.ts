@@ -8,11 +8,13 @@ import {MatSnackBar} from "@angular/material/snack-bar";
   styleUrls: ['./own-suggestion.component.css']
 })
 export class OwnSuggestionComponent implements OnInit {
+  public savedThemeIndex: string;
   profileForm: FormGroup;
 
   constructor(private fb: FormBuilder, public snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
+    this.savedThemeIndex = localStorage.getItem('themeNbr');
     this.profileForm = this.fb.group({
         suggestionName: ['', [Validators.required, Validators.minLength(1)]],
         inputSuggestion: ['', [Validators.required, Validators.minLength(1)]]
