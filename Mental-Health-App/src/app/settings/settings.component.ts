@@ -14,29 +14,20 @@ export class SettingsComponent implements OnInit {
 
   ngOnInit() {
     this.themeIndex = localStorage.getItem('themeNbr');
-    console.log(this.themeIndex + ' teema valittuna');
-
-    /*if (this.themeIndex == 'themeNbr1') {
-      console.log("laitetaan ykkös teema");
-    }
-    else if (this.themeIndex == 'themeNbr2') {
-      console.log("Tässä toka teema eli koira");
-    }
-    else if (this.themeIndex == 'themeNbr3') {
-      console.log("viimenen eli kolmas teema");
-    }
-    else {
-      console.log("ei pitä tulla tässä vaiheessa");
-    }*/
+    //console.log(this.themeIndex + ' teema valittuna');
   }
 
   changeTheme(themeNbr: string) {
     localStorage.clear();
-    localStorage.setItem('themeNbr', themeNbr)
+    localStorage.setItem('themeNbr', themeNbr);
     this.themeIndex = localStorage.getItem('themeNbr');
+    //this.refreshPage();
     //console.log("Ja uusi teema on " + themeNbr);
-
     return this.selectedTheme;
+  }
+
+  refreshPage() {
+    window.location.reload();
   }
 
 }

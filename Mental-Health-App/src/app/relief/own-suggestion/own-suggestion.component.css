@@ -83,6 +83,10 @@
     border-radius: 2%;
   }
 
+  .suggestionName {
+    right: -4%;
+  }
+
   .saveSuggestionButton {
     position: absolute;
     left: 65%;
@@ -102,10 +106,15 @@
   .errorMessageName {
     position: absolute;
     font-size: smaller;
+    margin-top: 10%;
+    left: 6%;
   }
+
    .errorMessageSuggestion {
      position: absolute;
      font-size: smaller;
+     margin-top: 1%;
+     left: 6%;
    }
 }
 /*scaled for iPhone5*/
