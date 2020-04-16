@@ -69,7 +69,7 @@
   .signUpCard{
     position: absolute;
     top: 15%;
-    height: 60%;
+    height: 80%;
     width: 80%;
     left: 8%;
     padding: 2%;
@@ -128,7 +128,7 @@
     position: absolute;
     left: 23%;
     top: 85%;
-    height: 10%;
+    height: 6%;
     width: 35%;
   }
 }

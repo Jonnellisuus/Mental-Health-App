@@ -62,31 +62,31 @@
   .class-theme1 {
     position: absolute;
     background-color: lightblue;
-    top: 15%;
-    height: 60%;
-    width: 65%;
-    left: 15%;
     padding: 2%;
+    left: 8%;
+    top: 15%;
+    width: 80%;
+    height: 80%;
     border-radius: 2%;
   }
   .class-theme2 {
     position: absolute;
     background-color: dimgrey;
-    top: 15%;
-    height: 60%;
-    width: 65%;
-    left: 15%;
     padding: 2%;
+    left: 8%;
+    top: 15%;
+    width: 80%;
+    height: 80%;
     border-radius: 2%;
   }
   .class-theme3 {
     position: absolute;
     background-color: gold;
-    top: 15%;
-    height: 60%;
-    width: 65%;
-    left: 15%;
     padding: 2%;
+    left: 8%;
+    top: 15%;
+    width: 80%;
+    height: 80%;
     border-radius: 2%;
   }
 

@@ -15,6 +15,7 @@
   top: 35%;
   left: 6%;
   width: 80%;
+  margin-bottom: 70%;
 }
 /* Input for own suggestion to a difficult moment stops here. */
 
@@ -45,7 +46,7 @@
 /* The placement for an error message starts here (if there was no suggestion written). */
 .errorMessageSuggestion{
   position: absolute;
-  top: 50%;
+  top: 70%;
 }
 /* The placement for an error message stops here (if there was no suggestion written). */
 
@@ -55,31 +56,31 @@
   .ownSuggestionCard1 {
     position: absolute;
     background-color: lightblue;
-    top: 15%;
-    height: 60%;
-    width: 65%;
-    left: 15%;
     padding: 2%;
+    left: 8%;
+    top: 15%;
+    width: 80%;
+    height: 80%;
     border-radius: 2%;
   }
   .ownSuggestionCard2 {
     position: absolute;
     background-color: dimgrey;
-    top: 15%;
-    height: 60%;
-    width: 65%;
-    left: 15%;
     padding: 2%;
+    left: 8%;
+    top: 15%;
+    width: 80%;
+    height: 80%;
     border-radius: 2%;
   }
   .ownSuggestionCard3 {
     position: absolute;
     background-color: gold;
-    top: 15%;
-    height: 60%;
-    width: 65%;
-    left: 15%;
     padding: 2%;
+    left: 8%;
+    top: 15%;
+    width: 80%;
+    height: 80%;
     border-radius: 2%;
   }
 
@@ -91,14 +92,14 @@
     position: absolute;
     left: 65%;
     top: 85%;
-    height: 10%;
+    height: 6%;
     width: 30%;
   }
 
   .cancelSuggestionButton {
     position: absolute;
     top: 85%;
-    height: 10%;
+    height: 6%;
     width: 30%;
     background: orangered;
   }
@@ -115,6 +116,10 @@
      font-size: smaller;
      margin-top: 1%;
      left: 6%;
+   }
+
+   .inputSuggestion{
+
    }
 }
 /*scaled for iPhone5*/

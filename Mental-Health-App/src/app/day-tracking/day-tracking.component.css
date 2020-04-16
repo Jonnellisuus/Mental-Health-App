@@ -136,40 +136,37 @@
   .class-theme1 {
     position: absolute;
     padding: 2%;
-    left: 5%;
+    left: 8%;
     top: 15%;
-    width: 90%;
-    height: 60%;
-    bottom: 50%;
+    width: 80%;
+    height: 80%;
     border-radius: 2%;
   }
 
   .class-theme2 {
     position: absolute;
     padding: 2%;
-    left: 5%;
+    left: 8%;
     top: 15%;
-    width: 90%;
-    height: 60%;
-    bottom: 50%;
+    width: 80%;
+    height: 80%;
     border-radius: 2%;
   }
 
   .class-theme3 {
     position: absolute;
     padding: 2%;
-    left: 5%;
+    left: 8%;
     top: 15%;
-    width: 90%;
-    height: 60%;
-    bottom: 50%;
+    width: 80%;
+    height: 80%;
     border-radius: 2%;
   }
 
   .saveButton{
     position: absolute;
     top: 115%;
-    left: 75%;
+    left: 72%;
   }
 
   .cancelDayTrackingButton{

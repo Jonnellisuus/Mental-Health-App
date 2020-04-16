@@ -36,10 +36,9 @@
   position: absolute;
   top: 15%;
   background: lightblue;
-  height: 60%;
-  width: 60%;
-  left: 19%;
-  padding: 2%;
+  left: 8%;
+  width: 80%;
+  height: 80%;
   border-radius: 2%;
 }
 
@@ -47,10 +46,9 @@
   position: absolute;
   top: 15%;
   background: dimgrey;
-  height: 60%;
-  width: 60%;
-  left: 19%;
-  padding: 2%;
+  left: 8%;
+  width: 80%;
+  height: 80%;
   border-radius: 2%;
 }
 
@@ -58,9 +56,8 @@
   position: absolute;
   top: 15%;
   background: gold;
-  height: 60%;
-  width: 60%;
-  left: 19%;
-  padding: 2%;
+  left: 8%;
+  width: 80%;
+  height: 80%;
   border-radius: 2%;
 }
