@@ -50,6 +50,8 @@
     <button [routerLink]="['/relief']" class="saveSuggestionButton" mat-raised-button [disabled]="contactForm.form.invalid"
             (click)="onSave(contactForm)">Tallenna</button>
 
-    <button [routerLink]="['/relief']" class="cancelSuggestionButton" mat-raised-button>Peruuta</button>
+    <button class="cancelSuggestionButton" mat-raised-button (click)="backClicked()">Peruuta</button>
+
+    <!--<button [routerLink]="['/relief']" class="cancelSuggestionButton" mat-raised-button>Peruuta</button>-->
   </mat-card>
 </div>

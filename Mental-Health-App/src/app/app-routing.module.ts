@@ -11,6 +11,7 @@ import {LoginGuard} from "./guard/login.guard";
 import {SettingsComponent} from "./settings/settings.component";
 import {SignupComponent} from "./signup/signup.component";
 import {HomeComponent} from "./home/home.component";
+import {AnxietyComponent} from "./anxiety/anxiety.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'own-suggestion', component: OwnSuggestionComponent, canActivate: [LoginGuard]},
   {path: 'relief-out', component: ReliefOutComponent, canActivate: [LoginGuard]},
   {path: 'settings', component: SettingsComponent, canActivate: [LoginGuard]},
+  {path: 'anxiety', component: AnxietyComponent, canActivate: [LoginGuard]},
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: SignupComponent},
   {path: 'home', component: HomeComponent},

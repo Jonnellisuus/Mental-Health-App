@@ -11,29 +11,32 @@
       </button>
     </mat-list-item>
     <mat-list-item class="menu-items">
-      <button [routerLink]="['/relief']"
-              [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}"
-              mat-fab class="menu-button2">
-        <mat-icon class="icon">live_help</mat-icon>
-        <br>Hankaliin hetkiin
+      <button
+        [routerLink]="['/anxiety']"
+        [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}"
+        mat-fab class="menu-button2">
+        <mat-icon class="icon">stars</mat-icon>
+        <br>Jos ahdistaa
       </button>
     </mat-list-item>
     <mat-list-item class="menu-items">
       <button
+        [routerLink]="['/relief']"
         [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}"
         mat-fab class="menu-button3">
-        <mat-icon class="icon">stars</mat-icon>
+        <mat-icon class="icon">live_help</mat-icon>
         <br>
-        Voimavarat
+        Kriisitilanne
       </button>
     </mat-list-item>
     <mat-list-item class="menu-items">
       <button
+        [routerLink]="['/own-suggestion']"
         [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}"
         mat-fab class="menu-button4">
-        <mat-icon class="icon">favorite</mat-icon>
+        <mat-icon class="icon">add</mat-icon>
         <br>
-        ":D"
+        Lisää oma juttu
       </button>
     </mat-list-item>
     <mat-list-item class="signOutButton">

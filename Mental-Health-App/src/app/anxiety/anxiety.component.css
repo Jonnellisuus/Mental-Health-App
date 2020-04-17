@@ -1,0 +1,33 @@
+
+.class-selections1 {
+  position: absolute;
+  padding: 2%;
+  background-color: lightblue;
+  left: 8%;
+  top: 15%;
+  width: 80%;
+  height: 80%;
+  border-radius: 2%;
+}
+
+.class-selections2 {
+  position: absolute;
+  padding: 2%;
+  background-color: dimgrey;
+  left: 8%;
+  top: 15%;
+  width: 80%;
+  height: 80%;
+  border-radius: 2%;
+}
+
+.class-selections3 {
+  position: absolute;
+  padding: 2%;
+  background-color: gold;
+  left: 8%;
+  top: 15%;
+  width: 80%;
+  height: 80%;
+  border-radius: 2%;
+}
