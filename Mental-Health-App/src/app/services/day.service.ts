@@ -16,7 +16,7 @@ export class DayService {
   AddDay(day: Day) {
       this.daysRef.push({
         mood: day.mood,
-        sleep: day.sleep_time,
+        sleep_time: day.sleep_time,
         weather: day.weather,
         exercise: day.exercise
       })

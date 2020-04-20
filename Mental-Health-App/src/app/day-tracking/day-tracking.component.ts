@@ -25,9 +25,8 @@ export class DayTrackingComponent implements OnInit {
               public router: Router,
               public fb: FormBuilder,
               private dayApi: DayService
+  ) {}
 
-
-  ) { }
   public savedThemeIndex: string;
   dayTrackingItemsList: Array<DayTrackingItem>;
   dayTrackingSleep: Array<DayTrackingSleepItem>;
@@ -47,18 +46,18 @@ export class DayTrackingComponent implements OnInit {
   submitDayForm() {
     this.dayForm = this.fb.group({
       mood: ['', [Validators.required]],
-      sleep: ['', [Validators.required]],
+      sleep_time: ['', [Validators.required]],
       weather: ['', [Validators.required]],
       exercise: ['', [Validators.required]]
     })
   }
 
-saveDayTracking() {
-  console.log(this.dayForm.value);
-  if (this.dayForm.valid) {
-    this.dayApi.AddDay(this.dayForm.value);
-  }
- // this.snackBar.open('Päivän seuranta tallennettu', 'OK', {duration: 3000});
+  saveDayTracking() {
+    console.log(this.dayForm.value);
+    if (this.dayForm.valid) {
+      this.dayApi.AddDay(this.dayForm.value);
+    }
+    // this.snackBar.open('Päivän seuranta tallennettu', 'OK', {duration: 3000});
 
-}
+  }
 }
