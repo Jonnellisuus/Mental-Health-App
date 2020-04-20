@@ -37,6 +37,7 @@ import {DayService} from './services/day.service';
 import {environment} from '../environments/environment';
 
 
+// @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,

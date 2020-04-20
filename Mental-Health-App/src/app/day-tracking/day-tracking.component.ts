@@ -23,8 +23,10 @@ export class DayTrackingComponent implements OnInit {
   constructor(private questionService: DayTrackingService,
               public snackBar: MatSnackBar,
               public router: Router,
-              private dayService: DayService,
-              public fb: FormBuilder
+              public fb: FormBuilder,
+              private dayApi: DayService
+
+
   ) { }
   public savedThemeIndex: string;
   dayTrackingItemsList: Array<DayTrackingItem>;
@@ -51,10 +53,12 @@ export class DayTrackingComponent implements OnInit {
     })
   }
 
-  saveDayTracking() {
-    console.log(this.dayForm.value);
-    this.dayService.AddDay(this.dayForm.value);
-    this.snackBar.open('Päivän seuranta tallennettu', 'OK', {duration: 3000});
-
+saveDayTracking() {
+  console.log(this.dayForm.value);
+  if (this.dayForm.valid) {
+    this.dayApi.AddDay(this.dayForm.value);
   }
+ // this.snackBar.open('Päivän seuranta tallennettu', 'OK', {duration: 3000});
+
+}
 }
