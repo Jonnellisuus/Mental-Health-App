@@ -11,19 +11,19 @@ export class DayService {
   dayRef: AngularFireObject<any>;
 
   constructor(private db: AngularFireDatabase) {}
-    /*create day*/
-    AddDay(day: Day) {
+
+  /*create day*/
+  AddDay(day: Day) {
       this.daysRef.push({
         mood: day.mood,
         sleep: day.sleep_time,
         weather: day.weather,
-        excercise: day.exercise
+        exercise: day.exercise
       })
         .catch(error => {
           this.errorMgmt(error);
         })
     }
-
     GetDay(id: string){
       this.dayRef = this.db.object('raport-list' + id);
 
@@ -54,7 +54,7 @@ export class DayService {
 
     //err management
   private errorMgmt(error) {
-      console.log(error);
-    }
+      console.log(error);}
+
 
 }

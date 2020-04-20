@@ -1,32 +1,38 @@
 <div [ng] [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1', 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}">
   <!-- Question about how the day has been. -->
+  <form [formGroup]="dayForm" (ngSubmit)="submitDayForm()" novalidate>
   <mat-card class="questionCard" *ngFor="let question of dayTrackingItemsList">
     {{ question.question }}
     <mat-slider class="slider" min="0" max="4" step="1" #matSlider></mat-slider>
-    <div class="sliderValue">{{question.answerList[matSlider.value]}}</div>
+    <div class="sliderValue" >{{question.answerList[matSlider.value]}}</div>
+    <input matInput placeholder="mood" formControlName="mood">
   </mat-card>
 
   <!-- Question about how much sleep did you get. -->
     <mat-card class="questionCardSleep" *ngFor="let question of dayTrackingSleep">
       {{ question.question }}
       <mat-slider class="sliderSleep" min="0" max="4" step="1" #matSlider></mat-slider>
-      <div class="sliderValueSleep">{{question.answerListSleep[matSlider.value]}}</div>
+      <div class="sliderValueSleep" formControlName="sleep" > {{question.answerListSleep[matSlider.value]}}</div>
+      <input matInput placeholder="sleep" formControlName="sleep">
   </mat-card>
 
   <!-- Question about how much exercise did you get. -->
   <mat-card class="questionCardExercise" *ngFor="let question of dayTrackingExercise">
     {{ question.question }}
-    <mat-slider class="sliderExercise" min="0" max="4" step="1" #matSlider></mat-slider>
-    <div class="sliderValueExercise">{{question.answerListExercise[matSlider.value]}}</div>
+    <mat-slider  class="sliderExercise" min="0" max="4" step="1" #matSlider></mat-slider>
+    <div class="sliderValueExercise"> {{question.answerListExercise[matSlider.value]}}</div>
+    <input matInput placeholder="exercise" formControlName="exercise">
   </mat-card>
 
   <!-- Question about how is the weather -->
   <mat-card class="questionCardWeather" *ngFor="let question of dayTrackingWeather">
     {{ question.question }}
-    <mat-slider class="sliderWeather" min="0" max="4" step="1" #matSlider></mat-slider>
-    <div class="sliderValueWeather">{{question.answerListWeather[matSlider.value]}}</div>
+    <mat-slider  class="sliderWeather" min="0" max="4" step="1" #matSlider></mat-slider>
+    <div  class="sliderValueWeather" formControlName="weather"> {{question.answerListWeather[matSlider.value]}}</div>
+    <input matInput placeholder="weather" formControlName="weather">
 
     <button [routerLink]="['/menu']" class="saveButton" mat-raised-button (click)="saveDayTracking()">Tallenna</button>
     <button [routerLink]="['/menu']" class="cancelDayTrackingButton" mat-raised-button>Peruuta</button>
   </mat-card>
+  </form>
 </div>
