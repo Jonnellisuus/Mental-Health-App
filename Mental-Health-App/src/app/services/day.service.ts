@@ -10,10 +10,12 @@ export class DayService {
   daysRef: AngularFireList<any>;
   dayRef: AngularFireObject<any>;
 
-  constructor(private db: AngularFireDatabase) {}
+  constructor(private db: AngularFireDatabase) {
+    this.daysRef = db.list('days');
+  }
 
   /*create day*/
-  AddDay(day: Day) {
+  AddDay(day: Day) { console.log(this.daysRef),
       this.daysRef.push({
         mood: day.mood,
         sleep_time: day.sleep_time,
