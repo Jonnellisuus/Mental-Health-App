@@ -7,7 +7,7 @@ import {DayTrackingWeatherItem} from './items/day-tracking-weather-item';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {Router} from '@angular/router';
 import {DayService} from '../services/day.service';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+
 
 
 
@@ -18,13 +18,12 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 })
 
 export class DayTrackingComponent implements OnInit {
-  dayForm: FormGroup;
+  private dayForm: any;
 
-  constructor(private questionService: DayTrackingService,
-              public snackBar: MatSnackBar,
-              public router: Router,
-              public fb: FormBuilder,
-              private dayApi: DayService
+    constructor(private questionService: DayTrackingService,
+                public snackBar: MatSnackBar,
+                public router: Router,
+                private dayApi: DayService
   ) {}
 
   public savedThemeIndex: string;
@@ -33,31 +32,28 @@ export class DayTrackingComponent implements OnInit {
   dayTrackingExercise: Array<DayTrackingExerciseItem>;
   dayTrackingWeather: Array<DayTrackingWeatherItem>;
 
-
   ngOnInit(): void {
     this.savedThemeIndex = localStorage.getItem('themeNbr');
     this.dayTrackingItemsList = this.questionService.getQuestions();
     this.dayTrackingSleep = this.questionService.getSleep();
     this.dayTrackingExercise = this.questionService.getExercise();
     this.dayTrackingWeather = this.questionService.getWeather();
-    this.submitDayForm();
-  }
 
-  submitDayForm() {
-    this.dayForm = this.fb.group({
-      mood: ['', [Validators.required]],
-      sleep_time: ['', [Validators.required]],
-      weather: ['', [Validators.required]],
-      exercise: ['', [Validators.required]]
-    })
+  }
+GatherDay() {
+  const mood = JSON.stringify(document.getElementById('mood').innerText);
+  const sleepTime = JSON.stringify(document.getElementById('sleep').innerText);
+  const exercise = JSON.stringify(document.getElementById('exercise').innerText);
+  const weather = JSON.stringify(document.getElementById('weather').innerText);
+  return {mood, sleepTime, exercise, weather};
   }
 
   saveDayTracking() {
-    console.log(this.dayForm.value);
-    if (this.dayForm.valid) {
-      this.dayApi.AddDay(this.dayForm.value);
-    }
-    // this.snackBar.open('Päivän seuranta tallennettu', 'OK', {duration: 3000});
+    console.log();
+    this.GatherDay();
+    // console.log(this.dayForm.values);
+    this.dayApi.AddDay(this.GatherDay());
+    this.snackBar.open('Päivän seuranta tallennettu', 'OK', {duration: 3000});
 
   }
 }

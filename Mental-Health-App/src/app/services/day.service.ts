@@ -15,10 +15,10 @@ export class DayService {
   }
 
   /*create day*/
-  AddDay(day: Day) { console.log(this.daysRef),
+  AddDay(day: { mood: string; weather: string; sleepTime: string; exercise: string }) {
       this.daysRef.push({
         mood: day.mood,
-        sleep_time: day.sleep_time,
+        sleep_time: day.sleepTime,
         weather: day.weather,
         exercise: day.exercise
       })
@@ -27,18 +27,18 @@ export class DayService {
         })
     }
     GetDay(id: string){
-      this.dayRef = this.db.object('raport-list' + id);
+      this.dayRef = this.db.object('days' + id);
 
     }
     GetDayList(){
-      this.daysRef = this.db.list('raport-list');
+      this.daysRef = this.db.list('days');
       return this.daysRef;
     }
 
     UpdateDay(id, day: Day) {
       this.dayRef.update({
         mood: day.mood,
-        sleep: day.sleep_time,
+        sleep: day.sleepTime,
         weather: day.weather,
         excercise: day.exercise
       })
