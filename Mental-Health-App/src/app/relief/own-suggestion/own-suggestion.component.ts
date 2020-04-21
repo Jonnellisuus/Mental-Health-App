@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, FormGroupDirective, Validators} from "@angular/forms";
 import {MatSnackBar} from "@angular/material/snack-bar";
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-own-suggestion',
@@ -11,7 +12,7 @@ export class OwnSuggestionComponent implements OnInit {
   public savedThemeIndex: string;
   profileForm: FormGroup;
 
-  constructor(private fb: FormBuilder, public snackBar: MatSnackBar) { }
+  constructor(private fb: FormBuilder, public snackBar: MatSnackBar, private _location: Location) { }
 
   ngOnInit(): void {
     this.savedThemeIndex = localStorage.getItem('themeNbr');
@@ -32,5 +33,9 @@ export class OwnSuggestionComponent implements OnInit {
 
   onSave(contactForm: FormGroupDirective) {
     this.snackBar.open('Ehdotus tallennettu', 'OK', {duration: 3000});
+  }
+
+  backClicked() {
+    this._location.back();
   }
 }
