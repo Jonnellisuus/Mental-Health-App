@@ -15,12 +15,19 @@ export class DayService {
   }
 
   /*create day*/
-  AddDay(day: { mood: string; weather: string; sleepTime: string; exercise: string }) {
+  AddDay(day: {symptomDetail: string; thingThree: string; thingTwo: string; thingOne: string; symptom: string; mood: string; happiness: string; contact: string; sleepTime: string; exercise: string; eat: string }) {
       this.daysRef.push({
         mood: day.mood,
         sleep_time: day.sleepTime,
-        weather: day.weather,
-        exercise: day.exercise
+        exercise: day.exercise,
+        eat: day.eat,
+        symptom: day.symptom,
+        symptomDetail: day.symptomDetail,
+        contact: day.contact,
+        happiness: day.happiness,
+        thingOne: day.thingOne,
+        thingTwo: day.thingTwo,
+        thingThree: day.thingThree
       })
         .catch(error => {
           this.errorMgmt(error);

@@ -6,7 +6,7 @@ export class DayTrackingSleepItem {
   constructor(question: string) {
     this.question = question;
     this.answer = '';
-    this.answerListSleep = ['Et ole vastannut', 'Tunnin', '2 tuntia', '3 tuntia', '4 tuntia'];
+    this.answerListSleep = ['En ollenkaan', 'pätkittäin', 'riittävästi', ' hyvin', 'liikaa'];
   }
 }
 //

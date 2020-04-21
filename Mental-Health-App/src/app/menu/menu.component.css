@@ -81,22 +81,20 @@
   .selections{
     position: absolute;
     padding: 2%;
-    left: 12%;
+    left: 8%;
     top: 15%;
-    width: 70%;
-    height: 60%;
-    bottom: 50%;
+    width: 80%;
+    height: 80%;
     border-radius: 2%;
   }
   .class-selections1 {
     position: absolute;
     padding: 2%;
     background-color: lightblue;
-    left: 12%;
+    left: 8%;
     top: 15%;
-    width: 70%;
-    height: 60%;
-    bottom: 50%;
+    width: 80%;
+    height: 80%;
     border-radius: 2%;
   }
 
@@ -104,11 +102,10 @@
     position: absolute;
     padding: 2%;
     background-color: dimgrey;
-    left: 12%;
+    left: 8%;
     top: 15%;
-    width: 70%;
-    height: 60%;
-    bottom: 50%;
+    width: 80%;
+    height: 80%;
     border-radius: 2%;
   }
 
@@ -116,11 +113,10 @@
     position: absolute;
     padding: 2%;
     background-color: gold;
-    left: 12%;
+    left: 8%;
     top: 15%;
-    width: 70%;
-    height: 60%;
-    bottom: 50%;
+    width: 80%;
+    height: 80%;
     border-radius: 2%;
   }
 

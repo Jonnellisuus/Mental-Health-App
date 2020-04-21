@@ -1,13 +1,45 @@
-.class-theme1 {
+.dayTrackingPage{
+  overflow: auto;
+}
+
+.dayTrackingText1{
   position: absolute;
   background: lightblue;
   padding: 2%;
   left: 33%;
   top: 15%;
   width: 30%;
-  height: 60%;
-  bottom: 50%;
-  border-radius: 2%;
+  height: 15%;
+}
+
+.dayTrackingText2{
+  position: absolute;
+  background: dimgrey;
+  padding: 2%;
+  left: 33%;
+  top: 15%;
+  width: 30%;
+  height: 15%;
+}
+
+.dayTrackingText3{
+  position: absolute;
+  background: gold;
+  padding: 2%;
+  left: 33%;
+  top: 15%;
+  width: 30%;
+  height: 15%;
+}
+
+.class-theme1 {
+  position: absolute;
+  background: lightblue;
+  padding: 2%;
+  left: 33%;
+  top: 37%;
+  width: 30%;
+  height: 300%;
 }
 
 .class-theme2 {
@@ -15,11 +47,11 @@
   background: dimgrey;
   padding: 2%;
   left: 33%;
-  top: 15%;
+  top: 37%;
   width: 30%;
-  height: 60%;
+  height: 100%;
   bottom: 50%;
-  border-radius: 2%;
+  overflow: auto;
 }
 
 .class-theme3 {
@@ -27,11 +59,11 @@
   background: gold;
   padding: 2%;
   left: 33%;
-  top: 15%;
+  top: 37%;
   width: 30%;
-  height: 60%;
+  height: 100%;
   bottom: 50%;
-  border-radius: 2%;
+  overflow: auto;
 }
 
 /* Adding a value about how the day has been starts here. */
@@ -43,8 +75,8 @@
 
 .questionCard {
   margin-bottom: 10px;
-  height: 10%;
-  top: 2%;
+  height: 3%;
+  top: 1%;
 }
 
 .slider {
@@ -56,6 +88,33 @@
 /* Adding a value about how the day has been stops here. */
 
 /* Adding a value about how much sleep did you get starts here. */
+.sliderValueSymptom {
+  position: absolute;
+  left: 60%;
+  top: 60%;
+}
+
+.questionCardSymptom {
+  margin-bottom: 10px;
+  height: 3%;
+  top: 2%;
+}
+
+.sliderSymptom {
+  position: absolute;
+  top: 45%;
+  right: 47%;
+  width: 50%;
+}
+/* Adding a value about how much sleep did you get stops here. */
+
+.symptomDetail{
+  position: absolute;
+  top: 13.5%;
+  width: 88.3%;
+}
+
+/* Adding a value about how much did you exercised starts here. */
 .sliderValueSleep {
   position: absolute;
   left: 60%;
@@ -64,8 +123,8 @@
 
 .questionCardSleep {
   margin-bottom: 10px;
-  height: 10%;
-  top: 4%;
+  height: 3%;
+  top: 8%;
 }
 
 .sliderSleep {
@@ -74,128 +133,216 @@
   right: 47%;
   width: 50%;
 }
-/* Adding a value about how much sleep did you get stops here. */
-
-/* Adding a value about how much did you exercised starts here. */
-.sliderValueExercise {
-  position: absolute;
-  left: 60%;
-  top: 60%;
-}
-
-.questionCardExercise {
-  margin-bottom: 10px;
-  height: 10%;
-  top: 6%;
-}
-
-.sliderExercise {
-  position: absolute;
-  top: 45%;
-  right: 47%;
-  width: 50%;
-}
 /* Adding a value about how much did you exercised stops here. */
 
 /* Adding a value about how is the weather starts here. */
-.sliderValueWeather {
+.sliderValueEat {
   position: absolute;
   left: 60%;
   top: 60%;
 }
 
-.questionCardWeather {
+.questionCardEat {
   margin-bottom: 10px;
-  height: 10%;
-  top: 8%;
+  height: 3%;
+  top: 9%;
 }
 
-.sliderWeather {
+.sliderEat {
   position: absolute;
   top: 45%;
   right: 47%;
   width: 50%;
 }
-/* Adding a value about how is the weather stops here. */
+
+.questionCardExercise{
+  margin-bottom: 10px;
+  height: 3%;
+  top: 10%;
+}
+
+.sliderExercise{
+  position: absolute;
+  top: 45%;
+  right: 47%;
+  width: 50%;
+}
+
+.sliderValueExercise{
+  position: absolute;
+  left: 60%;
+  top: 60%;
+}
+
+.questionCardContact{
+  margin-bottom: 10px;
+  height: 3%;
+  top: 11%;
+}
+
+.sliderContact{
+  position: absolute;
+  top: 45%;
+  right: 47%;
+  width: 50%;
+}
+
+.sliderValueContact{
+  position: absolute;
+  left: 60%;
+  top: 50%;
+}
+
+.questionCardHappiness{
+  margin-bottom: 10px;
+  height: 3%;
+  top: 12%;
+}
+
+.sliderHappiness{
+  position: absolute;
+  top: 45%;
+  right: 47%;
+  width: 50%;
+}
+
+.sliderValueHappiness{
+  position: absolute;
+  left: 60%;
+  top: 60%;
+}
+
+.goodThingsTitle{
+  position: absolute;
+  top: 120%;
+  left: 0;
+}
+
+.firstGoodThing{
+  position: absolute;
+  top: 200%;
+  width: 100%;
+  left: 0;
+}
+
+.secondGoodThing{
+  position: absolute;
+  top: 400%;
+  width: 100%;
+  left: 0;
+}
+
+.thirdGoodThing{
+  position: absolute;
+  top: 600%;
+  width: 100%;
+  left: 0;
+}
+
+.goodThingsToRememberTitle{
+  position: absolute;
+  top: 800%;
+  left: 0;
+}
+
+.goodThingsToRemember{
+  position: absolute;
+  top: 870%;
+  width: 100%;
+  left: 0;
+}
 
 .saveButton{
   position: absolute;
-  top: 115%;
+  top: 1150%;
   left: 78%;
 }
 
 .cancelDayTrackingButton{
   position: absolute;
-  top: 115%;
+  top: 1150%;
   left: 0;
   background: orangered;
 }
 
 /* Responsive for different devices */
 @media screen and (max-width: 640px){
+  .dayTrackingText1{
+    position: absolute;
+    background: lightblue;
+    padding: 2%;
+    left: 8%;
+    top: 10%;
+    width: 80%;
+    height: 18.5%;
+  }
+
+  .dayTrackingText2{
+    position: absolute;
+    background: dimgrey;
+    padding: 2%;
+    left: 8%;
+    top: 10%;
+    width: 80%;
+    height: 18.5%;
+  }
+
+  .dayTrackingText3{
+    position: absolute;
+    background: gold;
+    padding: 2%;
+    left: 8%;
+    top: 10%;
+    width: 80%;
+    height: 18.5%;
+  }
+
   .class-theme1 {
     position: absolute;
     padding: 2%;
-    left: 5%;
-    top: 15%;
-    width: 90%;
-    height: 60%;
-    bottom: 50%;
-    border-radius: 2%;
+    left: 8%;
+    top: 30.3%;
+    width: 80%;
+    height: 250%;
+    overflow: auto;
   }
 
   .class-theme2 {
     position: absolute;
     padding: 2%;
-    left: 5%;
-    top: 15%;
-    width: 90%;
-    height: 60%;
-    bottom: 50%;
-    border-radius: 2%;
+    left: 8%;
+    top: 30.3%;
+    width: 80%;
+    height: 250%;
+    overflow: auto;
   }
 
   .class-theme3 {
     position: absolute;
     padding: 2%;
-    left: 5%;
-    top: 15%;
-    width: 90%;
-    height: 60%;
-    bottom: 50%;
-    border-radius: 2%;
+    left: 8%;
+    top: 30.3%;
+    width: 80%;
+    height: 250%;
+    overflow: auto;
+  }
+
+  .symptomDetail{
+    position: absolute;
+    top: 12%;
+    width: 88.3%;
   }
 
   .saveButton{
     position: absolute;
-    top: 115%;
-    left: 75%;
+    top: 1200%;
+    left: 72%;
   }
 
   .cancelDayTrackingButton{
     position: absolute;
-    top: 115%;
+    top: 1200%;
     left: 0;
     background: orangered;
-  }
-
-  .sliderValue{
-    position: absolute;
-    top: 60%;
-  }
-
-  .sliderValueSleep{
-    position: absolute;
-    top: 60%;
-  }
-
-  .sliderValueSleep{
-    position: absolute;
-    top: 60%;
-  }
-
-  .sliderValueWeather{
-    position: absolute;
-    top: 60%;
   }
 }

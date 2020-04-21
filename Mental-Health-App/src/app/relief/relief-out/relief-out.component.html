@@ -1,5 +1,5 @@
 <div>
-  <mat-card [ngClass]="{'reliefCardOut1': savedThemeIndex == 'themeNbr1', 'reliefCardOut2': savedThemeIndex == 'themeNbr2', 'reliefCardOut3': savedThemeIndex == 'themeNbr3'}">
+  <mat-card [ngClass]="{'reliefCardOut1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'reliefCardOut2': savedThemeIndex == 'themeNbr2', 'reliefCardOut3': savedThemeIndex == 'themeNbr3'}">
     <h1 class="reliefHeader">Otsikko ulkona käymisestä</h1>
     <br>
     <p class="reliefText">Tekstiä ulkonakäymisestä. Tekstiä ulkona käymisestä. Tekstiä ulkona käymisestä. Tekstiä ulkona käymisestä.</p>
