@@ -1,3 +1,11 @@
 <div>
-  <mat-card [ngClass]="{'class-selections1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-selections2': savedThemeIndex == 'themeNbr2', 'class-selections3': savedThemeIndex == 'themeNbr3'}"></mat-card>
+  <mat-card [ngClass]="{'class-selections1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-selections2': savedThemeIndex == 'themeNbr2', 'class-selections3': savedThemeIndex == 'themeNbr3'}">
+    <h1 style="text-align: center">Ahdistaako?</h1>
+    <mat-list-item *ngFor="let help of anxietyHelps">
+      <div class="anxietyHelp">{{help}}</div>
+    </mat-list-item>
+    <button [routerLink]="['/menu']" class="returnAnxietyButton" mat-raised-button>Takaisin</button>
+    <button [routerLink]="['/own-suggestion']" class="addSuggestionButton" mat-fab color="warn">
+      <mat-icon class="icon">add</mat-icon></button>
+  </mat-card>
 </div>

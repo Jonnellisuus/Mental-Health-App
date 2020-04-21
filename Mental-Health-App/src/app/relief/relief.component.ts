@@ -8,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class ReliefComponent implements OnInit {
   public savedThemeIndex: string;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
     this.savedThemeIndex = localStorage.getItem('themeNbr');
   }
+
 }
-//
+
