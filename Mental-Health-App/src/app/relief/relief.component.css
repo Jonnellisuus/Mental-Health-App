@@ -58,7 +58,7 @@
 }
 
 /*scaled for iPhoneX*/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 640px) {
   .class-theme1 {
     position: absolute;
     background-color: lightblue;
