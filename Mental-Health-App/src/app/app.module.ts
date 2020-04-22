@@ -34,6 +34,7 @@ import {MatSelectModule} from "@angular/material/select";
 import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { AnxietyComponent } from './anxiety/anxiety.component';
+import { AnxietyInfoComponent } from './anxiety-info/anxiety-info.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { AnxietyComponent } from './anxiety/anxiety.component';
     SettingsComponent,
     SignupComponent,
     HomeComponent,
-    AnxietyComponent
+    AnxietyComponent,
+    AnxietyInfoComponent
   ],
   imports: [
     BrowserModule,

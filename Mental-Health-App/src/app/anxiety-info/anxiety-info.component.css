@@ -1,0 +1,41 @@
+.class-selections1 {
+  position: absolute;
+  padding: 2%;
+  background-color: lightblue;
+  left: 8%;
+  top: 15%;
+  width: 80%;
+  height: 125%;
+  border-radius: 2%;
+  margin-bottom: 5%;
+}
+
+.class-selections2 {
+  position: absolute;
+  padding: 2%;
+  background-color: dimgrey;
+  left: 8%;
+  top: 15%;
+  width: 80%;
+  height: 125%;
+  border-radius: 2%;
+  margin-bottom: 5%;
+}
+
+.class-selections3 {
+  position: absolute;
+  padding: 2%;
+  background-color: gold;
+  left: 8%;
+  top: 15%;
+  width: 80%;
+  height: 125%;
+  border-radius: 2%;
+  margin-bottom: 5%;
+}
+
+.anxietyInfo {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
