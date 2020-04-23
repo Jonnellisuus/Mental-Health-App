@@ -36,8 +36,9 @@ export class OwnSuggestionComponent implements OnInit {
     return this.profileForm.get('inputSuggestion');
   }
 
-  onSave(suggestionForm: NgForm) {
-    this.suggestionService.addSuggestion(suggestionForm.value); /* Save data to Firebase */
+  // Tallentamisessa poista contactForm: FormGroupDirective
+  onSave(contactForm: FormGroupDirective /*, suggestionForm: NgForm*/) {
+    // this.suggestionService.addSuggestion(suggestionForm.value); /* Save data to Firebase */
     this.snackBar.open('Ehdotus tallennettu', 'OK', {duration: 3000});
   }
 
