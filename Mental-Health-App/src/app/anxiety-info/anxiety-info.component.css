@@ -5,7 +5,7 @@
   left: 8%;
   top: 15%;
   width: 80%;
-  height: 125%;
+  height: 225%;
   border-radius: 2%;
   margin-bottom: 5%;
 }
@@ -17,7 +17,7 @@
   left: 8%;
   top: 15%;
   width: 80%;
-  height: 125%;
+  height: 225%;
   border-radius: 2%;
   margin-bottom: 5%;
 }
@@ -29,7 +29,7 @@
   left: 8%;
   top: 15%;
   width: 80%;
-  height: 125%;
+  height: 225%;
   border-radius: 2%;
   margin-bottom: 5%;
 }
@@ -37,5 +37,10 @@
 .anxietyInfo {
   margin-left: 5%;
   margin-right: 5%;
+  margin-top: 5%;
+}
+
+.routeButton {
+  margin-left: 5%;
   margin-top: 5%;
 }

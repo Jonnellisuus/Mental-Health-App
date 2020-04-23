@@ -2,24 +2,20 @@
   <mat-card [ngClass]="{'class-selections1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-selections2': savedThemeIndex == 'themeNbr2', 'class-selections3': savedThemeIndex == 'themeNbr3'}">
     <h1 style="text-align: center">Ahdistus - ystävä ja vihollinen</h1>
     <div>
-      <p class="anxietyInfo">Ahdistus on tilapäisenä tunteena täysin normaalia. Jokainen ihminen kokee jossakin elämänsä vaiheessa ahdistusta.
-        Yleensä ahdistukselle löytyy jokin syy - esimerkiksi pitkään jatkunut stressi tai se, että elämässä tapahtuu liikaa asioita yhdellä kertaa. </p>
-      <p class="anxietyInfo">Ahdistuksen tarkoitus on auttaa ihmistä välttämään vaarallisia tilanteita ja toimimaan ripeästi ja tehokkaasti.
-        Elimistö on tällöin kiihtymystilassa, mikä voi tuntua myös kehossa mm. sydämentykytyksenä, huimauksena, vapinana ja hikoiluna. A
-        hdistuksen tunne voi kuitenkin “jäädä päälle”, vaikkei sille olisi ulkoista syytä, tai se voi olla kohteeseen nähden liian voimakasta.
-        Tällöin ahdistus aiheuttaa tuskaa ja haittaa päivittäistä elämää. Myös paniikki liittyy läheisesti ahdistukseen. </p>
-      <p class="anxietyInfo">Ahdistus kertoo, että kestokykymme on ylittynyt, ja tarvitsemme joko ympäristön muutosta tai erilaisia keinoja,
-        joilla käsitellä kokemuksiamme. Ahdistusta aiheuttavan tilanteet tai ihmisen kohtaaminen tietoisesti, itseä kuunnellen
-        ja omaa kokemusta kunnioittaen, voi katkaista ahdistuksen noidankehän. Elämässä on myös kausia, jolloin olemme alttiita ahdistukselle
-        ja vaatimukset ulkopuolelta ovat korkealla. Tällöin on hyvä tietoisesti lisätä hyvinvointiamme tukevia aineksia elämässä. </p>
-      <p class="anxietyInfo">Ahdistuksesta kärsivän tulisi välttää: <br><br>*Kahvia, energiajuomia, kolajuomia ym. Piristeitä sisältäviä juomia.
-        Keho on jo valmiiksi ylivirittynyt ja kofeiini pahentaa tilannetta. Suositus on, että kaksi kuppia olisi maksimipäiväannos.
-        <br><br>*Alkoholia ja muita päihteitä<br><br>*Tupakointia joka pidemmän päälle altistaa ahdistukselle. </p>
-      <p class="anxietyInfo">Pidä huolta kehostasi! Terveet elämäntavat, kuten terveellinen ruokailu (älä jätä aterioita väliin!),
-        liikunta, normaali päivärytmi ja riittävät yöunet tasapainottavat niin kehoa kuin mieltä. </p>
+      <div *ngFor="let info of infos" class="anxietyInfo">
+        {{info.text}}
+      </div>
       <p class="anxietyInfo"><strong>Lisää tietoa mielen hyvinvoinnista ja arjen hallinnasta:</strong></p>
       <p class="anxietyInfo">Suomen Mielenterveys ry:n sivuilla tietoa, muiden kokemuksia ja tietoa paikallisten yhdistysten toiminnasta.
         Kriisipuhelimeen voi aina soittaa! </p>
+      <button mat-raised-button class="routeButton" (click)="goMieli()">Mieli.fi</button>
+      <p class="anxietyInfo">Työkaluja mielen hyvinvointiin –omahoito</p>
+      <button mat-raised-button class="routeButton" (click)="goMtTalo()">Mielenterveystalo</button>
+      <p class="anxietyInfo"><strong>Lisää tietoa paniikkihäiriöstä ja ahdistuneisuudesta</strong></p>
+      <p class="anxietyInfo">Tietoa ja omahoitoharjoituksia ahdistuksesta:</p>
+      <button mat-raised-button class="routeButton" (click)="goInfoAndPractises()">Tietoa ja harjoituksia</button>
+      <button mat-raised-button class="routeButton" (click)="goKaypa()">Ahdistuneisuushäiriöt</button><br>
+      <button mat-raised-button class="routeButton" (click)="goTerveystalo()">Paniikkihäiriöt</button>
     </div>
   </mat-card>
 </div>

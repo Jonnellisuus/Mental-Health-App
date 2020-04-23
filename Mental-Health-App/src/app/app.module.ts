@@ -35,7 +35,7 @@ import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { AnxietyComponent } from './anxiety/anxiety.component';
 import { AnxietyInfoComponent } from './anxiety-info/anxiety-info.component';
-
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -86,7 +86,8 @@ import { AnxietyInfoComponent } from './anxiety-info/anxiety-info.component';
     MatOptionModule,
     MatSelectModule,
     MatSelectModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
