@@ -1,11 +1,17 @@
+.oloKirjaLogo{
+  position: absolute;
+  left: 40%;
+  top: 1%;
+}
+
 .loginCard {
   position: absolute;
   background: lightskyblue;
   padding: 2%;
   left: 33%;
-  top: 15%;
+  top: 35%;
   width: 30%;
-  height: 60%;
+  height: 50%;
   bottom: 50%;
   border-radius: 2%;
 }
@@ -24,31 +30,48 @@
   position: absolute;
   left: 25%;
   width: 50%;
-  top: 30%;
+  top: 35%;
 }
 
 .loginButton {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 25%;
 }
 
 .redirectToSignUp{
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 25%;
 }
 
 /* Responsive for different devices */
 @media screen and (max-width: 640px){
+  .oloKirjaLogo{
+    position: absolute;
+    top: 1%;
+    left: 15%;
+  }
+
   .loginCard{
     position: absolute;
     padding: 2%;
     left: 8%;
-    top: 15%;
+    top: 30%;
     width: 80%;
-    height: 80%;
+    height: 65%;
     border-radius: 2%;
+  }
+
+  .loginTitle{
+    position: absolute;
+    left: 20%;
+    top: 5%;
+  }
+
+  .inputEmail{
+    position: absolute;
+    top: 15%;
   }
 
   .redirectToSignUp{

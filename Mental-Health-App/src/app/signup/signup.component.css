@@ -1,11 +1,18 @@
+.oloKirjaLogo{
+  position: absolute;
+  left: 40%;
+  top: 1%;
+}
+
 .signUpCard {
   position: absolute;
   background: lightskyblue;
-  top: 15%;
-  height: 60%;
-  width: 30%;
-  left: 30%;
   padding: 2%;
+  left: 33%;
+  top: 35%;
+  width: 30%;
+  height: 50%;
+  bottom: 50%;
   border-radius: 2%;
 }
 
@@ -66,13 +73,19 @@
 }
 
 @media screen and (max-width: 640px){
+  .oloKirjaLogo{
+    position: absolute;
+    top: 1%;
+    left: 15%;
+  }
+
   .signUpCard{
     position: absolute;
-    top: 15%;
-    height: 80%;
-    width: 80%;
-    left: 8%;
     padding: 2%;
+    left: 8%;
+    top: 30%;
+    width: 80%;
+    height: 65%;
     border-radius: 2%;
   }
 
@@ -128,7 +141,7 @@
     position: absolute;
     left: 23%;
     top: 85%;
-    height: 6%;
+    height: 7%;
     width: 35%;
   }
 }

@@ -14,6 +14,7 @@
     <mat-list-item class="signOutButton">
       <button mat-flat-button (click)="logout()" *ngIf="authService.user | async">Kirjaudu ulos</button>
     </mat-list-item>
+    <img class="oloKirjaLogo" src="../../assets/images/olokirja_logosvg.svg" alt="kuva" height="200" width="200">
   </mat-sidenav>
   <app-toolbar (MenuClick)="sidenav.toggle()"></app-toolbar>
   <router-outlet></router-outlet>
