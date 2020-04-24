@@ -9,9 +9,11 @@ import { AngularFireDatabase, AngularFireList, AngularFireObject } from '@angula
 export class DayService {
   daysRef: AngularFireList<any>;
   dayRef: AngularFireObject<any>;
+  suggestsRef: AngularFireList<any>;
 
   constructor(private db: AngularFireDatabase) {
     this.daysRef = db.list('days');
+    this.suggestsRef = db.list('suggests');
   }
 
   /*create day*/
