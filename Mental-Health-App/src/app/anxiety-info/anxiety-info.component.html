@@ -15,7 +15,9 @@
       <p class="anxietyInfo">Tietoa ja omahoitoharjoituksia ahdistuksesta:</p>
       <button mat-raised-button class="routeButton" (click)="goInfoAndPractises()">Tietoa ja harjoituksia</button>
       <button mat-raised-button class="routeButton" (click)="goKaypa()">Ahdistuneisuushäiriöt</button><br>
-      <button mat-raised-button class="routeButton" (click)="goTerveystalo()">Paniikkihäiriöt</button>
+      <button mat-raised-button class="routeButton" (click)="goTerveystalo()">Paniikkihäiriöt</button><br>
+      <button mat-raised-button class="crisisButton" [routerLink]="['/crisis']" >Kriisitilanne</button>
+      <button mat-raised-button class="backButton" [routerLink]="['/anxiety']">Takaisin</button>
     </div>
   </mat-card>
 </div>

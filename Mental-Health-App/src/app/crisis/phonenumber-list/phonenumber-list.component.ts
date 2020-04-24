@@ -1,0 +1,37 @@
+import {Component, OnInit} from '@angular/core';
+import {PhonenumberService} from '../shared/phonenumber.service';
+import {Phonenumber} from '../shared/phonenumber'
+
+@Component({
+  selector: 'app-phonenumber-list',
+  templateUrl: './phonenumber-list.component.html',
+  styleUrls: ['./phonenumber-list.component.css']
+})
+export class PhonenumberListComponent implements OnInit {
+  phonenumberList: Phonenumber[];
+
+  constructor(private phonenumberService: PhonenumberService) {
+  }
+
+  ngOnInit(): void {
+    var x = this.phonenumberService.getData();
+    x.snapshotChanges().subscribe(item => {
+      this.phonenumberList = [];
+      item.forEach(element => {
+        var y = element.payload.toJSON();
+        y["$key"] = element.key;
+        this.phonenumberList.push(y as Phonenumber);
+      });
+    });
+  }
+
+
+  toCrisisPhone(): void {
+    window.open('https://mieli.fi/fi/tukea-ja-apua/kriisipuhelin-keskusteluapua-numerossa-09-2525-0111');
+  }
+
+  toSekaisin(): void {
+    window.open('https://sekasin247.fi/#sekasin-2');
+  }
+
+}

@@ -1,0 +1,23 @@
+<div>
+  <form #phonenumberForm="ngForm" (ngSubmit)="onSubmit(phonenumberForm)">
+    <div class="form-group">
+      <label>Nimi</label>
+      <input class="form-control" name="name" #name="ngModel" [(ngModel)]="phonenumberService.selectedPhonenumber.name"
+             placeholder="Anna nimi" minlength="2" maxlength="20" required>
+    </div>
+    <div class="form-group">
+      <label>Tietoa</label>
+      <input class="form-control" name="info" #info="ngModel" [(ngModel)]="phonenumberService.selectedPhonenumber.info"
+             placeholder="Kuka hän on?" maxlength="20">
+    </div>
+    <div class="form-group">
+      <label>Numero</label>
+      <input class="form-control" name="pNumber" #pNumber="ngModel" [(ngModel)]="phonenumberService.selectedPhonenumber.pNumber"
+             placeholder="Puhelinnumero" pattern="[0-9 ]{10}" required>
+    </div>
+    <div class="form-group">
+      <button mat-raised-button class="btn btn-default" type="submit" [disabled]="!phonenumberForm.valid">Tallenna</button>
+      <button mat-raised-button class="btn btn-default" (click)="returnPage()" type="button">Peruuta</button>
+    </div>
+  </form>
+</div>

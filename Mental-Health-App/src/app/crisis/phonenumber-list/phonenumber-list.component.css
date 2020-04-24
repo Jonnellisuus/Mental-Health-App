@@ -1,0 +1,25 @@
+.phoneNumberHeader {
+  text-align: center;
+}
+
+.contact {
+  border: 1px solid blue;
+  max-height: 5%;
+  margin-bottom: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.newContact {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.numberButton {
+  margin-bottom: 4%;
+}
+
+.texts {
+  margin-left: 5%;
+  margin-right: 5%;
+}

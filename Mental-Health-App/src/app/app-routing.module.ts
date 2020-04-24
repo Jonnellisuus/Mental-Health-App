@@ -13,6 +13,8 @@ import {SignupComponent} from "./signup/signup.component";
 import {HomeComponent} from "./home/home.component";
 import {AnxietyComponent} from "./anxiety/anxiety.component";
 import {AnxietyInfoComponent} from "./anxiety-info/anxiety-info.component";
+import {CrisisComponent} from "./crisis/crisis.component";
+import {PhonenumberComponent} from "./crisis/phonenumber/phonenumber.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -24,6 +26,8 @@ const routes: Routes = [
   {path: 'settings', component: SettingsComponent, canActivate: [LoginGuard]},
   {path: 'anxiety', component: AnxietyComponent, canActivate: [LoginGuard]},
   {path: 'anxiety-info', component: AnxietyInfoComponent, canActivate: [LoginGuard]},
+  {path: 'crisis', component: CrisisComponent, canActivate: [LoginGuard]},
+  {path: 'new-contact', component: PhonenumberComponent, canActivate: [LoginGuard]},
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: SignupComponent},
   {path: 'home', component: HomeComponent},

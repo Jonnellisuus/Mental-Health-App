@@ -36,6 +36,9 @@ import { HomeComponent } from './home/home.component';
 import { AnxietyComponent } from './anxiety/anxiety.component';
 import { AnxietyInfoComponent } from './anxiety-info/anxiety-info.component';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
+import { CrisisComponent } from './crisis/crisis.component';
+import { PhonenumberListComponent } from './crisis/phonenumber-list/phonenumber-list.component';
+import { PhonenumberComponent } from './crisis/phonenumber/phonenumber.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +58,12 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
     SignupComponent,
     HomeComponent,
     AnxietyComponent,
-    AnxietyInfoComponent
+    AnxietyInfoComponent,
+    CrisisComponent,
+    PhonenumberListComponent,
+    PhonenumberComponent,
+    PhonenumberComponent,
+    PhonenumberListComponent
   ],
   imports: [
     BrowserModule,
