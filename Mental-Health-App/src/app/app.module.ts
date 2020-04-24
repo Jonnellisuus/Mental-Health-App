@@ -39,6 +39,8 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
 import { CrisisComponent } from './crisis/crisis.component';
 import { PhonenumberListComponent } from './crisis/phonenumber-list/phonenumber-list.component';
 import { PhonenumberComponent } from './crisis/phonenumber/phonenumber.component';
+import {MatDialogModule} from "@angular/material/dialog";
+import { MatDeleteDialogComponent } from './mat-delete-dialog/mat-delete-dialog.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +65,8 @@ import { PhonenumberComponent } from './crisis/phonenumber/phonenumber.component
     PhonenumberListComponent,
     PhonenumberComponent,
     PhonenumberComponent,
-    PhonenumberListComponent
+    PhonenumberListComponent,
+    MatDeleteDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -95,9 +98,11 @@ import { PhonenumberComponent } from './crisis/phonenumber/phonenumber.component
     MatSelectModule,
     MatSelectModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule
   ],
   providers: [AuthService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [MatDeleteDialogComponent]
 })
 export class AppModule { }
