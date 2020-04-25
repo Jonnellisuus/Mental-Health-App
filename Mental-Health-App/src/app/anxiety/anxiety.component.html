@@ -4,8 +4,8 @@
     <mat-list-item *ngFor="let help of anxietyHelps">
       <div class="anxietyHelp">{{help}}</div>
     </mat-list-item>
-    <button [routerLink]="['/menu']" class="returnAnxietyButton" mat-raised-button>Takaisin</button>
     <button [routerLink]="['/anxiety-info']" class="moreInfo" mat-raised-button>Lisätietoa ahdistuksesta</button>
+    <button [routerLink]="['/menu']" class="returnAnxietyButton" mat-raised-button>Takaisin</button>
     <!--<button [routerLink]="['/own-suggestion']" class="addSuggestionButton" mat-fab color="warn">
       <mat-icon class="icon">add</mat-icon></button>-->
   </mat-card>

@@ -11,17 +11,20 @@ import {MatSnackBar} from "@angular/material/snack-bar";
   styleUrls: ['./phonenumber.component.css']
 })
 export class PhonenumberComponent implements OnInit {
+  public savedThemeIndex: string;
 
-  constructor(public phonenumberService : PhonenumberService, private _location: Location, private router: Router, private snackBar: MatSnackBar) { }
+  constructor(public phonenumberService : PhonenumberService, private _location: Location,
+              private router: Router, private snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
-    //this.ResetForm();
+    this.ResetForm();
+    this.savedThemeIndex = localStorage.getItem('themeNbr');
   }
 
   onSubmit(phonenumberForm : NgForm) {
     this.phonenumberService.insertPhonenumber(phonenumberForm.value);
     this.router.navigate(['/crisis']);
-    this.snackBar.open('Yhteystieto tallennettu', 'Ok');
+    this.snackBar.open('Yhteystieto tallennettu', 'Ok', {duration: 3000});
   }
 
   returnPage() {

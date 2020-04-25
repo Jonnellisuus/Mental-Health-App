@@ -41,15 +41,15 @@
 }
 
 .returnAnxietyButton {
-  position: absolute;
   margin-left: 5%;
   bottom: 1%;
+  margin-top: 5%;
 }
 
 .moreInfo {
-  position: absolute;
   margin-left: 5%;
   bottom: 5%;
+  margin-top: 5%;
 }
 
 @media screen and (max-width: 640px){
@@ -71,7 +71,7 @@
     left: 8%;
     top: 15%;
     width: 80%;
-    height: 130%;
+    height: 155%;
     border-radius: 2%;
   }
 

@@ -24,14 +24,14 @@ export class PhonenumberService {
     });
   }
 
-  updatePhonenumber(phonenumber : Phonenumber) {
+  /*updatePhonenumber(phonenumber : Phonenumber) {
     this.phonenumberList.update(phonenumber.$key,
       {
         name: phonenumber.name,
       info: phonenumber.info,
       pNumber: phonenumber.pNumber
       });
-  }
+  }*/
 
   deletePhonenumber($key : string){
     this.phonenumberList.remove($key);

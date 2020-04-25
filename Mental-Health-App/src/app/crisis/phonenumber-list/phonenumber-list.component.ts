@@ -32,7 +32,7 @@ export class PhonenumberListComponent implements OnInit {
     this.dialogService.openDeleteDialog().afterClosed().subscribe(res => {
       if(res == true){
         this.phonenumberService.deletePhonenumber(key);
-        this.snackBar.open('Yhteystieto poistettu', 'Ok');
+        this.snackBar.open('Yhteystieto poistettu', 'Ok', {duration: 3000});
       }
     })
   }
