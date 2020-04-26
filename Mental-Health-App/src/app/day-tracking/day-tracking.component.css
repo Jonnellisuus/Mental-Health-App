@@ -1,5 +1,6 @@
 .dayTrackingPage{
   overflow: auto;
+  height: 100%;
 }
 
 .dayTrackingText1{
@@ -39,7 +40,6 @@
   left: 33%;
   top: 37%;
   width: 30%;
-  height: 120%;
   overflow: auto;
 }
 
@@ -50,7 +50,6 @@
   left: 33%;
   top: 37%;
   width: 30%;
-  height: 120%;
   bottom: 50%;
   overflow: auto;
 }
@@ -62,7 +61,6 @@
   left: 33%;
   top: 37%;
   width: 30%;
-  height: 120%;
   bottom: 50%;
   overflow: auto;
 }

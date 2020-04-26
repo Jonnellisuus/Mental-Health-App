@@ -17,6 +17,7 @@ import {CrisisComponent} from "./crisis/crisis.component";
 import {PhonenumberComponent} from "./crisis/phonenumber/phonenumber.component";
 import {SuggestionComponent} from "./suggestions/suggestion/suggestion.component";
 import {SuggestionsComponent} from "./suggestions/suggestions.component";
+import {ReportComponent} from "./report/report.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -31,6 +32,7 @@ const routes: Routes = [
   {path: 'new-contact', component: PhonenumberComponent, canActivate: [LoginGuard]},
   {path: 'suggestion', component: SuggestionComponent, canActivate: [LoginGuard]},
   {path: 'suggestions', component: SuggestionsComponent, canActivate: [LoginGuard]},
+  {path: 'report', component: ReportComponent, canActivate: [LoginGuard]},
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: SignupComponent},
   {path: 'home', component: HomeComponent},

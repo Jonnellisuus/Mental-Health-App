@@ -5,7 +5,6 @@
   left: 8%;
   top: 15%;
   width: 80%;
-  border-radius: 2%;
 }
 
 .class-selections2 {
@@ -15,7 +14,6 @@
   left: 8%;
   top: 15%;
   width: 80%;
-  border-radius: 2%;
 }
 
 .class-selections3 {
@@ -25,13 +23,17 @@
   left: 8%;
   top: 15%;
   width: 80%;
-  border-radius: 2%;
+}
+
+.day-data {
+  background-color: hotpink;
+  margin-bottom: 5%;
+}
+
+.report-card {
+  height: 100%;
 }
 
 .backButton {
   margin-top: 5%;
-}
-
-.suggestionspage {
-  height: 100%;
 }

@@ -46,8 +46,10 @@ import { MatDeleteDialogComponent } from './mat-delete-dialog/mat-delete-dialog.
 import { SuggestionsComponent } from './suggestions/suggestions.component';
 import { SuggestionComponent } from './suggestions/suggestion/suggestion.component';
 import { SuggestionListComponent } from './suggestions/suggestion-list/suggestion-list.component';
+import { ReportComponent } from './report/report.component';
 
 
+// @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
@@ -75,7 +77,8 @@ import { SuggestionListComponent } from './suggestions/suggestion-list/suggestio
     MatDeleteDialogComponent,
     SuggestionsComponent,
     SuggestionComponent,
-    SuggestionListComponent
+    SuggestionListComponent,
+    ReportComponent
   ],
   imports: [
     BrowserModule,

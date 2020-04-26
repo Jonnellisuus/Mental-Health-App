@@ -6,7 +6,7 @@
       </div>
     </div>
     <mat-list-item class="reportButton">
-      <button mat-flat-button>Raportti</button>
+      <button mat-flat-button [routerLink]="['/report']">Raportti</button>
     </mat-list-item>
     <mat-list-item class="settingsButton">
       <button mat-flat-button (click)="toSettings()">Asetukset</button>

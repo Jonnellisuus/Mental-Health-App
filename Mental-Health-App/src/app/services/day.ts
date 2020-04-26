@@ -1,7 +1,7 @@
-export interface Day {
+export class Day {
   $key: string;
   mood: string;
-  sleepTime: string;
+  sleep_time: string;
   exercise: string;
   eat: string;
   symptom: string;

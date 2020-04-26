@@ -91,19 +91,19 @@
 
   .dogPawSvg1{
     position: absolute;
-    left: 30%;
+    left: 50%;
   }
 
   .dogPawSvg2{
     position: absolute;
-    left: 45%;
+    left: 60%;
     top: 75%;
   }
 
   .dogPawSvg3{
     position: absolute;
-    right: 35%;
-    top: 57%;
+    right: 60%;
+    top: 55%;
   }
 
   .selections{

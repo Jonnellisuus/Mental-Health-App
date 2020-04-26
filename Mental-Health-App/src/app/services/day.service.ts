@@ -8,11 +8,17 @@ import { AngularFireDatabase, AngularFireList, AngularFireObject } from '@angula
 
 export class DayService {
   daysRef: AngularFireList<any>;
-  dayRef: AngularFireObject<any>;
+  dayRef: Day = new Day();
+  //dayRef: AngularFireObject<any>;
 
   constructor(private db: AngularFireDatabase) {
     this.daysRef = db.list('days');
 
+  }
+
+  GetDayList(){
+    this.daysRef = this.db.list('days');
+    return this.daysRef;
   }
 
   /*create day*/
@@ -30,16 +36,18 @@ export class DayService {
           this.errorMgmt(error);
         });
     }
-  /*  GetDay(id: string){
+
+  deleteDayData($key : string){
+    this.daysRef.remove($key);
+  }
+
+    /*GetDay(id: string){
       this.dayRef = this.db.object('days' + id);
 
-    }
-    GetDayList(){
-      this.daysRef = this.db.list('days');
-      return this.daysRef;
-    }
+    }*/
 
-    UpdateDay(id, day: Day) {
+
+    /*UpdateDay(id, day: Day) {
       this.dayRef.update({
         mood: day.mood,
         sleep: day.sleepTime,
@@ -49,13 +57,7 @@ export class DayService {
           this.errorMgmt(error);
         })
     }
-    DeleteDay(id: string){
-      this.dayRef = this.db.object('raport-list' + id);
-      this.dayRef.remove()
-        .catch(error =>{
-          this.errorMgmt(error);
-        })
-    } */
+     */
 
     // err management
   private errorMgmt(error) {

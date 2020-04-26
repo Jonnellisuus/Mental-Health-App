@@ -1,0 +1,21 @@
+<div class="report-card">
+  <mat-card
+    [ngClass]="{'class-selections1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-selections2': savedThemeIndex == 'themeNbr2', 'class-selections3': savedThemeIndex == 'themeNbr3'}">
+    <h3 align="center">Omat raportit</h3>
+    <div *ngFor="let day of dayList">
+      <div class="day-data">
+        <p>Fiilis: {{day.mood}}.</p>
+        <p>Nukuin {{day.sleep_time}}.</p>
+        <p>Liikuin {{day.exercise}}.</p>
+        <p>Söin {{day.eat}} kertaa.</p>
+        <p>Oireita {{day.symptom}}.</p>
+        <p>Kontaktit: {{day.contact}}</p>
+        <p>Iloisuus: {{day.happiness}}</p>
+        <a class="btn" (click)="onDelete(day.$key)">
+          <i class="fa fa-trash-o"></i>
+        </a>
+      </div>
+    </div>
+    <button mat-raised-button class="back-button" (click)="returnPage()">Takaisin</button>
+  </mat-card>
+</div>
