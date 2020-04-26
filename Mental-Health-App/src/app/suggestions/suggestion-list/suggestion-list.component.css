@@ -1,6 +1,7 @@
 .ownSuggestion1 {
    display: inline-block;
-   background-color: lightblue;
+   background-color: lightyellow;
+  margin-top: 5%;
    width: 100%;
    border-radius: 5%;
  }
@@ -8,6 +9,7 @@
 .ownSuggestion2 {
   display: inline-block;
   background-color: lightgrey;
+  margin-top: 5%;
   width: 100%;
   border-radius: 5%;
 }
@@ -15,6 +17,7 @@
 .ownSuggestion3 {
   display: inline-block;
   background-color: deeppink;
+  margin-top: 5%;
   width: 100%;
   border-radius: 5%;
 }
@@ -34,4 +37,6 @@
   width: 80%;
 }
 
-
+.suggestion {
+  margin-top: 5%;
+}

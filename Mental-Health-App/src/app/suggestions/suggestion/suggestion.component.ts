@@ -25,7 +25,7 @@ export class SuggestionComponent implements OnInit {
   onSubmit(suggestionForm : NgForm) {
     this.suggestionService.insertSuggestion(suggestionForm.value);
     this._location.back();
-    this.snackBar.open('Yhteystieto tallennettu', 'Ok', {duration: 3000});
+    this.snackBar.open('Oma juttu tallennettu', 'Ok', {duration: 3000});
     //this.resetForm(suggestionForm);
   }
 

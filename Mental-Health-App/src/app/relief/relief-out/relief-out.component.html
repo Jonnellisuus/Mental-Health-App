@@ -1,8 +1,8 @@
 <div>
   <mat-card [ngClass]="{'reliefCardOut1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'reliefCardOut2': savedThemeIndex == 'themeNbr2', 'reliefCardOut3': savedThemeIndex == 'themeNbr3'}">
-    <h1 class="reliefHeader">Otsikko ulkona käymisestä</h1>
+    <h3 align="center" class="reliefHeader">Käy kävelylenkillä</h3>
     <br>
-    <p class="reliefText">Tekstiä ulkonakäymisestä. Tekstiä ulkona käymisestä. Tekstiä ulkona käymisestä. Tekstiä ulkona käymisestä.</p>
+    <p class="reliefText">Käy ulkona haukkaamassa raitista ilmaa. Samalla saat muuta ajateltavaa.</p>
     <button [routerLink]="['/relief']" class="returnReliefButton" mat-raised-button>Takaisin</button>
   </mat-card>
 </div>
