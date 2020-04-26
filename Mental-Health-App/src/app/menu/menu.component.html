@@ -15,7 +15,7 @@
         [routerLink]="['/anxiety']"
         [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}"
         mat-raised-button [ngClass]="{'menu-button2': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'menu-button2theme2': savedThemeIndex == 'themeNbr2', 'menu-button2theme3':savedThemeIndex == 'themeNbr3'}">
-        <mat-icon class="icon">warning</mat-icon>
+        <mat-icon class="icon">stars</mat-icon>
         <br>Jos ahdistaa
       </button>
     </mat-list-item>
@@ -31,13 +31,6 @@
     </mat-list-item>
     <mat-list-item class="menu-items">
       <button
-        [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}"
-        mat-raised-button [ngClass]="{'menu-button4': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'menu-button4theme2': savedThemeIndex == 'themeNbr2', 'menu-button4theme3':savedThemeIndex == 'themeNbr3'}">
-        <mat-icon class="icon">add</mat-icon>
-        <br>
-        Lisää oma<br>juttu
-      </button>
-      <button
         [routerLink]="['/suggestion']"
         [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}"
         mat-raised-button [ngClass]="{'menu-button4': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'menu-button4theme2': savedThemeIndex == 'themeNbr2', 'menu-button4theme3':savedThemeIndex == 'themeNbr3'}">
@@ -50,5 +43,17 @@
       <!--<button mat-raised-button (click)="settingsTest()">teema</button>-->
       <button mat-flat-button (click)="logout()" *ngIf="authService.user | async">Kirjaudu ulos</button>
     </mat-list-item>
+    <div [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}">
+      <img class="lizardSvg" src="../../assets/images/lizardOlo.svg" alt="kuva" height="150" width="250" [ngClass]="{'lizardPic': savedThemeIndex == 'themeNbr3'}" *ngIf="savedThemeIndex == 'themeNbr3'">
+    </div>
+    <div [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}">
+      <img class="dogPawSvg1" src="../../assets/images/dogPawOlo.svg" alt="kuva" height="170" width="270" [ngClass]="{'dogPawPic1': savedThemeIndex == 'themeNbr3'}" *ngIf="savedThemeIndex == 'themeNbr3'">
+    </div>
+    <div [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}">
+      <img class="dogPawSvg2" src="../../assets/images/dogPawOlo.svg" alt="kuva" height="170" width="270" [ngClass]="{'dogPawPic2': savedThemeIndex == 'themeNbr3'}" *ngIf="savedThemeIndex == 'themeNbr3'">
+    </div>
+    <div [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}">
+      <img class="dogPawSvg3" src="../../assets/images/dogPawOlo.svg" alt="kuva" height="170" width="270" [ngClass]="{'dogPawPic3': savedThemeIndex == 'themeNbr3'}" *ngIf="savedThemeIndex == 'themeNbr3'">
+    </div>
   </mat-card>
 </div>

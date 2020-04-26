@@ -39,7 +39,8 @@
   left: 33%;
   top: 37%;
   width: 30%;
-  height: 300%;
+  height: 120%;
+  overflow: auto;
 }
 
 .class-theme2 {
@@ -49,7 +50,7 @@
   left: 33%;
   top: 37%;
   width: 30%;
-  height: 100%;
+  height: 120%;
   bottom: 50%;
   overflow: auto;
 }
@@ -61,7 +62,7 @@
   left: 33%;
   top: 37%;
   width: 30%;
-  height: 100%;
+  height: 120%;
   bottom: 50%;
   overflow: auto;
 }
@@ -70,12 +71,12 @@
 .sliderValue {
   position: absolute;
   left: 60%;
-  top: 60%;
+  top: 55%;
 }
 
 .questionCard {
   margin-bottom: 10px;
-  height: 3%;
+  height: 5%;
   top: 1%;
 }
 
@@ -91,12 +92,12 @@
 .sliderValueSymptom {
   position: absolute;
   left: 60%;
-  top: 60%;
+  top: 55%;
 }
 
 .questionCardSymptom {
   margin-bottom: 10px;
-  height: 3%;
+  height: 5%;
   top: 2%;
 }
 
@@ -118,13 +119,13 @@
 .sliderValueSleep {
   position: absolute;
   left: 60%;
-  top: 60%;
+  top: 55%;
 }
 
 .questionCardSleep {
   margin-bottom: 10px;
-  height: 3%;
-  top: 8%;
+  height: 5%;
+  top: 3%;
 }
 
 .sliderSleep {
@@ -139,13 +140,13 @@
 .sliderValueEat {
   position: absolute;
   left: 60%;
-  top: 60%;
+  top: 55%;
 }
 
 .questionCardEat {
   margin-bottom: 10px;
-  height: 3%;
-  top: 9%;
+  height: 5%;
+  top: 4%;
 }
 
 .sliderEat {
@@ -157,8 +158,8 @@
 
 .questionCardExercise{
   margin-bottom: 10px;
-  height: 3%;
-  top: 10%;
+  height: 5%;
+  top: 5%;
 }
 
 .sliderExercise{
@@ -171,13 +172,13 @@
 .sliderValueExercise{
   position: absolute;
   left: 60%;
-  top: 60%;
+  top: 55%;
 }
 
 .questionCardContact{
   margin-bottom: 10px;
-  height: 3%;
-  top: 11%;
+  height: 5%;
+  top: 6%;
 }
 
 .sliderContact{
@@ -195,8 +196,8 @@
 
 .questionCardHappiness{
   margin-bottom: 10px;
-  height: 3%;
-  top: 12%;
+  height: 5%;
+  top: 7%;
 }
 
 .sliderHappiness{
@@ -209,58 +210,18 @@
 .sliderValueHappiness{
   position: absolute;
   left: 60%;
-  top: 60%;
-}
-
-.goodThingsTitle{
-  position: absolute;
-  top: 120%;
-  left: 0;
-}
-
-.firstGoodThing{
-  position: absolute;
-  top: 200%;
-  width: 100%;
-  left: 0;
-}
-
-.secondGoodThing{
-  position: absolute;
-  top: 400%;
-  width: 100%;
-  left: 0;
-}
-
-.thirdGoodThing{
-  position: absolute;
-  top: 600%;
-  width: 100%;
-  left: 0;
-}
-
-.goodThingsToRememberTitle{
-  position: absolute;
-  top: 800%;
-  left: 0;
-}
-
-.goodThingsToRemember{
-  position: absolute;
-  top: 870%;
-  width: 100%;
-  left: 0;
+  top: 55%;
 }
 
 .saveButton{
   position: absolute;
-  top: 1150%;
+  top: 80%;
   left: 78%;
 }
 
 .cancelDayTrackingButton{
   position: absolute;
-  top: 1150%;
+  top: 80%;
   left: 0;
   background: orangered;
 }
@@ -272,7 +233,7 @@
     background: lightblue;
     padding: 2%;
     left: 8%;
-    top: 10%;
+    top: 12%;
     width: 80%;
     height: 18.5%;
   }
@@ -282,7 +243,7 @@
     background: dimgrey;
     padding: 2%;
     left: 8%;
-    top: 10%;
+    top: 12%;
     width: 80%;
     height: 18.5%;
   }
@@ -292,7 +253,7 @@
     background: gold;
     padding: 2%;
     left: 8%;
-    top: 10%;
+    top: 12%;
     width: 80%;
     height: 18.5%;
   }
@@ -303,7 +264,7 @@
     left: 8%;
     top: 30.3%;
     width: 80%;
-    height: 250%;
+    height: 100%;
     overflow: auto;
   }
 
@@ -313,7 +274,7 @@
     left: 8%;
     top: 30.3%;
     width: 80%;
-    height: 250%;
+    height: 100%;
     overflow: auto;
   }
 
@@ -323,25 +284,165 @@
     left: 8%;
     top: 30.3%;
     width: 80%;
-    height: 250%;
+    height: 100%;
     overflow: auto;
   }
 
+  /* Adding a value about how the day has been starts here. */
+  .sliderValue {
+    position: absolute;
+    left: 60%;
+    top: 55%;
+  }
+
+  .questionCard {
+    margin-bottom: 10px;
+    height: 15%;
+    top: 1%;
+  }
+
+  .slider {
+    position: absolute;
+    top: 45%;
+    right: 47%;
+    width: 50%;
+  }
+  /* Adding a value about how the day has been stops here. */
+
+  /* Adding a value about how much sleep did you get starts here. */
+  .sliderValueSymptom {
+    position: absolute;
+    left: 60%;
+    top: 55%;
+  }
+
+  .questionCardSymptom {
+    margin-bottom: 10px;
+    height: 15%;
+    top: 2%;
+  }
+
+  .sliderSymptom {
+    position: absolute;
+    top: 45%;
+    right: 47%;
+    width: 50%;
+  }
+  /* Adding a value about how much sleep did you get stops here. */
+
   .symptomDetail{
     position: absolute;
-    top: 12%;
+    top: 13.5%;
     width: 88.3%;
+  }
+
+  /* Adding a value about how much did you exercised starts here. */
+  .sliderValueSleep {
+    position: absolute;
+    left: 60%;
+    top: 55%;
+  }
+
+  .questionCardSleep {
+    margin-bottom: 10px;
+    height: 15%;
+    top: 3%;
+  }
+
+  .sliderSleep {
+    position: absolute;
+    top: 45%;
+    right: 47%;
+    width: 50%;
+  }
+  /* Adding a value about how much did you exercised stops here. */
+
+  /* Adding a value about how is the weather starts here. */
+  .sliderValueEat {
+    position: absolute;
+    left: 60%;
+    top: 55%;
+  }
+
+  .questionCardEat {
+    margin-bottom: 10px;
+    height: 15%;
+    top: 4%;
+  }
+
+  .sliderEat {
+    position: absolute;
+    top: 45%;
+    right: 47%;
+    width: 50%;
+  }
+
+  .questionCardExercise{
+    margin-bottom: 10px;
+    height: 15%;
+    top: 5%;
+  }
+
+  .sliderExercise{
+    position: absolute;
+    top: 45%;
+    right: 47%;
+    width: 50%;
+  }
+
+  .sliderValueExercise{
+    position: absolute;
+    left: 60%;
+    top: 55%;
+  }
+
+  .questionCardContact{
+    margin-bottom: 10px;
+    height: 15%;
+    top: 6%;
+  }
+
+  .sliderContact{
+    position: absolute;
+    top: 45%;
+    right: 47%;
+    width: 50%;
+  }
+
+  .sliderValueContact{
+    position: absolute;
+    left: 60%;
+    top: 50%;
+  }
+
+  .questionCardHappiness{
+    margin-bottom: 10px;
+    height: 15%;
+    top: 7%;
+  }
+
+  .sliderHappiness{
+    position: absolute;
+    top: 60%;
+    right: 47%;
+    width: 50%;
+  }
+
+  .sliderValueHappiness{
+    position: absolute;
+    left: 60%;
+    top: 60%;
   }
 
   .saveButton{
     position: absolute;
-    top: 1200%;
-    left: 72%;
+    top: 110%;
+    left: 70%;
   }
 
   .cancelDayTrackingButton{
     position: absolute;
-    top: 1200%;
+    top: 110%;
     left: 0;
     background: orangered;
   }

@@ -4,5 +4,8 @@
     <br>
     <p class="reliefText">Käy ulkona haukkaamassa raitista ilmaa. Samalla saat muuta ajateltavaa.</p>
     <button [routerLink]="['/relief']" class="returnReliefButton" mat-raised-button>Takaisin</button>
+    <div [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}">
+      <img class="cuteDog" src="../../assets/images/cuteDogOlo.jpg" alt="kuva" height="170" width="270" [ngClass]="{'cuteDog': savedThemeIndex == 'themeNbr3'}" *ngIf="savedThemeIndex == 'themeNbr3'">
+    </div>
   </mat-card>
 </div>

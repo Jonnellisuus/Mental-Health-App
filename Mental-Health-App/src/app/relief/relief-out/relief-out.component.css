@@ -46,6 +46,12 @@
     border-radius: 2%;
   }
 
+  .cuteDog{
+    position: absolute;
+    left: 5%;
+    top: 25%;
+  }
+
   .returnReliefButton {
     position: absolute;
     left: 10%;

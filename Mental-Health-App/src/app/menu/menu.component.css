@@ -83,6 +83,29 @@
 }
 
 @media screen and (max-width: 812px){
+  .lizardSvg{
+    position: absolute;
+    top: 63%;
+    left: 1%;
+  }
+
+  .dogPawSvg1{
+    position: absolute;
+    left: 30%;
+  }
+
+  .dogPawSvg2{
+    position: absolute;
+    left: 45%;
+    top: 75%;
+  }
+
+  .dogPawSvg3{
+    position: absolute;
+    right: 35%;
+    top: 57%;
+  }
+
   .selections{
     position: absolute;
     padding: 2%;
@@ -132,6 +155,7 @@
     height: 110px;
     top: 5%;
     width: 110px;
+    left: 6.4%;
   }
 
   .menu-button2{
@@ -203,7 +227,7 @@
     left: 56%;
   }
 
-/* TEEMA3 TESTAUSTA*/
+  /* TEEMA3 TESTAUSTA*/
   .menu-button1theme3{
     position: absolute;
     background-color: limegreen;
