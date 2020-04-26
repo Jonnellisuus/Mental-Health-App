@@ -1,3 +1,4 @@
+
 <div class="dayTrackingPage">
   <div [ngClass]="{'dayTrackingText1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'dayTrackingText2': savedThemeIndex == 'themeNbr2', 'dayTrackingText3': savedThemeIndex == 'themeNbr3'}">
     <mat-card class="dayTrackingText">
@@ -11,50 +12,51 @@
     <!-- Question about how the day has been. -->
     <mat-card class="questionCard" *ngFor="let question of dayTrackingItemsList">
       {{ question.question }}
-      <mat-slider class="slider" value="2" min="0" max="4" step="1" #matSlider></mat-slider>
-      <div class="sliderValue">{{question.answerList[matSlider.value]}}</div>
+      <mat-slider class="slider" min="0" max="4" step="1" #matSlider></mat-slider>
+      <div class="sliderValue" id="mood">{{question.answerList[matSlider.value]}}</div>
     </mat-card>
 
     <!-- Question about symptoms. -->
     <mat-card class="questionCardSymptom" *ngFor="let question of dayTrackingSymptom">
       {{ question.question }}
-      <mat-slider class="sliderSymptom" value="2" min="0" max="4" step="1" #matSlider></mat-slider>
-      <div class="sliderValueSymptom">{{question.answerListSymptom[matSlider.value]}}</div>
+      <mat-slider class="sliderSymptom" min="0" max="4" step="1" #matSlider></mat-slider>
+      <div class="sliderValueSymptom" id="symptom">{{question.answerListSymptom[matSlider.value]}}</div>
     </mat-card>
 
     <!-- Question about how much sleep did you get. -->
     <mat-card class="questionCardSleep" *ngFor="let question of dayTrackingSleep">
       {{ question.question }}
-      <mat-slider class="sliderSleep" value="2" min="0" max="4" step="1" #matSlider></mat-slider>
-      <div class="sliderValueSleep">{{question.answerListSleep[matSlider.value]}}</div>
+      <mat-slider class="sliderSleep" min="0" max="4" step="1" #matSlider></mat-slider>
+      <div class="sliderValueSleep" id="sleepTime">{{question.answerListSleep[matSlider.value]}}</div>
     </mat-card>
 
     <!-- Question about how eating -->
     <mat-card class="questionCardEat" *ngFor="let question of dayTrackingEat">
       {{ question.question }}
-      <mat-slider class="sliderEat" value="2" min="0" max="4" step="1" #matSlider></mat-slider>
-      <div class="sliderValueEat">{{question.answerListEat[matSlider.value]}}</div>
+      <mat-slider class="sliderEat" min="0" max="4" step="1" #matSlider></mat-slider>
+      <div class="sliderValueEat" id="eat">{{question.answerListEat[matSlider.value]}}</div>
     </mat-card>
 
     <!-- Question about how much exercise did you get. -->
     <mat-card class="questionCardExercise" *ngFor="let question of dayTrackingExercise">
       {{ question.question }}
-      <mat-slider class="sliderExercise" value="2" min="0" max="4" step="1" #matSlider></mat-slider>
-      <div class="sliderValueExercise">{{question.answerListExercise[matSlider.value]}}</div>
+      <mat-slider class="sliderExercise" min="0" max="4" step="1" #matSlider></mat-slider>
+      <div class="sliderValueExercise" id="exercise">{{question.answerListExercise[matSlider.value]}}</div>
     </mat-card>
 
     <!-- Question about contacting people. -->
     <mat-card class="questionCardContact" *ngFor="let question of dayTrackingContact">
       {{ question.question }}
-      <mat-slider class="sliderContact" value="2" min="0" max="4" step="1" #matSlider></mat-slider>
-      <div class="sliderValueContact">{{question.answerListContact[matSlider.value]}}</div>
+      <mat-slider class="sliderContact" min="0" max="4" step="1" #matSlider></mat-slider>
+      <div class="sliderValueContact" id="contact">{{question.answerListContact[matSlider.value]}}</div>
     </mat-card>
 
     <!-- Question about things that brought happiness. -->
     <mat-card class="questionCardHappiness" *ngFor="let question of dayTrackingHappiness">
       {{ question.question }}
-      <mat-slider class="sliderHappiness" value="2" min="0" max="4" step="1" #matSlider></mat-slider>
-      <div class="sliderValueHappiness">{{question.answerListHappiness[matSlider.value]}}</div>
+      <mat-slider class="sliderHappiness" min="0" max="4" step="1" #matSlider></mat-slider>
+      <div class="sliderValueHappiness" id="happiness">{{question.answerListHappiness[matSlider.value]}}</div>
+
 
       <button [routerLink]="['/menu']" class="saveButton" mat-raised-button (click)="saveDayTracking()">Tallenna
       </button>

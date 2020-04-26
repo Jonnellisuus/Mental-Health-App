@@ -56,4 +56,5 @@ export class DayTrackingService {
   getHappiness(): Array<DayTrackingHappinessItem> {
     return this.dayTrackingHappiness;
   }
+
 }
