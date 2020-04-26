@@ -5,8 +5,9 @@
   left: 8%;
   top: 15%;
   width: 80%;
-  height: 125%;
+  height: 155%;
   border-radius: 2%;
+  margin-bottom: 5%;
 }
 
 .class-selections2 {
@@ -16,8 +17,9 @@
   left: 8%;
   top: 15%;
   width: 80%;
-  height: 125%;
+  height: 155%;
   border-radius: 2%;
+  margin-bottom: 5%;
 }
 
 .class-selections3 {
@@ -27,14 +29,9 @@
   left: 8%;
   top: 15%;
   width: 80%;
-  height: 125%;
+  height: 155%;
   border-radius: 2%;
-}
-
-.returnAnxietyButton {
-  position: absolute;
-  margin-left: 5%;
-  top: 93%;
+  margin-bottom: 5%;
 }
 
 .anxietyHelp {
@@ -43,12 +40,16 @@
   margin-right: 5%;
 }
 
-.addSuggestionButton {
-  position: absolute;
-  left: 65%;
-  top: 91%;
-  height: 70px;
-  width: 70px;
+.returnAnxietyButton {
+  margin-left: 5%;
+  bottom: 1%;
+  margin-top: 5%;
+}
+
+.moreInfo {
+  margin-left: 5%;
+  bottom: 5%;
+  margin-top: 5%;
 }
 
 @media screen and (max-width: 640px){
@@ -59,7 +60,7 @@
     left: 8%;
     top: 15%;
     width: 80%;
-    height: 145%;
+    height: 155%;
     border-radius: 2%;
   }
 
@@ -70,7 +71,7 @@
     left: 8%;
     top: 15%;
     width: 80%;
-    height: 145%;
+    height: 155%;
     border-radius: 2%;
   }
 
@@ -81,7 +82,7 @@
     left: 8%;
     top: 15%;
     width: 80%;
-    height: 145%;
+    height: 155%;
     border-radius: 2%;
   }
 }

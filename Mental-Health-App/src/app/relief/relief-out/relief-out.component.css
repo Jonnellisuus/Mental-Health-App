@@ -48,12 +48,14 @@
 
   .returnReliefButton {
     position: absolute;
+    left: 10%;
     top: 85%;
   }
 }
   /*scaled for iPhone5*/
   @media screen and (max-width: 320px) {
     .reliefText {
+      position: absolute;
       font-size: smaller;
     }
     .reliefHeader {

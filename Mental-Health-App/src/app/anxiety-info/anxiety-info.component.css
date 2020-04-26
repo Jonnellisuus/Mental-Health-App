@@ -1,0 +1,64 @@
+@media screen and (max-width: 812px) {
+  .class-selections1 {
+    position: absolute;
+    padding: 2%;
+    background-color: lightblue;
+    left: 8%;
+    top: 15%;
+    width: 80%;
+    height: 310%;
+    margin-bottom: 5%;
+  }
+
+  .class-selections2 {
+    position: absolute;
+    padding: 2%;
+    background-color: dimgrey;
+    left: 8%;
+    top: 15%;
+    width: 80%;
+    height: 310%;
+    margin-bottom: 5%;
+  }
+
+  .class-selections3 {
+    position: absolute;
+    padding: 2%;
+    background-color: gold;
+    left: 8%;
+    top: 15%;
+    width: 80%;
+    height: 310%;
+    margin-bottom: 5%;
+  }
+
+  .backButton {
+    margin-top: 45%;
+    margin-left: 5%;
+  }
+
+  .crisisButton {
+    background-color: darkred;
+    color: white;
+    position: absolute;
+    height: 4%;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 85%;
+  }
+}
+
+.anxietyInfo {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.routeButton {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+
+
+

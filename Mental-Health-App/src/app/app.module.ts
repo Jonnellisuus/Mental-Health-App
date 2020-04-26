@@ -34,8 +34,16 @@ import {MatSelectModule} from "@angular/material/select";
 import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { AnxietyComponent } from './anxiety/anxiety.component';
-
-
+import { AnxietyInfoComponent } from './anxiety-info/anxiety-info.component';
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import { CrisisComponent } from './crisis/crisis.component';
+import { PhonenumberListComponent } from './crisis/phonenumber-list/phonenumber-list.component';
+import { PhonenumberComponent } from './crisis/phonenumber/phonenumber.component';
+import {MatDialogModule} from "@angular/material/dialog";
+import { MatDeleteDialogComponent } from './mat-delete-dialog/mat-delete-dialog.component';
+import { SuggestionsComponent } from './suggestions/suggestions.component';
+import { SuggestionComponent } from './suggestions/suggestion/suggestion.component';
+import { SuggestionListComponent } from './suggestions/suggestion-list/suggestion-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +61,17 @@ import { AnxietyComponent } from './anxiety/anxiety.component';
     SettingsComponent,
     SignupComponent,
     HomeComponent,
-    AnxietyComponent
+    AnxietyComponent,
+    AnxietyInfoComponent,
+    CrisisComponent,
+    PhonenumberListComponent,
+    PhonenumberComponent,
+    PhonenumberComponent,
+    PhonenumberListComponent,
+    MatDeleteDialogComponent,
+    SuggestionsComponent,
+    SuggestionComponent,
+    SuggestionListComponent
   ],
   imports: [
     BrowserModule,
@@ -84,9 +102,12 @@ import { AnxietyComponent } from './anxiety/anxiety.component';
     MatOptionModule,
     MatSelectModule,
     MatSelectModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    MatDialogModule
   ],
   providers: [AuthService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [MatDeleteDialogComponent]
 })
 export class AppModule { }

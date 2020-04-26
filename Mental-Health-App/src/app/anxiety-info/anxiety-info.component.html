@@ -1,0 +1,23 @@
+<div>
+  <mat-card [ngClass]="{'class-selections1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-selections2': savedThemeIndex == 'themeNbr2', 'class-selections3': savedThemeIndex == 'themeNbr3'}">
+    <h1 style="text-align: center">Ahdistus - ystävä ja vihollinen</h1>
+    <div>
+      <div *ngFor="let info of infos" class="anxietyInfo">
+        {{info.text}}
+      </div>
+      <p class="anxietyInfo"><strong>Lisää tietoa mielen hyvinvoinnista ja arjen hallinnasta:</strong></p>
+      <p class="anxietyInfo">Suomen Mielenterveys ry:n sivuilla tietoa, muiden kokemuksia ja tietoa paikallisten yhdistysten toiminnasta.
+        Kriisipuhelimeen voi aina soittaa! </p>
+      <button mat-raised-button class="routeButton" (click)="goMieli()">Mieli.fi</button>
+      <p class="anxietyInfo">Työkaluja mielen hyvinvointiin –omahoito</p>
+      <button mat-raised-button class="routeButton" (click)="goMtTalo()">Mielenterveystalo</button>
+      <p class="anxietyInfo"><strong>Lisää tietoa paniikkihäiriöstä ja ahdistuneisuudesta</strong></p>
+      <p class="anxietyInfo">Tietoa ja omahoitoharjoituksia ahdistuksesta:</p>
+      <button mat-raised-button class="routeButton" (click)="goInfoAndPractises()">Tietoa ja harjoituksia</button>
+      <button mat-raised-button class="routeButton" (click)="goKaypa()">Ahdistuneisuushäiriöt</button><br>
+      <button mat-raised-button class="routeButton" (click)="goTerveystalo()">Paniikkihäiriöt</button><br>
+      <button mat-raised-button class="crisisButton" [routerLink]="['/crisis']" >Kriisitilanne</button>
+      <button mat-raised-button class="backButton" [routerLink]="['/anxiety']">Takaisin</button>
+    </div>
+  </mat-card>
+</div>

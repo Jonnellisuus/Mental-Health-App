@@ -12,16 +12,25 @@ import {SettingsComponent} from "./settings/settings.component";
 import {SignupComponent} from "./signup/signup.component";
 import {HomeComponent} from "./home/home.component";
 import {AnxietyComponent} from "./anxiety/anxiety.component";
+import {AnxietyInfoComponent} from "./anxiety-info/anxiety-info.component";
+import {CrisisComponent} from "./crisis/crisis.component";
+import {PhonenumberComponent} from "./crisis/phonenumber/phonenumber.component";
+import {SuggestionComponent} from "./suggestions/suggestion/suggestion.component";
+import {SuggestionsComponent} from "./suggestions/suggestions.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'day-tracking', component: DayTrackingComponent, canActivate: [LoginGuard]},
   {path: 'relief', component: ReliefComponent, canActivate: [LoginGuard]},
   {path: 'menu', component: MenuComponent, canActivate: [LoginGuard]},
-  {path: 'own-suggestion', component: OwnSuggestionComponent, canActivate: [LoginGuard]},
   {path: 'relief-out', component: ReliefOutComponent, canActivate: [LoginGuard]},
   {path: 'settings', component: SettingsComponent, canActivate: [LoginGuard]},
   {path: 'anxiety', component: AnxietyComponent, canActivate: [LoginGuard]},
+  {path: 'anxiety-info', component: AnxietyInfoComponent, canActivate: [LoginGuard]},
+  {path: 'crisis', component: CrisisComponent, canActivate: [LoginGuard]},
+  {path: 'new-contact', component: PhonenumberComponent, canActivate: [LoginGuard]},
+  {path: 'suggestion', component: SuggestionComponent, canActivate: [LoginGuard]},
+  {path: 'suggestions', component: SuggestionsComponent, canActivate: [LoginGuard]},
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: SignupComponent},
   {path: 'home', component: HomeComponent},

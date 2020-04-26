@@ -1,0 +1,42 @@
+.ownSuggestion1 {
+   display: inline-block;
+   background-color: lightyellow;
+  margin-top: 5%;
+   width: 100%;
+   border-radius: 5%;
+ }
+
+.ownSuggestion2 {
+  display: inline-block;
+  background-color: lightgrey;
+  margin-top: 5%;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.ownSuggestion3 {
+  display: inline-block;
+  background-color: deeppink;
+  margin-top: 5%;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.suggestionName {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: x-large;
+  width: 80%;
+  margin-top: 5%;
+}
+
+.suggestionInfo {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: large;
+  width: 80%;
+}
+
+.suggestion {
+  margin-top: 5%;
+}
