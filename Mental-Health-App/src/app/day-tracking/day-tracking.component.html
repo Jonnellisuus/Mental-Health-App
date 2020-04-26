@@ -2,7 +2,7 @@
 <div class="dayTrackingPage">
   <div [ngClass]="{'dayTrackingText1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'dayTrackingText2': savedThemeIndex == 'themeNbr2', 'dayTrackingText3': savedThemeIndex == 'themeNbr3'}">
     <mat-card class="dayTrackingText">
-      <h3 align="center">Kooste päivästä</h3>
+      <h4 align="center">Kooste päivästä</h4>
       <p>Pysähdy hetkeksi miettimään, mitä teit tänään, miltä arki tuntui? Mikä on hyvin?
         Voit jälkeenpäin katsoa päiväkirjaasi<span style="color: hotpink"> täältä.</span></p>
     </mat-card>
@@ -22,15 +22,6 @@
       <mat-slider class="sliderSymptom" min="0" max="4" step="1" #matSlider></mat-slider>
       <div class="sliderValueSymptom" id="symptom">{{question.answerListSymptom[matSlider.value]}}</div>
     </mat-card>
-
-    <mat-form-field class="symptomDetail">
-      <label for="inputSymptomDetail">
-        <textarea matInput type="text"
-                  id="inputSymptomDetail"
-                  placeholder="Miten selvisin tilanteesta:"
-                  maxlength="120"></textarea>
-      </label>
-    </mat-form-field>
 
     <!-- Question about how much sleep did you get. -->
     <mat-card class="questionCardSleep" *ngFor="let question of dayTrackingSleep">
@@ -66,45 +57,6 @@
       <mat-slider class="sliderHappiness" min="0" max="4" step="1" #matSlider></mat-slider>
       <div class="sliderValueHappiness" id="happiness">{{question.answerListHappiness[matSlider.value]}}</div>
 
-      <h3 class="goodThingsTitle">Kolme hyvää asiaa tänään:</h3>
-
-      <mat-form-field class="firstGoodThing">
-        <label for="inputFirstGoodThing">
-        <textarea matInput type="inputFirstGoodThing"
-                  id="inputFirstGoodThing"
-                  placeholder="Ensimmäinen hyvä asia päivässä:"
-                  maxlength="170"></textarea>
-        </label>
-      </mat-form-field>
-
-      <mat-form-field class="secondGoodThing">
-        <label for="inputSecondGoodThing">
-        <textarea matInput type="inputSecondGoodThing"
-                  id="inputSecondGoodThing"
-                  placeholder="Toinen hyvä asia päivässä:"
-                  maxlength="170"></textarea>
-        </label>
-      </mat-form-field>
-
-      <mat-form-field class="thirdGoodThing">
-        <label for="inputThirdGoodThing">
-        <textarea matInput type="inputThirdGoodThing"
-                  id="inputThirdGoodThing"
-                  placeholder="Kolmas hyvä asia päivässä:"
-                  maxlength="170"></textarea>
-        </label>
-      </mat-form-field>
-
-      <h3 class="goodThingsToRememberTitle">Mitä muuta haluan muistaa tästä päivästä:</h3>
-
-      <mat-form-field class="goodThingsToRemember">
-        <label for="inputGoodThingsToRemember">
-        <textarea matInput type="inputGoodThingsToRemember"
-                  id="inputGoodThingsToRemember"
-                  placeholder="Päivästä täytyy muistaa myös:"
-                  maxlength="300"></textarea>
-        </label>
-      </mat-form-field>
 
       <button [routerLink]="['/menu']" class="saveButton" mat-raised-button (click)="saveDayTracking()">Tallenna
       </button>

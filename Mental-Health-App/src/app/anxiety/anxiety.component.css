@@ -1,0 +1,88 @@
+.class-selections1 {
+  position: absolute;
+  padding: 2%;
+  background-color: lightblue;
+  left: 8%;
+  top: 15%;
+  width: 80%;
+  height: 155%;
+  border-radius: 2%;
+  margin-bottom: 5%;
+}
+
+.class-selections2 {
+  position: absolute;
+  padding: 2%;
+  background-color: dimgrey;
+  left: 8%;
+  top: 15%;
+  width: 80%;
+  height: 155%;
+  border-radius: 2%;
+  margin-bottom: 5%;
+}
+
+.class-selections3 {
+  position: absolute;
+  padding: 2%;
+  background-color: gold;
+  left: 8%;
+  top: 15%;
+  width: 80%;
+  height: 155%;
+  border-radius: 2%;
+  margin-bottom: 5%;
+}
+
+.anxietyHelp {
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.returnAnxietyButton {
+  margin-left: 5%;
+  bottom: 1%;
+  margin-top: 5%;
+}
+
+.moreInfo {
+  margin-left: 5%;
+  bottom: 5%;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 640px){
+  .class-selections1 {
+    position: absolute;
+    padding: 2%;
+    background-color: lightblue;
+    left: 8%;
+    top: 15%;
+    width: 80%;
+    height: 155%;
+    border-radius: 2%;
+  }
+
+  .class-selections2 {
+    position: absolute;
+    padding: 2%;
+    background-color: dimgrey;
+    left: 8%;
+    top: 15%;
+    width: 80%;
+    height: 155%;
+    border-radius: 2%;
+  }
+
+  .class-selections3 {
+    position: absolute;
+    padding: 2%;
+    background-color: gold;
+    left: 8%;
+    top: 15%;
+    width: 80%;
+    height: 155%;
+    border-radius: 2%;
+  }
+}

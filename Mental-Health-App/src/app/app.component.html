@@ -1,10 +1,10 @@
 <mat-sidenav-container class="sidenavContainer">
   <mat-sidenav #sidenav [mode]="'over'" [opened]="false" class="sidenav">
-      <div fxLayout="column" fxLayoutAlign="center center" class="sidenav-toolbar">
-        <div class="userEmail">
-          <h4 *ngIf="authService.showEmail()">{{(authService.user | async)?.email}}</h4>
-        </div>
+    <div fxLayout="column" fxLayoutAlign="center center" class="sidenav-toolbar">
+      <div class="userEmail">
+        <h5 *ngIf="authService.showEmail()">{{(authService.user | async)?.email}}</h5>
       </div>
+    </div>
     <mat-list-item class="reportButton">
       <button mat-flat-button>Raportti</button>
     </mat-list-item>
@@ -14,6 +14,7 @@
     <mat-list-item class="signOutButton">
       <button mat-flat-button (click)="logout()" *ngIf="authService.user | async">Kirjaudu ulos</button>
     </mat-list-item>
+    <img class="oloKirjaLogo" src="../../assets/images/olokirja_logosvg.svg" alt="kuva" height="200" width="200">
   </mat-sidenav>
   <app-toolbar (MenuClick)="sidenav.toggle()"></app-toolbar>
   <router-outlet></router-outlet>

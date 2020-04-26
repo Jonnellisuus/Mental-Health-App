@@ -21,7 +21,7 @@
   bottom: 50%;
   border-radius: 2%;
 }
-
+/*
 .class-theme1 {
   background-color: lightgoldenrodyellow;
   color: black;
@@ -29,15 +29,16 @@
 
 .class-theme2 {
   background-color: darkslategrey;
+  border-radius: 10%;
 }
 
 .class-theme3 {
   background-color: red;
-}
-
+}*/
+/*
 .icon {
   font-size: xx-large;
-}
+}*/
 
 .menu-items {
   display: inline-block;
@@ -46,11 +47,13 @@
 
 .menu-button1 {
   height: 130px;
+  border-radius: 50%;
   width: 130px;
 }
 
 .menu-button2 {
   height: 130px;
+  border-radius: 50%;
   width: 130px;
   left: 50%;
 }
@@ -58,6 +61,7 @@
 .menu-button3 {
   position: absolute;
   height: 130px;
+  border-radius: 50%;
   width: 130px;
   top: 50%;
   left: 8%;
@@ -66,6 +70,7 @@
 .menu-button4 {
   position: absolute;
   height: 130px;
+  border-radius: 50%;
   width: 130px;
   top: 50%;
   left: 58%;
@@ -78,6 +83,29 @@
 }
 
 @media screen and (max-width: 812px){
+  .lizardSvg{
+    position: absolute;
+    top: 63%;
+    left: 1%;
+  }
+
+  .dogPawSvg1{
+    position: absolute;
+    left: 30%;
+  }
+
+  .dogPawSvg2{
+    position: absolute;
+    left: 45%;
+    top: 75%;
+  }
+
+  .dogPawSvg3{
+    position: absolute;
+    right: 35%;
+    top: 57%;
+  }
+
   .selections{
     position: absolute;
     padding: 2%;
@@ -122,12 +150,19 @@
 
   .menu-button1{
     position: absolute;
+    background-color: sandybrown;
+    color: white;
     height: 110px;
+    top: 5%;
     width: 110px;
+    left: 6.4%;
   }
 
   .menu-button2{
     position: absolute;
+    background-color: sandybrown;
+    color: white;
+    top: 5%;
     height: 110px;
     width: 110px;
     left: 56%;
@@ -135,6 +170,8 @@
 
   .menu-button3{
     position: absolute;
+    background-color: sandybrown;
+    color: white;
     height: 110px;
     width: 110px;
     top: 30%;
@@ -143,9 +180,90 @@
 
   .menu-button4{
     position: absolute;
+    background-color: sandybrown;
+    color: white;
     height: 110px;
     width: 110px;
     top: 30%;
+    left: 56%;
+  }
+
+  .menu-button1theme2{
+    position: absolute;
+    background-color: darkslategrey;
+    color: white;
+    height: 110px;
+    top: 5%;
+    width: 110px;
+  }
+
+  .menu-button2theme2{
+    position: absolute;
+    background-color: darkslategrey;
+    color: white;
+    top: 5%;
+    height: 110px;
+    width: 110px;
+    left: 56%;
+  }
+
+  .menu-button3theme2{
+    position: absolute;
+    background-color: darkslategrey;
+    color: white;
+    height: 110px;
+    width: 110px;
+    top: 30%;
+    left: 6.4%;
+  }
+
+  .menu-button4theme2{
+    position: absolute;
+    background-color: darkslategrey;
+    color: white;
+    height: 110px;
+    width: 110px;
+    top: 30%;
+    left: 56%;
+  }
+
+  /* TEEMA3 TESTAUSTA*/
+  .menu-button1theme3{
+    position: absolute;
+    background-color: limegreen;
+    border-radius: 14%;
+    height: 130px;
+    top: 5%;
+    width: 100px;
+  }
+
+  .menu-button2theme3{
+    position: absolute;
+    background-color: saddlebrown;
+    border-radius: 14%;
+    top: 20%;
+    height: 110px;
+    width: 110px;
+    left: 56%;
+  }
+
+  .menu-button3theme3{
+    position: absolute;
+    background-color: red;
+    border-radius: 14%;
+    height: 110px;
+    width: 110px;
+    top: 35%;
+    left: 6.4%;
+  }
+
+  .menu-button4theme3{
+    position: absolute;
+    background-color: blue;
+    border-radius: 14%;
+    height: 110px;
+    width: 110px;
+    top: 50%;
     left: 56%;
   }
 

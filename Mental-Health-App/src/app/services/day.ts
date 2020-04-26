@@ -5,10 +5,7 @@ export interface Day {
   exercise: string;
   eat: string;
   symptom: string;
-  symptomDetail: string;
   contact: string;
   happiness: string;
-  thingOne: string;
-  thingTwo: string;
-  thingThree: string;
+
 }

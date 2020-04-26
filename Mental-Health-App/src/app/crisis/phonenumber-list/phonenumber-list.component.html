@@ -1,0 +1,27 @@
+<div>
+  <h2 class="phoneNumberHeader">Tärkeät puhelinnumerot</h2>
+  <table class="table table-sm">
+    <div *ngFor="let phonenumber of phonenumberList">
+      <div class="contact">
+        <div>{{phonenumber.name}}</div>
+        <div>{{phonenumber.info}}</div>
+        <div>{{phonenumber.pNumber}}</div>
+      </div>
+      <a class="btn" (click)="onDelete(phonenumber.$key)">
+        <i class="fa fa-trash-o"></i>
+      </a>
+    </div>
+  </table>
+  <button mat-raised-button class="newContact" [routerLink]="['/new-contact']">Uusi numero</button>
+  <div class="texts">
+    <p>Suomen Mielenterveys ry:n kriisipuhelin päivystää 24/7 numerossa <strong>09 2525 0111</strong> Puhelun hinta on
+      soittajan liittymäsopimuksen mukainen, ei lisämaksuja. Kriisipuhelimeen vastaavat kriisityön ammattilaiset sekä
+      koulutetut vapaaehtoiset. Halutessaan voi keskustella nimettömänä. Lisää tietoa Kriisipuhelimesta</p>
+    <button mat-raised-button class="numberButton" (click)="toCrisisPhone()">Kriisipuhelin</button>
+    <p>Suomen Mielenterveys ry:n Sekasin-chat 12-29-vuotiaille </p>
+    <button mat-raised-button class="numberButton" (click)="toSekaisin()">Sekaisin 247</button>
+    <p>Seurakunnat, yhdistykset ym. tarjoavat usein tukea ja apua. </p>
+    <p>Hätänumeroon<strong> 112</strong> tulee soittaa, mikäli tiedät tai epäilet hengen, terveyden, omaisuuden tai
+      ympäristön olevan uhattuna tai vaarassa. </p>
+  </div>
+</div>

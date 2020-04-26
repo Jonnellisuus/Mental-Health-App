@@ -23,7 +23,6 @@ import {DayTrackingHappinessItem} from './items/day-tracking-happiness';
 })
 
 export class DayTrackingComponent implements OnInit {
-  private dayForm: any;
 
     constructor(private questionService: DayTrackingService,
                 public snackBar: MatSnackBar,
@@ -58,27 +57,17 @@ GatherDay() {
   const exercise = JSON.stringify(document.getElementById('exercise').innerText);
   const eat = JSON.stringify(document.getElementById('eat').innerText);
   const symptom = JSON.stringify(document.getElementById('symptom').innerText);
-  const symptomDetail = JSON.stringify(document.getElementById('inputSymptomDetail').innerText);
   const contact = JSON.stringify(document.getElementById('contact').innerText);
   const happiness = JSON.stringify(document.getElementById('happiness').innerText);
-  const thingOne = JSON.stringify(document.getElementById('inputFirstGoodThing').innerText);
-  const thingTwo = JSON.stringify(document.getElementById('inputSecondGoodThing').innerText);
-  const thingThree = document.getElementById('inputThirdGoodThing').textContent;
-  const thingsToRemember = JSON.stringify(document.getElementById('inputGoodThingsToRemember').innerText);
 
-  return {mood, sleepTime, exercise, eat, symptom, symptomDetail, contact, happiness, thingOne, thingTwo, thingThree, thingsToRemember};
+
+  return {mood, sleepTime, exercise, eat, symptom, contact, happiness};
   }
 
   saveDayTracking() {
-
-    this.GatherDay();
-    console.log(this.GatherDay());
-  //  this.dayApi.AddDay(this.GatherDay());
+    this.dayApi.AddDay(this.GatherDay());
     this.snackBar.open('Päivän seuranta tallennettu', 'OK', {duration: 3000});
 
   }
 
-  getSliderValue(event) {
-    console.log(event.target.value);
-  }
 }

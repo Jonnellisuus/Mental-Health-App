@@ -1,7 +1,9 @@
 <mat-card class="homeCard">
-<h3 class="homeTitle">Tervetuloa käyttämään oLokirjaa</h3>
+  <h4 align="center" class="homeTitle">Tervetuloa käyttämään oLokirjaa</h4>
   <p class="signUpText">Rekisteröidy sovellukseen alla olevasta napista.</p>
   <button [routerLink]="['/signup']" class="directSignUpButton" mat-raised-button>Rekisteröidy</button>
   <p class="logInText">Jos olet jo rekisteröitynyt, voit kirjautua sisään alla olevasta napista.</p>
   <button [routerLink]="['/login']" class="directLogInButton" mat-raised-button>Kirjaudu sisään</button>
+
 </mat-card>
+<img class="oloKirjaLogo" src="../../assets/images/olokirja_logosvg.svg" alt="kuva" height="200" width="300">
