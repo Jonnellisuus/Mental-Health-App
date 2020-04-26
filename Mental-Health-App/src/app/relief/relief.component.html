@@ -10,7 +10,7 @@
     <button [ngClass]="{'crisisPhoneButton1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'crisisPhoneButton2': savedThemeIndex == 'themeNbr2', 'crisisPhoneButton3': savedThemeIndex == 'themeNbr3'}" mat-raised-button>Kriisi-<br>puhelin</button>
     </mat-list-item>
     <mat-list-item class="relief-items">
-    <button [ngClass]="{'ownSuggestionButton1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'ownSuggestionButton2': savedThemeIndex == 'themeNbr2', 'ownSuggestionButton3': savedThemeIndex == 'themeNbr3'}" mat-raised-button>Oma<br>ehdotus</button>
+    <button [routerLink]="['/created-suggestions']" [ngClass]="{'ownSuggestionButton1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'ownSuggestionButton2': savedThemeIndex == 'themeNbr2', 'ownSuggestionButton3': savedThemeIndex == 'themeNbr3'}" mat-raised-button>Oma<br>ehdotus</button>
     </mat-list-item>
     <!--<button [routerLink]="['/relief-out']" class="reliefButton" mat-raised-button>Ulos</button>
     <button class="reliefButton" mat-raised-button>Hengitys harjoitus</button>

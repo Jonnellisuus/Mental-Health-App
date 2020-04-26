@@ -16,7 +16,6 @@
 
       <mat-error>
         <div *ngIf="suggestionName.invalid && (suggestionName.dirty || suggestionName.touched)">
-
           <p class="errorMessageName" *ngIf="suggestionName.hasError('required')">Anna ehdotukselle nimi</p>
           <!-- This will be removed if not needed.
           <p class="instructionTextFirstName" *ngIf="suggestionName.hasError('minlength')">Et kirjoittanut nimeä</p>
@@ -38,20 +37,17 @@
 
       <mat-error>
         <div *ngIf="inputSuggestion.invalid && (inputSuggestion.dirty || inputSuggestion.touched)">
-
           <p class="errorMessageSuggestion" *ngIf="inputSuggestion.hasError('required')">Kirjoita ehdotus</p>
           <!-- This will be removed if not needed.
           <p class="instructionTextFirstName" *ngIf="inputSuggestion.hasError('minlength')">Et kirjoittanut ehdotusta</p>
           -->
         </div>
       </mat-error>
-
     </form>
+
     <button [routerLink]="['/relief']" class="saveSuggestionButton" mat-raised-button [disabled]="contactForm.form.invalid"
             (click)="onSave(contactForm)">Tallenna</button>
-
     <button class="cancelSuggestionButton" mat-raised-button (click)="backClicked()">Peruuta</button>
-
     <!--<button [routerLink]="['/relief']" class="cancelSuggestionButton" mat-raised-button>Peruuta</button>-->
   </mat-card>
 </div>
