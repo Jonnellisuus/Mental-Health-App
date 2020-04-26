@@ -1,0 +1,24 @@
+.ownSuggestion {
+  display: inline-block;
+  background-color: lightgrey;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.suggestionName {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: x-large;
+  background-color: green;
+  width: 80%;
+}
+
+.suggestionInfo {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: large;
+  background-color: green;
+  width: 80%;
+}
+
+

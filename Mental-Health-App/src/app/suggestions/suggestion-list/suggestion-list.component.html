@@ -1,0 +1,12 @@
+<h2 class="text-center">Omat ehdotukset</h2>
+<div>
+  <div class="ownSuggestion" *ngFor="let suggestion of suggestionList">
+    <div class="suggestion">
+    <p class="suggestionName">{{suggestion.name}}</p>
+    <p class="suggestionInfo">- {{suggestion.info}}</p>
+    </div>
+    <a class="btn" (click)="onDelete(suggestion.$key)">
+      <i class="fa fa-trash-o"></i>
+    </a>
+  </div>
+</div>

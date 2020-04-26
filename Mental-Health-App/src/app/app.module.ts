@@ -41,7 +41,9 @@ import { PhonenumberListComponent } from './crisis/phonenumber-list/phonenumber-
 import { PhonenumberComponent } from './crisis/phonenumber/phonenumber.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import { MatDeleteDialogComponent } from './mat-delete-dialog/mat-delete-dialog.component';
-
+import { SuggestionsComponent } from './suggestions/suggestions.component';
+import { SuggestionComponent } from './suggestions/suggestion/suggestion.component';
+import { SuggestionListComponent } from './suggestions/suggestion-list/suggestion-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,7 +68,10 @@ import { MatDeleteDialogComponent } from './mat-delete-dialog/mat-delete-dialog.
     PhonenumberComponent,
     PhonenumberComponent,
     PhonenumberListComponent,
-    MatDeleteDialogComponent
+    MatDeleteDialogComponent,
+    SuggestionsComponent,
+    SuggestionComponent,
+    SuggestionListComponent
   ],
   imports: [
     BrowserModule,

@@ -15,7 +15,7 @@
         [routerLink]="['/anxiety']"
         [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}"
         mat-raised-button [ngClass]="{'menu-button2': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'menu-button2theme2': savedThemeIndex == 'themeNbr2', 'menu-button2theme3':savedThemeIndex == 'themeNbr3'}">
-        <mat-icon class="icon">stars</mat-icon>
+        <mat-icon class="icon">warning</mat-icon>
         <br>Jos ahdistaa
       </button>
     </mat-list-item>
@@ -31,7 +31,14 @@
     </mat-list-item>
     <mat-list-item class="menu-items">
       <button
-        [routerLink]="['/own-suggestion']"
+        [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}"
+        mat-raised-button [ngClass]="{'menu-button4': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'menu-button4theme2': savedThemeIndex == 'themeNbr2', 'menu-button4theme3':savedThemeIndex == 'themeNbr3'}">
+        <mat-icon class="icon">add</mat-icon>
+        <br>
+        Lisää oma<br>juttu
+      </button>
+      <button
+        [routerLink]="['/suggestion']"
         [ngClass]="{'class-theme1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'class-theme2': savedThemeIndex == 'themeNbr2', 'class-theme3': savedThemeIndex == 'themeNbr3'}"
         mat-raised-button [ngClass]="{'menu-button4': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'menu-button4theme2': savedThemeIndex == 'themeNbr2', 'menu-button4theme3':savedThemeIndex == 'themeNbr3'}">
         <mat-icon class="icon">add</mat-icon>

@@ -10,13 +10,15 @@
     <button [routerLink]="['/crisis']" [ngClass]="{'crisisPhoneButton1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'crisisPhoneButton2': savedThemeIndex == 'themeNbr2', 'crisisPhoneButton3': savedThemeIndex == 'themeNbr3'}" mat-raised-button>Kriisi-<br>puhelin</button>
     </mat-list-item>
     <mat-list-item class="relief-items">
-    <button [ngClass]="{'ownSuggestionButton1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'ownSuggestionButton2': savedThemeIndex == 'themeNbr2', 'ownSuggestionButton3': savedThemeIndex == 'themeNbr3'}" mat-raised-button>Oma<br>ehdotus</button>
+    <button [routerLink]="['/suggestions']" [ngClass]="{'ownSuggestionButton1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'ownSuggestionButton2': savedThemeIndex == 'themeNbr2', 'ownSuggestionButton3': savedThemeIndex == 'themeNbr3'}" mat-raised-button>Oma<br>ehdotus</button>
     </mat-list-item>
     <!--<button [routerLink]="['/relief-out']" class="reliefButton" mat-raised-button>Ulos</button>
     <button class="reliefButton" mat-raised-button>Hengitys harjoitus</button>
     <button class="reliefButton" mat-raised-button>Kriisi puhelin</button>
-    <button class="reliefButton" mat-raised-button>Oma ehdotus</button>-->
+    <button class="reliefButton" mat-raised-button>Oma ehdotus</button>
     <button [routerLink]="['/own-suggestion']" class="addSuggestionButton" mat-fab color="warn">
+      <mat-icon class="icon">add</mat-icon></button>-->
+    <button class="addSuggestionButton" mat-fab color="warn">
       <mat-icon class="icon">add</mat-icon></button>
     <button [routerLink]="['/menu']" class="returnMenuButton" mat-raised-button>Takaisin</button>
   </mat-card>

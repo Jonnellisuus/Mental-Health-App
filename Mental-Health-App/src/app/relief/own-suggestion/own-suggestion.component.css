@@ -53,7 +53,7 @@
 
 /*scaled for iPhoneX*/
 @media screen and (max-width: 640px) {
-  .ownSuggestionCard1 {
+  .class-selections1 {
     position: absolute;
     background-color: lightblue;
     padding: 2%;
@@ -63,7 +63,7 @@
     height: 80%;
     border-radius: 2%;
   }
-  .ownSuggestionCard2 {
+  .class-selections2 {
     position: absolute;
     background-color: dimgrey;
     padding: 2%;
@@ -73,7 +73,7 @@
     height: 80%;
     border-radius: 2%;
   }
-  .ownSuggestionCard3 {
+  .class-selections3 {
     position: absolute;
     background-color: gold;
     padding: 2%;
