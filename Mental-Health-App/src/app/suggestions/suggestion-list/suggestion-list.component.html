@@ -1,6 +1,6 @@
 <h2 class="text-center">Omat ehdotukset</h2>
 <div>
-  <div class="ownSuggestion" *ngFor="let suggestion of suggestionList">
+  <mat-card [ngClass]="{'ownSuggestion1': savedThemeIndex == 'themeNbr1' || savedThemeIndex == null, 'ownSuggestion2': savedThemeIndex == 'themeNbr2', 'ownSuggestion3': savedThemeIndex == 'themeNbr3'}" *ngFor="let suggestion of suggestionList">
     <div class="suggestion">
     <p class="suggestionName">{{suggestion.name}}</p>
     <p class="suggestionInfo">- {{suggestion.info}}</p>
@@ -8,5 +8,5 @@
     <a class="btn" (click)="onDelete(suggestion.$key)">
       <i class="fa fa-trash-o"></i>
     </a>
-  </div>
+  </mat-card>
 </div>

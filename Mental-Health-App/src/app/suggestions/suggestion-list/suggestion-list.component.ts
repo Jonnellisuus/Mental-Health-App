@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { SuggestionService} from "../shared/suggestion.service";
 import {Suggestion} from "../shared/suggestion";
 import {element} from "protractor";
+import {MatDialog} from "@angular/material/dialog";
+import {SuggestionDialogService} from "../shared/suggestion-dialog.service";
+import {MatSnackBar} from "@angular/material/snack-bar";
 
 @Component({
   selector: 'app-suggestion-list',
@@ -9,11 +12,14 @@ import {element} from "protractor";
   styleUrls: ['./suggestion-list.component.css']
 })
 export class SuggestionListComponent implements OnInit {
+  public savedThemeIndex: string;
   suggestionList : Suggestion[];
 
-  constructor(private suggestionService : SuggestionService) { }
+  constructor(private suggestionService : SuggestionService,
+              private dialog : MatDialog, private suggestionDialogService : SuggestionDialogService, private snackBar : MatSnackBar) { }
 
   ngOnInit(): void {
+    this.savedThemeIndex = localStorage.getItem('themeNbr');
     var x = this.suggestionService.getData();
     x.snapshotChanges().subscribe(item => {
       this.suggestionList = [];
@@ -26,7 +32,15 @@ export class SuggestionListComponent implements OnInit {
   }
 
   onDelete(key : string) {
-    this.suggestionService.deleteSuggestion(key);
+    //this.suggestionService.deleteSuggestion(key);
+    this.suggestionDialogService.openSuggestionDialog()
+      .afterClosed().subscribe(res => {
+      //console.log(res);
+      if(res == true) {
+        this.suggestionService.deleteSuggestion(key);
+        this.snackBar.open('Keino poistettu', 'Ok', {duration: 3000});
+      }
+    })
   }
 
 }

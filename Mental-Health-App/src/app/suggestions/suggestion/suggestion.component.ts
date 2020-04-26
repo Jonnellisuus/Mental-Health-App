@@ -29,6 +29,10 @@ export class SuggestionComponent implements OnInit {
     //this.resetForm(suggestionForm);
   }
 
+  returnPage() {
+    this._location.back();
+  }
+
   resetForm(suggestionForm? : NgForm) {
     //suggestionForm.reset();
     this.suggestionService.selectedSuggestion = {
